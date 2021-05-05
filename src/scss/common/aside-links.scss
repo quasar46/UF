@@ -1,0 +1,37 @@
+.aside-links {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 70px;
+    a {
+        display: block;
+        margin-bottom: 20px;
+        svg {
+            display: block;
+        }
+        &:first-child {
+            margin-bottom: 228px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover {
+            svg {
+                path {
+                    stroke: rgba(255, 255, 255, 0.5);
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        fill: rgba(255, 255, 255, 0.5);
+                    }
+                }
+                g {
+                    fill: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+    @include media-laptop {
+        right: 70px;
+        width: 60px;
+    }
+}

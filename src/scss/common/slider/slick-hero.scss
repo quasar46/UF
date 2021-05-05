@@ -1,0 +1,35 @@
+.slick-hero__title {
+    font-size: 76px;
+    font-weight: 500;
+    .br {
+        display: block;
+    }
+    @include media-laptop {
+        font-size: 58px;
+    }
+}
+
+.slick-hero__pagination {
+    display: flex;
+}
+
+.slick-hero__arrow {
+    width: 79px;
+    &.slick-disabled {
+        svg {
+            path {
+                stroke: rgba(184, 158, 158, 0.5);
+                &:nth-child(2) {
+                    fill: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+    @include media-laptop {
+        width: 67px;
+    }
+}
+
+.slick-hero__prev {
+    margin-right: 20px;
+}

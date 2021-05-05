@@ -1,0 +1,17 @@
+.feedback-content {
+    flex: 0 0 1075px;
+    margin-left: auto;
+    @include media-laptop {
+        flex: 0 0 690px;
+    }
+}
+
+.feedback-content__title {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    @include media-laptop {
+        font-size: 30px;
+    }
+}

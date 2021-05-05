@@ -1,0 +1,56 @@
+.advantage-tabs {
+    display: flex;
+}
+
+.advantage-tabs__picture {
+    width: 50%;
+    flex: 1 0 auto;
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+    &.hide {
+        display: none;
+    }
+    &.show {
+        display: block;
+    }
+}
+
+.advantage-tabs__tab {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 100px;
+    & * {
+        pointer-events: none;
+    }
+    h3 {
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        @include media-laptop {
+            font-size: 30px;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5;
+        @include media-laptop {
+            font-size: 17px;
+        }
+    }
+    &.active {
+        background-color: #f1f1f1;
+    }
+    @include media-laptop {
+        padding: 40px 75px;
+    }
+}
+
+.advantages-tabs__tab-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

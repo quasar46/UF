@@ -1,0 +1,40 @@
+.slick-objects {
+    width: 100%;
+    .slick-list {
+        // width: 100%;
+        // transform: translateX(25%);
+    }
+    .slick-track {
+        // margin-right: -800px;
+    }
+}
+
+.slick-objects__arrow {
+    width: 79px;
+    &.slick-disabled {
+        svg {
+            path {
+                stroke: rgba(48, 53, 93, 0.5);
+            }
+        }
+    }
+    @include media-laptop {
+        width: 67px;
+    }
+}
+
+.slick-objects__prev {
+    margin-right: 20px;
+}
+
+.slick-objects__item {
+    // margin-right: 105px;
+    height: 495px;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+    @include media-laptop {
+        height: 352px;
+    }
+}

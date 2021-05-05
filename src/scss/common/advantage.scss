@@ -1,0 +1,77 @@
+.advantage {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @include media-laptop {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+}
+
+.advantage__slick-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 200px;
+    .slick-slider {
+        position: static;
+    }
+}
+
+.advantage__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 428px;
+    padding-bottom: 50px;
+    span {
+        z-index: -1;
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 1px;
+            background-color: #c4c4c4;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            background-color: #c4c4c4;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 80%;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #c4c4c4;
+    }
+}
+
+.slick-advantage__arrow {
+    width: 79px;
+    @include media-laptop {
+        width: 67px;
+    }
+}
+
+.advantage__pagination {
+    display: flex;
+    margin-top: auto;
+}
