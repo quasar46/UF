@@ -3,11 +3,29 @@
     @include media-laptop {
         padding-top: 130px;
     }
+    @include media-tablet-horizontal {
+        padding-top: 100px;
+    }
+    @include media-mobile {
+        padding-top: 70px;
+    }
 }
 
 .catalog__title {
     display: inline-flex;
     align-items: center;
+    img {
+        @include media-mobile {
+            margin-left: auto;
+        }
+    }
+    @include media-mobile {
+        align-items: flex-start;
+        width: 100%;
+        .br {
+            display: block;
+        }
+    }
 }
 
 .catalog__content {
@@ -17,6 +35,9 @@
     svg {
         position: relative;
         z-index: 50;
+    }
+    @include media-tablet {
+        flex-direction: column;
     }
 }
 
@@ -40,16 +61,18 @@
         &:last-child {
             margin-right: 0;
         }
+        @include media-tablet-horizontal {
+            margin-right: 30px;
+        }
     }
     button {
         display: flex;
         align-items: center;
         background-color: transparent;
         border: 2px solid $color-fiolet;
-        line-height: 70px;
+        height: 70px;
         padding: 0 30px;
-        border-radius: 20px;
-
+        border-radius: 10px;
         cursor: pointer;
         span {
             margin-right: 10px;
@@ -61,12 +84,26 @@
         svg {
             width: 30px;
         }
+        @include media-laptop {
+            height: 60px;
+        }
+        @include media-tablet-horizontal {
+            height: 55px;
+            padding: 0 15px;
+        }
+        @include media-mobile {
+            height: 50px;
+        }
+    }
+    @include media-tablet-horizontal {
+        margin-bottom: 30px;
     }
 }
 
 .catalog__item {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 420px;
     width: 50%;
     padding: 40px;
@@ -99,6 +136,26 @@
             transform: translateX(-50%);
         }
     }
+    &:before {
+        @include media-tablet {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 90%;
+            height: 1px;
+            background-color: #c5c5c5;
+            transform: translateX(-50%);
+        }
+    }
+    &:last-child {
+        @include media-tablet {
+            &::before {
+                display: none;
+            }
+        }
+    }
     &.active,
     &:hover {
         background-image: url("../img/bg/catalog-item.jpg");
@@ -115,11 +172,34 @@
                 }
             }
         }
+        .catalog-item__arrow {
+            display: block;
+        }
         .catalog__overlay {
             display: block;
         }
     }
+    @include media-laptop {
+        height: 329px;
+    }
+    @include media-tablet-horizontal {
+        height: 291px;
+    }
+    @include media-tablet {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    @include media-mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
+// .catalog-item__title {
+//     position: relative;
+//     margin-top: auto;
+// }
 
 .catalog__overlay {
     display: none;
@@ -134,21 +214,39 @@
 
 .catalog-item__arrow {
     width: 70px;
-    display: block;
+    display: none;
     margin-left: auto;
-    position: relative;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    @include media-laptop {
+        width: 60px;
+    }
+    @include media-tablet-horizontal {
+        width: 55px;
+    }
+    @include media-mobile {
+        right: 15px;
+    }
 }
 
 .catalog-item__title {
+    position: relative;
     font-size: 34px;
     font-weight: 500;
-    position: absolute;
     z-index: 50;
     line-height: 1.3;
-    bottom: 43px;
+    // bottom: 43px;
+    margin-top: auto;
     @include media-laptop {
         font-size: 30px;
-        bottom: 30px;
+        // bottom: 30px;
+    }
+    @include media-tablet-horizontal {
+        font-size: 28px;
+    }
+    @include media-tablet {
+        font-size: 26px;
     }
 }
 
@@ -159,5 +257,12 @@
     z-index: 50;
     @include media-laptop {
         font-size: 22px;
+    }
+    @include media-tablet {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    @include media-mobile {
+        font-size: 18px;
     }
 }

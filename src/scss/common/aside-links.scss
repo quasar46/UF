@@ -29,9 +29,29 @@
                 }
             }
         }
+        &.aside-links__link--social {
+            @include media-mobile {
+                display: none;
+            }
+        }
     }
     @include media-laptop {
         right: 70px;
         width: 60px;
+        @include media-tablet-horizontal {
+            right: 55px;
+        }
+        @include media-tablet {
+            right: 40px;
+        }
+        @include media-mobile {
+            right: 15px;
+        }
+    }
+    @include media-tablet-horizontal {
+        width: 55px;
+    }
+    @include media-mobile {
+        top: 60px;
     }
 }

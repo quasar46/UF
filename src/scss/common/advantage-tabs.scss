@@ -1,5 +1,15 @@
 .advantage-tabs {
     display: flex;
+    .container {
+        padding: 0;
+        max-width: 100%;
+        @include media-tablet-horizontal {
+            padding: 0 55px;
+        }
+        @include media-tablet {
+            padding: 0 40px;
+        }
+    }
 }
 
 .advantage-tabs__picture {
@@ -15,6 +25,9 @@
     &.show {
         display: block;
     }
+    @include media-tablet-horizontal {
+        display: none !important;
+    }
 }
 
 .advantage-tabs__tab {
@@ -23,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 50px 100px;
+    border-bottom: 1px solid #c5c5c5;
     & * {
         pointer-events: none;
     }
@@ -32,6 +46,12 @@
         margin-bottom: 20px;
         @include media-laptop {
             font-size: 30px;
+        }
+        @include media-tablet-horizontal {
+            font-size: 28px;
+        }
+        @include media-tablet {
+            font-size: 26px;
         }
     }
     p {
@@ -44,13 +64,30 @@
     }
     &.active {
         background-color: #f1f1f1;
+        @include media-tablet-horizontal {
+            background-color: transparent;
+        }
+    }
+    &:last-child {
+        border-bottom: none;
     }
     @include media-laptop {
         padding: 40px 75px;
+    }
+    @include media-tablet-horizontal {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 .advantages-tabs__tab-wrapper {
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 0;
+    max-width: 100%;
+    @include media-mobile {
+        display: none;
+    }
 }

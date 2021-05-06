@@ -1,13 +1,19 @@
 @import "../utils/variables";
 
+@mixin media-mobile {
+    @media (max-width: $mediaWidthMobile) {
+        @content;
+    }
+}
+
 @mixin media-tablet {
-    @media (min-width: $mediaWidthTablet) {
+    @media (max-width: $mediaWidthTablet) {
         @content;
     }
 }
 
 @mixin media-tablet-horizontal {
-    @media (min-width: $mediaWidthTabletHorizontal) {
+    @media (max-width: $mediaWidthTabletHorizontal) {
         @content;
     }
 }

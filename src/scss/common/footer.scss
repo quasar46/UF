@@ -11,6 +11,9 @@
 
 .footer__list {
     margin-bottom: 50px;
+    @include media-tablet {
+        margin-bottom: 0;
+    }
 }
 
 .footer__col {
@@ -21,20 +24,39 @@
         margin-bottom: 15px;
         &.footer__title {
             font-size: 24px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             @include media-laptop {
                 font-size: 22px;
             }
+            @include media-tablet {
+                display: block;
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+        }
+        @include media-tablet {
+            display: none;
         }
     }
     &--contacts {
         font-size: 34px;
         flex-direction: column;
+        line-height: 1.5;
         p {
             margin-bottom: 60px;
+            @include media-tablet-horizontal {
+                margin-bottom: 50px;
+            }
         }
         @include media-laptop {
             font-size: 30px;
+        }
+        @include media-tablet-horizontal {
+            max-width: 310px;
+            font-size: 28px;
+        }
+        @include media-tablet {
+            font-size: 26px;
         }
     }
     &--other {
@@ -42,10 +64,23 @@
         @include media-laptop {
             font-size: 17px;
         }
+        @include media-tablet {
+            display: none;
+        }
     }
     &:nth-child(2) {
         margin-left: auto;
         margin-right: 130px;
+        @include media-tablet-horizontal {
+            margin-right: 70px;
+        }
+    }
+    &--tablet {
+        display: none;
+        @include media-tablet {
+            display: block;
+            margin-left: auto;
+        }
     }
 }
 
@@ -57,6 +92,31 @@
         &:first-child {
             margin-right: 20px;
         }
+        @include media-tablet-horizontal {
+            width: 55px;
+        }
+        @include media-tablet {
+            width: 50px;
+        }
+    }
+    svg {
+        &:hover {
+            path {
+                stroke: rgba(255, 255, 255, 0.5);
+                &:nth-child(2),
+                &:nth-child(3) {
+                    fill: rgba(255, 255, 255, 0.5);
+                }
+            }
+            g {
+                path:first-child {
+                    fill: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+    @include media-tablet {
+        margin-bottom: 0 !important;
     }
 }
 
@@ -72,6 +132,13 @@
     font-size: 18px;
     width: 100%;
     margin-top: 70px;
+    @include media-tablet-horizontal {
+        font-size: 17px;
+        margin-top: 40px;
+    }
+    @include media-tablet {
+        margin-top: 70px;
+    }
 }
 
 .footer__mail {
