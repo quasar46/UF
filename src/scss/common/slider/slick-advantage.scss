@@ -10,9 +10,9 @@
         width: 130%;
     }
     @include media-mobile {
-        height: 266px;
         width: 240%;
-        padding-top: 60px;
+        height: auto;
+        margin-bottom: 50px;
     }
 }
 
@@ -30,11 +30,18 @@
         @include media-tablet {
             width: 50px;
         }
+        @include media-mobile {
+            width: 43px;
+            margin-bottom: 30px;
+        }
     }
     p {
         color: #41424d;
         font-size: 18px;
         line-height: 1.5;
+        @include media-mobile {
+            font-size: 15px;
+        }
     }
     span {
         position: absolute;
@@ -81,7 +88,11 @@
         padding-top: 65px;
     }
     @include media-mobile {
-        min-height: 266px;
+        // min-height: 266px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

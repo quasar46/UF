@@ -1,6 +1,5 @@
 .header-main {
     position: relative;
-    padding-top: 30px;
     padding-bottom: 50px;
     background-image: url("../img/bg/main.jpg");
     background-size: cover;
@@ -9,38 +8,72 @@
     font-size: 18px;
 
     @include media-tablet-horizontal {
-        padding-top: 25px;
         padding-bottom: 40px;
     }
     @include media-tablet {
         padding-bottom: 30px;
     }
     @include media-mobile {
-        padding-top: 25px;
         padding-bottom: 20px;
     }
 }
 
 .header-main__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        @include media-tablet-horizontal {
+            padding-top: 25px;
+        }
+        @include media-mobile {
+            padding-top: 25px;
+        }
+    }
+    &.fixed {
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        color: $color-base;
+        z-index: 100;
+        width: 100%;
+        border-bottom: 1px solid #c5c5c5;
+        svg {
+            g {
+                stroke: $color-base;
+            }
+        }
+        .header-main__logo {
+            background-image: url("../img/logo-fix.png");
+        }
+        .container {
+            padding-bottom: 30px;
+        }
+    }
 }
 
 .header-main__logo {
     flex: 1 0 auto;
     max-width: 301px;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    height: 58px;
     @include media-laptop {
         max-width: 229px;
+        height: 44px;
     }
     @include media-tablet-horizontal {
         max-width: 213px;
+        height: 41px;
     }
     @include media-tablet {
         max-width: 183px;
+        height: 35px;
     }
     @include media-mobile {
         max-width: 166px;
+        height: 32px;
     }
 }
 
@@ -111,18 +144,17 @@
 .header-main__fixed-link {
     position: fixed;
     right: -145px;
-    top: 25%;
+    top: 50%;
     transform: translateY(-50%) rotate(90deg);
     background-color: $color-blue;
     line-height: 50px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
     text-align: center;
     padding: 0 30px;
     z-index: 100;
     @include media-laptop {
         line-height: 41px;
         font-size: 17px;
-        top: 19%;
     }
     @include media-tablet-horizontal {
         line-height: 37px;
@@ -138,12 +170,36 @@
     @include media-laptop {
         display: block;
         width: 60px;
+        height: 60px;
         margin-left: 37px;
     }
     @include media-tablet-horizontal {
         width: 55px;
+        height: 55px;
     }
     @include media-mobile {
         width: 50px;
+        height: 50px;
+    }
+}
+
+.header-main__animation {
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: $color-blue;
+    border-radius: 15px;
+    background-image: url("../img/svg/animation/time-animation.svg");
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &.active {
+        background-image: url("../img/svg/animation/filter-animation.svg");
+    }
+    @include media-mobile {
+        display: block;
     }
 }

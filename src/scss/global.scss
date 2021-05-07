@@ -73,6 +73,7 @@ h4 {
     font-weight: 500;
     margin-bottom: 60px;
     white-space: nowrap;
+    line-height: 1.4;
 
     span {
         margin-right: 50px;
@@ -96,6 +97,7 @@ h4 {
         @include media-mobile {
             // margin-left: auto;
             margin-left: 30px;
+            width: 50px;
         }
     }
     @include media-laptop {

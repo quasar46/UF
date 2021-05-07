@@ -15,6 +15,7 @@
     }
     @include media-mobile {
         padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -33,7 +34,9 @@
         margin-bottom: 140px;
     }
     @include media-mobile {
-        height: 427px;
+        flex-direction: column;
+        // margin-bottom: 100px;
+        margin-bottom: 0;
     }
 }
 
@@ -62,7 +65,7 @@
             height: 1px;
             background-color: #c4c4c4;
             @include media-mobile {
-                display: none;
+                // display: none;
             }
         }
         &::after {
@@ -75,7 +78,7 @@
             height: 1px;
             background-color: #c4c4c4;
             @include media-mobile {
-                display: none;
+                // display: none;
             }
         }
     }
@@ -97,8 +100,9 @@
         max-width: 340px;
     }
     @include media-mobile {
-        height: 427px;
-        position: absolute;
+        // height: 427px;
+        // position: absolute;
+        display: none;
     }
 }
 
@@ -110,14 +114,17 @@
     @include media-tablet-horizontal {
         width: 60px;
     }
+    @include media-mobile {
+        width: 56px;
+    }
 }
 
 .advantage__pagination {
     display: flex;
     margin-top: auto;
     @include media-mobile {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
     }
 }

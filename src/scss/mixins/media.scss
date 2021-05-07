@@ -24,8 +24,14 @@
     }
 }
 
+@mixin media-desctop {
+    @media (max-width: $mediaWidthDesctop) {
+        @content;
+    }
+}
+
 @mixin media-custom($width) {
-    @media (min-width: $width) {
+    @media (max-width: $width) {
         @content;
     }
 }

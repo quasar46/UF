@@ -19,6 +19,9 @@
 }
 
 .feedback__title {
+    @include media-laptop {
+        margin-right: 233px;
+    }
     @include media-tablet-horizontal {
         margin-right: 70px;
     }
@@ -38,7 +41,7 @@
     input {
         font-size: 18px;
         border: 2px solid #bdbdbe;
-        border-radius: 10px;
+        border-radius: 15px;
         height: 70px;
         padding: 0 30px;
         @include media-laptop {
@@ -64,29 +67,34 @@
             width: 53%;
             @include media-tablet-horizontal {
                 margin-bottom: 20px;
+                width: 100%;
             }
             @include media-tablet {
                 margin-bottom: 0;
-                width: 44% !important;
                 margin-right: 20px;
+                width: 43%;
             }
             @include media-mobile {
-                width: 100% !important;
+                width: 100%;
+                margin-bottom: 20px;
             }
         }
         &:last-child {
             flex: 1 0 auto;
             margin-left: 30px;
+            @include media-tablet-horizontal {
+                margin-left: 0;
+            }
             @include media-tablet {
-                width: auto !important;
             }
         }
         @include media-tablet-horizontal {
-            width: 100% !important;
-            margin-left: 0 !important;
         }
         @include media-tablet {
             flex: 1 0 auto;
+        }
+        @include media-mobile {
+            height: 50px;
         }
     }
     @include media-tablet-horizontal {
@@ -110,12 +118,15 @@
     @include media-laptop {
         font-size: 17px;
     }
+    @include media-mobile {
+        font-size: 15px;
+    }
 }
 
 .feedback__submit {
     align-self: flex-start;
     background-image: url("../img/svg/arrow-submit.svg");
-    background-size: 30px 30px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 80% center;
     input {
@@ -128,5 +139,8 @@
         @include media-tablet-horizontal {
             font-size: 17px;
         }
+    }
+    @include media-tablet-horizontal {
+        background-size: 22px;
     }
 }

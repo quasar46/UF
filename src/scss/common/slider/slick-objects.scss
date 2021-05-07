@@ -1,5 +1,11 @@
 .slick-objects {
     width: 100%;
+    @include media-laptop {
+        width: 80%;
+    }
+    @media (max-width: 1700px) {
+        width: 100%;
+    }
     @include media-tablet-horizontal {
         width: 120%;
     }

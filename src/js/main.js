@@ -51,7 +51,7 @@ $(document).ready(function () {
 
             $slider.slick({
                 slidesToShow: 1,
-                infinite: false,
+                // infinite: false,
                 prevArrow: $('.slick-hero__prev'),
                 nextArrow: $('.slick-hero__next'),
             });
@@ -92,6 +92,35 @@ $(document).ready(function () {
         }
     });
 
+    $('#clamp').on('click', function () {
+        $(this).siblings('p').toggleClass('line-clamp');
+    })
+
+    $(function () {
+        let header = $('.header-main__wrapper');
+        let headerHeight = header.height();
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                header.addClass('fixed');
+                $('.header-main').css({
+                    'paddingTop': headerHeight + 'px'
+                });
+            } else {
+                header.removeClass('fixed');
+                $('.header-main').css({
+                    'paddingTop': 0
+                })
+            }
+        });
+    })
+
+    setTimeout(function tick() {
+        $('.header-main__animation').toggleClass('active');
+        timerId = setTimeout(tick, 1000);
+    }, 2000);
+
+
     // function slickObjects() {
     //     const asides = document.querySelectorAll('.objects__aside');
     //     const arrowsObject = document.querySelectorAll('.slick-objects__arrow');
@@ -126,7 +155,3 @@ $(document).ready(function () {
     // slickObjects();
 
 });
-
-window.addEventListener('DOMContentLoaded', () => {
-
-})
