@@ -1,0 +1,30 @@
+.objects-page__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -50px;
+    .objects__aside {
+        display: block;
+        width: calc(100% / 3 - 50px);
+        background-color: #f1f1f1;
+        padding: 60px 50px;
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+}
+
+.objects-page__selects {
+    display: flex;
+    margin-bottom: 40px;
+    .select-css {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.objects-page__address {
+    font-weight: 500;
+    color: $color-blue;
+    margin-bottom: 30px;
+}

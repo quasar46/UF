@@ -1,0 +1,12 @@
+.pay {
+    .container {
+        display: flex;
+    }
+    p {
+        font-size: 34px;
+        a {
+            color: $color-blue;
+            text-decoration: underline;
+        }
+    }
+}

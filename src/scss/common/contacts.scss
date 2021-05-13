@@ -1,0 +1,26 @@
+.contacts__address {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.contacts__list {
+    width: 50%;
+    & > li {
+        max-width: 430px;
+        width: 100%;
+    }
+}
+
+.contacts__list-head {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contacts__list__address {
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.contacts__map {
+    // height: 620px;
+}

@@ -96,6 +96,11 @@ $(document).ready(function () {
         $(this).siblings('p').toggleClass('line-clamp');
     })
 
+    $('.toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).siblings().slideToggle();
+    })
+
     $(function () {
         let header = $('.header-main__wrapper');
         let headerHeight = header.height();

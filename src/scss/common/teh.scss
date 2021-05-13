@@ -1,0 +1,163 @@
+.teh__head {
+    padding-bottom: 50px;
+    // margin-bottom: 70px;
+    border-bottom: 1px solid #c5c5c5;
+    p {
+        font-size: 34px;
+        a {
+            color: $color-blue;
+            text-decoration: underline;
+        }
+    }
+}
+
+.teh__content {
+    // padding-bottom: 60px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.teh__tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    cursor: pointer;
+    span {
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .teh__toggle {
+        max-width: 70px;
+        height: 70px;
+        flex: 1 0 auto;
+        background-image: url("../img/svg/plus.svg");
+    }
+    &.active {
+        padding-bottom: 0;
+        .teh__toggle {
+            background-image: url("../img/svg/minus.svg");
+            background-size: cover;
+        }
+    }
+}
+
+.teh__form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+
+    h3 {
+        font-size: 34px;
+        margin-bottom: 40px;
+        font-weight: 400;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+        margin-bottom: 30px;
+    }
+}
+
+.teh__submit {
+    align-self: flex-start;
+    background-image: url("../img/svg/arrow-submit.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    input {
+        font-size: 18px;
+        background-color: transparent;
+        border: 2px solid #30355d;
+        padding: 0 30px;
+        padding-right: 80px;
+        color: $color-fiolet;
+        cursor: pointer;
+        height: 70px;
+        border-radius: 15px;
+        @include media-tablet-horizontal {
+            font-size: 17px;
+        }
+    }
+    @include media-tablet-horizontal {
+        background-size: 22px;
+    }
+}
+
+.teh__input {
+    flex: 1 0 auto;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    input {
+        font-size: 18px;
+        border: 2px solid #bdbdbe;
+        border-radius: 15px;
+        height: 70px;
+        padding: 0 30px;
+        width: 100%;
+
+        &:focus {
+            outline: 0;
+            border: 2px solid #30355d;
+        }
+    }
+    &--big {
+        max-width: 50%;
+        width: 100%;
+    }
+    &--star {
+        position: relative;
+        margin-bottom: 63px;
+        &:after {
+            content: "*Если оборудование приобреталось у дилера";
+            font-size: 18px;
+            position: absolute;
+            display: block;
+            bottom: -40px;
+            left: 0;
+        }
+    }
+}
+
+.teh__message {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    textarea {
+        border-radius: 15px;
+        border-color: #bdbdbe;
+        padding: 25px 30px;
+        outline: none;
+        height: 140px;
+        width: 100%;
+        &:focus {
+            outline: none;
+            border: 2px solid $color-base;
+        }
+    }
+}
+
+.teh__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px;
+    .br {
+        display: block;
+    }
+}
+
+.teh__file-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.teh__file-text {
+    margin-right: 25px;
+}
+
+.teh__file-icon-btn {
+    width: 70px;
+}

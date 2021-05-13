@@ -1,0 +1,41 @@
+.phones__wrapper {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.phones__list {
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #c5c5c5;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .phones__list-item {
+        font-size: 34px;
+    }
+}
+
+.phones__grafik-work-wrapper {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        li {
+            font-size: 34px;
+            display: flex;
+            p {
+                width: 50%;
+            }
+        }
+    }
+}

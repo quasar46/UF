@@ -1,0 +1,51 @@
+.about-page__head {
+    font-size: 34px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+.about-page__head-picture {
+    margin-bottom: 130px;
+}
+
+.about-page-numbers {
+    display: flex;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.about-page-numbers__block {
+    position: relative;
+    width: 50%;
+    padding: 50px;
+    &:first-child {
+        padding-left: 0;
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            background-color: #c5c5c5;
+            height: 80%;
+        }
+    }
+    &:last-child {
+        padding-right: 35px;
+    }
+}
+
+.about-page-numbers__count {
+    color: $color-blue;
+    font-size: 120px;
+    margin-bottom: 40px;
+    span {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+}
+
+.about-page-numbers__text {
+    line-height: 1.5;
+}

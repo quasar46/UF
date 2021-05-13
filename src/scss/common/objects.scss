@@ -1,6 +1,9 @@
 .objects {
     background-color: #f1f1f1;
     padding: 100px 0;
+    &--history {
+        background-color: #fff;
+    }
     @include media-laptop {
         padding-top: 90px;
         padding-bottom: 130px;
@@ -120,6 +123,7 @@
         position: relative;
         font-size: 18px;
         padding-left: 58px;
+        line-height: 1.5;
         &::before {
             content: "";
             position: absolute;

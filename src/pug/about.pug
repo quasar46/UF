@@ -1,0 +1,70 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header-inner.pug
+        .breadcrumbs.container 
+            ul 
+                li
+                    a(href="index.html")  Главная
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a(href="index.html").active  О компании
+
+        .about-page
+            .container
+                h2.title-main О компании
+                .about-page__head.container-aside 
+                    p Производство располагается в городе Сергиев Посад (Московская Область), бывший Загорск. В этом городе впервые в СССР, в 70-х годах прошлого века, был налажен промышленный выпуск бактерицидных установок для обеззараживания воды.
+                img(src="img/about.jpg" alt="").about-page__head-picture
+                .about-page__numbers.about-page-numbers
+                    .about-page-numbers__block
+                        .about-page-numbers__count 
+                            p > 7000
+                                |
+                                span установок
+                        p.about-page-numbers__text было разработано и внедрено для очистки и обеззараживания воды за время работы специалистами компании. Сегодня они успешно применяются не только в России, но и в Черногории, Казахстане, Украине, Беларуси, Кыргызстане, Узбекистане, Таджикистане, Молдове и Грузии.
+
+                    .about-page-numbers__block
+                        .about-page-numbers__count 
+                            p 0,2-8000
+                                |
+                                span м3/час
+                        p.about-page-numbers__text единичная производительность установок, для обеззараживания : питьевой воды, сточных вод, воды в бассейне, технической и оборотной воды, шахтных вод, морской воды. Объединение нескольких установок в систему, позволяет обеззараживать в любом необходимом объеме.
+
+            include includes/sliders/history.pug
+
+            .wide-block.inner-content
+                .container
+                    p Все УФ оборудование для очистки соответствует европейским и отечественным стандартам, что подтверждается соответствующими документами и сертификатами.
+
+            .documents.inner-content
+                .container
+                    .documents__wrapper
+                        h2.title-inner Документы
+                        .documents__links.container-aside 
+                            ul 
+                                li 
+                                    img(src="img/svg/pdf.svg" alt="")
+                                    p Сертификат соответствия ГОСТ ISO 9001-2015 
+                                li 
+                                    img(src="img/svg/pdf.svg" alt="")
+                                    p Отказное письмо Роспотребнадзора
+                                li 
+                                    img(src="img/svg/pdf.svg" alt="")
+                                    p Свидетельство о государственной регистрации продукции в рамках таможенного союза России, Беларуси и Казахстана
+                                li 
+                                    img(src="img/svg/pdf.svg" alt="")
+                                    p Декларация о соответствии электрической безопасности ТС
+                                li 
+                                    img(src="img/svg/pdf.svg" alt="")
+                                    p Декларация о безопасности машин и оборудования
+                                li 
+                                    img(src="img/svg/pdf.svg" alt="")
+                                    p Информационное письмо
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header-inner.pug
+        .breadcrumbs.container 
+            ul 
+                li
+                    a(href="index.html")  Главная
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a(href="index.html")  Технология
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a.active Принципы УФ-излучения и работы УОВ
+        .principle.inner-content
+            .container
+                h2.title-main Принципы УФ-излучения и работы УОВ
+            .principle__picture
+            .container 
+                .container-aside
+                    p.principle__text Ультрафиолетовое обеззараживание воды - простой и современный метод, не использующий химические реагенты. Метод обеспечивает экологическую безопасность, высокую эффективность и экономичность. В воде при этом не образуются вредные для человека вещества, в отличие от методов хлорирования и озонирования. Технология ультрафиолетового обеззараживания, обладая очень высокой эффективностью воздействия на бактерии, вирусы и простейшие, имеет ряд преимуществ по сравнению с окислительными технологиями.
+
+        include includes/princip/princip-uf.pug
+        include includes/princip/princip-work.pug
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

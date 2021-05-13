@@ -1,0 +1,20 @@
+.breadcrumbs {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    ul {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #d6d7df;
+        li {
+            margin-right: 10px;
+        }
+        img {
+            width: 18px;
+            opacity: 0.2;
+        }
+        .active {
+            color: $color-base;
+        }
+    }
+}

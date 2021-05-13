@@ -17,6 +17,7 @@ html {
 
 body {
     margin: 0;
+    line-height: 1;
     color: $color-base;
 }
 
@@ -50,6 +51,13 @@ a {
     }
 }
 
+.container-aside {
+    max-width: 1075px;
+    width: 100%;
+    margin-left: auto;
+    line-height: 1.5;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -65,6 +73,12 @@ h2,
 h3,
 h4 {
     margin: 0;
+}
+
+.title-main {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 60px;
 }
 
 .title-inner {
@@ -114,5 +128,29 @@ h4 {
     @include media-mobile {
         font-size: 38px;
         margin-bottom: 50px;
+    }
+}
+
+.inner-content {
+    margin-bottom: 200px;
+
+    @include media-tablet-horizontal {
+        margin-bottom: 150px;
+    }
+    @include media-tablet {
+        margin-bottom: 140px;
+    }
+    @include media-mobile {
+        margin-bottom: 100px;
+    }
+}
+
+.wide-block {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+    font-size: 34px;
+    line-height: 1.5;
+    &--small {
+        padding: 70px 0;
     }
 }
