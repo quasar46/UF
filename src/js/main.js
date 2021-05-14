@@ -125,38 +125,23 @@ $(document).ready(function () {
         timerId = setTimeout(tick, 1000);
     }, 2000);
 
+    let showPopup = function () {
 
-    // function slickObjects() {
-    //     const asides = document.querySelectorAll('.objects__aside');
-    //     const arrowsObject = document.querySelectorAll('.slick-objects__arrow');
-    //     const itemsObject = document.querySelectorAll('.slick-objects__item');
-    //     // const countItem = document.querySelectorAll('[data-slick-index]');
+        let datas = document.querySelectorAll('[data-caption]');
 
-    //     function hideAsides() {
-    //         asides.forEach(item => {
-    //             item.classList.remove('active');
-    //         })
-    //         asides[0].classList.add('active');
-    //     }
-    //     hideAsides();
-
-    //     arrowsObject.forEach(arrow => {
-    //         arrow.addEventListener('click', function () {
-    //             asides.forEach(aside => {
-    //                 aside.classList.remove('active');
-    //             });
-    //             itemsObject.forEach((item, i) => {
-    //                 if (item[i].getAttribute('data-slick-index') == i) {
-    //                     asides[i].classList.add('active');
-    //                 }
-    //                 // if (itemsObject[countItem.getAttribute('data-slick-index')].classList.contains('slick-current')) {
-    //                 //     asides[countItem.getAttribute('data-slick-index')].classList.add('active');
-    //                 // }
-    //             })
-    //         })
-    //     })
-    // }
-
-    // slickObjects();
-
+        datas.forEach(data => {
+            data.onmouseover = function (event) {
+                let popupBlock = document.createElement('div');
+                popupBlock.classList.add('popup-block');
+                let html = data.getAttribute('data-caption');
+                popupBlock.innerHTML = html;
+                data.append(popupBlock);
+            }
+            data.onmouseout = function (event) {
+                let popup = data.querySelector('.popup-block');
+                popup.remove();
+            }
+        })
+    }
+    showPopup();
 });

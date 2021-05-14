@@ -1,26 +1,29 @@
-.about {
-    padding-top: 200px;
+.container-st {
     @include media-laptop {
-        padding-top: 180px;
+        // padding-top: 180px;
     }
     @include media-tablet-horizontal {
-        padding-top: 165px;
+        // padding-top: 165px;
     }
     @include media-tablet {
-        padding-top: 140px;
+        // padding-top: 140px;
     }
     @include media-mobile {
-        padding-top: 100px;
+        // padding-top: 100px;
     }
 }
 
-.about__header {
+.container-st__header {
     display: flex;
     align-items: flex-start;
     margin-bottom: 70px;
     p {
         font-size: 34px;
         line-height: 1.5;
+        a {
+            color: $color-blue;
+            text-decoration: underline;
+        }
         @include media-laptop {
             font-size: 30px;
         }
@@ -50,6 +53,9 @@
             display: block;
         }
     }
+    &--mode {
+        margin-bottom: 130px;
+    }
     @include media-laptop {
         margin-bottom: 60px;
     }
@@ -62,9 +68,8 @@
     }
 }
 
-.about__title {
+.container-st__title {
     display: flex;
-    // align-items: center;
     flex: 1 0 auto;
     margin-right: 135px;
     @include media-mobile {
@@ -73,8 +78,48 @@
     }
 }
 
-.about__picture {
+.container-st__picture {
     @include media-mobile {
         display: none;
+    }
+}
+
+.container-st__list {
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #c5c5c5;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .container-st__list-item {
+        font-size: 34px;
+    }
+}
+
+.container-st__items {
+    p {
+        font-size: 18px;
+    }
+}
+
+.container-st__btn {
+    display: flex;
+    margin-top: 50px;
+    a {
+        font-size: 18px;
+        background-image: url("../img/svg/arrow-submit.svg");
+        background-position: right 30px top 50%;
+        background-size: 30px auto;
+        background-repeat: no-repeat;
+        line-height: 70px;
+        border: 2px solid #30355d;
+        border-radius: 15px;
+        padding-left: 35px;
+        padding-right: 70px;
     }
 }

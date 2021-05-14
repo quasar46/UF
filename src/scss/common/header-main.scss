@@ -1,11 +1,17 @@
 .header-main {
     position: relative;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     background-image: url("../img/bg/main.jpg");
     background-size: cover;
     background-position: bottom center;
     color: #fff;
     font-size: 18px;
+    &--inner {
+        color: $color-base;
+        background-image: none;
+        background-color: #fff;
+        border-bottom: 1px solid #c1c3cf;
+    }
 
     @include media-tablet-horizontal {
         padding-bottom: 40px;
@@ -59,6 +65,9 @@
     background-image: url("../img/logo.png");
     background-size: cover;
     height: 58px;
+    &--inner {
+        background-image: url("../img/logo-fix.png");
+    }
     @include media-laptop {
         max-width: 229px;
         height: 44px;

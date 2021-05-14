@@ -1,6 +1,6 @@
 .contacts__address {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .contacts__list {
@@ -9,16 +9,19 @@
         max-width: 430px;
         width: 100%;
     }
+    &:last-child {
+        padding-left: 100px;
+    }
 }
 
 .contacts__list-head {
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contacts__list__address {
     font-size: 34px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 }
 
 .contacts__map {

@@ -3,6 +3,7 @@
     padding: 100px 0;
     &--history {
         background-color: #fff;
+        padding: 0;
     }
     @include media-laptop {
         padding-top: 90px;

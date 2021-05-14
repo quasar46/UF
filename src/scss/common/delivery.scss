@@ -10,6 +10,9 @@
         border-bottom: 1px solid #c5c5c5;
         padding-bottom: 50px;
         margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     p {
         line-height: 1.5;
