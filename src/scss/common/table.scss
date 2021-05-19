@@ -1,0 +1,25 @@
+.table {
+    font-size: 16px;
+    p {
+        width: calc(100% / 5);
+    }
+}
+
+.table__caption {
+    display: flex;
+    align-items: center;
+    padding: 18px 50px;
+    margin-bottom: 17px;
+    background-color: #f1f1f1;
+}
+
+.table__row {
+    display: flex;
+    padding: 12px 50px;
+    &:last-child {
+        margin-bottom: 27px;
+    }
+    &:hover {
+        background-color: rgba(14, 177, 210, 0.2);
+    }
+}

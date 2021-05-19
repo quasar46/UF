@@ -1,3 +1,10 @@
+.documents {
+    &--end-block {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
 .documents__wrapper {
     display: flex;
 }
@@ -20,13 +27,24 @@
                 align-items: center;
 
                 p {
+                    font-size: 18px;
                     max-width: 320px;
                     width: 100%;
                     line-height: 1.5;
                 }
-                img {
+                svg {
                     width: 70px;
                     margin-right: 30px;
+                }
+                &:hover {
+                    svg {
+                        path {
+                            stroke: $color-blue;
+                        }
+                        text {
+                            fill: $color-blue;
+                        }
+                    }
                 }
             }
         }

@@ -1,10 +1,18 @@
 $(document).ready(function () {
 
     $(function () {
-        $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+        $('.tabs__caption').on('mouseover', 'li:not(.active)', function () {
             $(this)
                 .addClass('active').siblings().removeClass('active')
-                .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+                .closest('.tabs').find('.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+    });
+
+    $(function () {
+        $('.tabs__caption2').on('click', 'li:not(.active)', function () {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.tabs').find('.tabs__content2').removeClass('active').eq($(this).index()).addClass('active');
         });
     });
 
@@ -24,6 +32,13 @@ $(document).ready(function () {
             }
         })
     });
+
+    $('.missions').slick({
+        slidesToShow: 4,
+        infinite: true,
+        prevArrow: $('.slick-missions__prev'),
+        nextArrow: $('.slick-missions__next'),
+    })
 
     $(function () {
         let $slider = $('.slick-hero');
@@ -120,9 +135,13 @@ $(document).ready(function () {
         });
     })
 
+
     setTimeout(function tick() {
-        $('.header-main__animation').toggleClass('active');
-        timerId = setTimeout(tick, 1000);
+        if (window.innerWidth < 768) {
+            $('.header-main__animation').toggleClass('active');
+            timerId = setTimeout(tick, 1000);
+        }
+
     }, 2000);
 
     let showPopup = function () {
@@ -144,4 +163,62 @@ $(document).ready(function () {
         })
     }
     showPopup();
+
+    let showDevice = function () {
+        let deviceWrapper = document.querySelector('.selection');
+        let tabsMini = deviceWrapper.querySelectorAll('button[data-for="deviceMini"]');
+        let tabsNorma = deviceWrapper.querySelectorAll('button[data-for="deviceNorma"]');
+        let tabsProm = deviceWrapper.querySelectorAll('button[data-for="deviceProm"]');
+        let contentDevice = deviceWrapper.querySelectorAll('.selection__wrapper');
+
+        tabsMini.forEach((tab, i) => {
+            tab.onclick = function () {
+                contentDevice.forEach(item => {
+                    item.classList.remove('active');
+                })
+                contentDevice[0].classList.add('active');
+            }
+        })
+        tabsNorma.forEach((tab, i) => {
+            tab.onclick = function () {
+                contentDevice.forEach(item => {
+                    item.classList.remove('active');
+                })
+                contentDevice[1].classList.add('active');
+            }
+        })
+        tabsProm.forEach((tab, i) => {
+            tab.onclick = function () {
+                contentDevice.forEach(item => {
+                    item.classList.remove('active');
+                })
+                contentDevice[2].classList.add('active');
+            }
+        })
+    }
+    showDevice();
+
+    let showMore = function () {
+        $('.show-more').on('click', function (event) {
+            $(this).siblings('.hideContent').toggleClass('active');
+        });
+    }
+    showMore();
+
+    document.addEventListener('click', function (evt) {
+        console.log(evt.target.className);
+    })
+
+
+});
+
+$(function () {
+    $('a[href^="#"]').on('click', function (evt) {
+        evt.preventDefault();
+
+        var sc = $(this).attr("href"),
+            dn = $(sc).offset().top;
+
+        $('html, body').animate({ scrollTop: dn }, 500);
+    });
 });

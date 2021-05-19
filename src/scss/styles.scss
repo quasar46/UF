@@ -1,10 +1,10 @@
 @import "global";
+@import "common/inner-content";
 @import "common/header-main";
 @import "common/footer";
 @import "common/slider/slick-hero";
 @import "common/aside-links";
 @import "common/catalog";
-@import "common/container-st";
 @import "common/advantage";
 @import "common/slider/slick-advantage";
 @import "common/advantage-tabs";
@@ -15,6 +15,7 @@
 @import "common/footer";
 @import "common/tabs";
 @import "common/slider/slick";
+@import "common/slider/slick-arrow";
 @import "common/breadcrumbs";
 @import "common/support";
 @import "common/delivery";
@@ -32,3 +33,16 @@
 @import "common/select/select";
 @import "common/content";
 @import "common/question-list";
+@import "common/buttons/buttons";
+@import "common/selection";
+@import "common/device";
+@import "common/show-more";
+@import "common/picture-inner";
+@import "common/water-page";
+@import "common/container-aside";
+@import "common/table";
+@import "common/phones-list";
+@import "common/anchor-btn";
+@import "common/submenu";
+@import "common/missions";
+@import "common/titles/title-inner";

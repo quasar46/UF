@@ -1,0 +1,22 @@
+.phones-list {
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #c5c5c5;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .phones-list__item {
+        font-size: 34px;
+    }
+}
+
+.phones-list__items {
+    p {
+        font-size: 18px;
+    }
+}

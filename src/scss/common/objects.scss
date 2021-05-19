@@ -1,4 +1,5 @@
 .objects {
+    overflow: hidden;
     background-color: #f1f1f1;
     padding: 100px 0;
     &--history {
@@ -35,7 +36,7 @@
 
 .objects__slick-wrapper {
     display: flex;
-    overflow: hidden;
+    // overflow: hidden;
     @include media-tablet {
         flex-direction: column;
     }
@@ -98,7 +99,8 @@
     h3 {
         font-size: 34px;
         font-weight: 500;
-        line-height: 1.5;
+        // line-height: 1.5;
+        line-height: 1.3;
         margin-bottom: 35px;
         .br {
             display: block;
@@ -120,7 +122,6 @@
     }
 
     p {
-        text-transform: uppercase;
         position: relative;
         font-size: 18px;
         padding-left: 58px;
@@ -132,9 +133,8 @@
             width: 38px;
             height: 2px;
             background-color: $color-blue;
-            top: 50%;
+            top: 12px;
             left: 0;
-            transform: translateY(-50%);
             @include media-tablet-horizontal {
                 width: 32px;
             }

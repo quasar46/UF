@@ -74,8 +74,9 @@
     }
     &.active,
     &:hover {
-        background-image: url("../img/bg/catalog-item.jpg");
-        background-size: cover;
+        .catalog__content-picture {
+            display: block;
+        }
         .catalog-item__title,
         .catalog-item__number {
             color: #ffffff;
@@ -155,6 +156,15 @@
         padding-right: 15px;
         min-height: 173px;
     }
+}
+
+.catalog__content-picture {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .catalog__tabs {

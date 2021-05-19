@@ -23,15 +23,19 @@
     display: flex;
 }
 
-.slick-hero__arrow {
-    width: 79px;
-    &.slick-disabled {
+.slick-hero__arrow.slick-arrow {
+
+    &:hover {
         svg {
             path {
-                stroke: rgba(184, 158, 158, 0.5);
-                &:nth-child(2) {
+                stroke: rgba(255, 255, 255, 0.5);
+                &:nth-child(2),
+                &:nth-child(3) {
                     fill: rgba(255, 255, 255, 0.5);
                 }
+            }
+            g {
+                fill: rgba(255, 255, 255, 0.5);
             }
         }
     }

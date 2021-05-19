@@ -1,37 +1,25 @@
-.container-st {
-    @include media-laptop {
-        // padding-top: 180px;
-    }
+.inner-content {
+    margin-bottom: 200px;
+
     @include media-tablet-horizontal {
-        // padding-top: 165px;
+        margin-bottom: 150px;
     }
     @include media-tablet {
-        // padding-top: 140px;
+        margin-bottom: 140px;
     }
     @include media-mobile {
-        // padding-top: 100px;
+        margin-bottom: 100px;
     }
 }
 
-.container-st__header {
+.inner-content__head {
     display: flex;
     align-items: flex-start;
     margin-bottom: 70px;
     p {
-        font-size: 34px;
-        line-height: 1.5;
         a {
             color: $color-blue;
             text-decoration: underline;
-        }
-        @include media-laptop {
-            font-size: 30px;
-        }
-        @include media-tablet-horizontal {
-            font-size: 28px;
-        }
-        @include media-tablet {
-            font-size: 26px;
         }
     }
     .line-clamp {
@@ -56,6 +44,9 @@
     &--mode {
         margin-bottom: 130px;
     }
+    &--center {
+        align-items: center;
+    }
     @include media-laptop {
         margin-bottom: 60px;
     }
@@ -68,46 +59,7 @@
     }
 }
 
-.container-st__title {
-    display: flex;
-    flex: 1 0 auto;
-    margin-right: 135px;
-    @include media-mobile {
-        margin-right: 0;
-        width: 100%;
-    }
-}
-
-.container-st__picture {
-    @include media-mobile {
-        display: none;
-    }
-}
-
-.container-st__list {
-    li {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 30px;
-        margin-bottom: 50px;
-        border-bottom: 1px solid #c5c5c5;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    .container-st__list-item {
-        font-size: 34px;
-    }
-}
-
-.container-st__items {
-    p {
-        font-size: 18px;
-    }
-}
-
-.container-st__btn {
+.inner-content__submit {
     display: flex;
     margin-top: 50px;
     a {
@@ -121,5 +73,16 @@
         border-radius: 15px;
         padding-left: 35px;
         padding-right: 70px;
+        &:hover {
+            border-color: $color-blue;
+            color: $color-blue;
+            background-image: url("../img/svg/arrow-submit-hover.svg");
+        }
+    }
+}
+
+.inner-content__picture {
+    @include media-mobile {
+        display: none;
     }
 }

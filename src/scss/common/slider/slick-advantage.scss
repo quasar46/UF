@@ -100,10 +100,12 @@
     margin-right: 20px;
 }
 
-.slick-advantage__arrow.slick-disabled {
-    svg {
-        path {
-            stroke: rgba(48, 53, 93, 0.5);
+.slick-advantage__arrow {
+    &.slick-disabled {
+        svg {
+            path {
+                stroke: rgba(48, 53, 93, 0.5);
+            }
         }
     }
 }

@@ -1,0 +1,21 @@
+.anchor-btn {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 100px;
+    top: -200px;
+    path {
+        &:first-child {
+            fill: #fff;
+        }
+    }
+    &:hover {
+        path {
+            stroke: $color-blue;
+            &:nth-child(2) {
+                fill: $color-blue;
+            }
+        }
+    }
+}

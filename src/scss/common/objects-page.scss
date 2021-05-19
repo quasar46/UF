@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -50px;
+    margin-bottom: -50px;
     .objects__aside {
         display: block;
         width: calc(100% / 3 - 50px);
         background-color: #f1f1f1;
         padding: 60px 50px;
+        padding-bottom: 140px;
         margin-bottom: 50px;
         margin-right: 50px;
     }
@@ -26,5 +28,6 @@
 .objects-page__address {
     font-weight: 500;
     color: $color-blue;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }

@@ -3,18 +3,31 @@
 }
 
 .work__document {
-    position: relative;
-    padding-left: 100px;
-
-    &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background-image: url("../img/svg/pdf.svg");
+    display: inline-flex;
+    align-items: center;
+    span {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    svg {
         width: 70px;
-        height: 70px;
+    }
+    &:hover {
+        svg {
+            text {
+                stroke: $color-blue;
+            }
+            path {
+                &:first-child {
+                    stroke: $color-blue;
+                }
+                &:nth-child(2) {
+                    fill: $color-blue;
+                }
+                &:last-child {
+                    stroke: $color-blue;
+                }
+            }
+        }
     }
 }

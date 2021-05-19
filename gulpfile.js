@@ -51,19 +51,20 @@ gulp.task("js", function () {
 });
 
 gulp.task("img", function () {
-    // console.log(imagemin);
     return gulp.src("src/img/**/*.*")
         .pipe(imagemin([
             imagemin.gifsicle({
                 interlaced: true
             }),
-            imagemin.mozjpeg({
-                quality: 50,
-                progressive: true
-            }),
-            imagemin.optipng({
-                optimizationLevel: 5
-            }),
+            // imagemin.mozjpeg({
+            //     // quality: 50,
+            //     quality: 20,
+            //     progressive: true
+            // }),
+            // imagemin.optipng({
+            //     // optimizationLevel: 5
+            //     optimizationLevel: 2
+            // }),
             imagemin.svgo({
                 plugins: [{
                     removeViewBox: true

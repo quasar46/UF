@@ -1,0 +1,39 @@
+.slick-arrow {
+    cursor: pointer;
+    width: 79px;
+    &.slick-disabled {
+        svg {
+            path {
+                stroke: rgba(184, 158, 158, 0.5);
+                &:nth-child(2) {
+                    fill: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+    @include media-laptop {
+        width: 67px;
+    }
+    @include media-tablet-horizontal {
+        width: 60px;
+    }
+    @include media-mobile {
+        width: 56px;
+    }
+    &:hover {
+        svg {
+            path {
+                stroke: $color-blue;
+            }
+            g {
+                path {
+                    fill: $color-blue;
+                }
+            }
+        }
+    }
+}
+
+.slick-missions__prev {
+    margin-right: 20px;
+}

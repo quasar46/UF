@@ -2,7 +2,7 @@
     .container 
         .feedback__wrapper
             h2.title-inner.feedback__title Связаться
-            .feedback__content.feedback-content 
+            .feedback__content.feedback-content.container-aside
                 h3.feedback-content__title Свяжитесь с Нами и, в ближайшее время, Вам помогут подобрать оборудование в соответствии с вашими требованиями.
                 form.feedback__form(action="get") 
                     p.feedback__inputs
@@ -14,5 +14,5 @@
                         | и принимаете условия обработки 
                         | 
                         a(href="#" target="_blank") персональных данных 
-                    p.feedback__submit
-                        input(type="submit" placeholder="Отправить")
+                    p.feedback__submit.button-input
+                        input(type="submit" value="Отправить")

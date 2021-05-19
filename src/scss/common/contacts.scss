@@ -15,6 +15,7 @@
 }
 
 .contacts__list-head {
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -25,5 +26,9 @@
 }
 
 .contacts__map {
-    // height: 620px;
+    height: 620px;
+}
+
+.contacts__phone {
+    margin-bottom: 130px;
 }

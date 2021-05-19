@@ -23,21 +23,20 @@ html(lang="ru")
                         li.contacts__list-head Производственный: 
                         li.contacts__list__address 141315, Mосковская область, г. Сергиев Посад, ул. Фабричная, д. 12-а.
 
-            .contacts__map.inner-content#map
-                <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.ru/map-widget/v1/-/CCU45ZefxB" width="100%" height="620" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            .contacts__map.inner-content.map#map
 
-        .container-st.inner-content
+        .inner-content
             .container
-                .container-st__header.container-st__header--mode
+                .inner-content__head.contacts__phone
                     h2.title-inner Телефоны
-                    ul.container-st__list.container-aside
+                    ul.phones-list.container-aside
                         li 
-                            p.container-st__list-item Бесплатная горячая линия
-                            .container-st__items 
+                            p.plones-list__item Бесплатная горячая линия
+                            .phones-list__items
                                 p 8-800-100-71-40
                         li 
-                            p.container-st__list-item Многоканальные в Москве
-                            .container-st__items 
+                            p.plones-list__item Многоканальные в Москве
+                            .phones-list__items 
                                 p +7 (495) 973-25-56
                                 p +7 (495) 979-93-92
                                 p +7 (496) 549-08-10
@@ -55,9 +54,7 @@ html(lang="ru")
                             p 13.00-14.00
 
 
-
         include includes/index/feedback.pug
-
 
 
 

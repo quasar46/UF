@@ -12,10 +12,27 @@
     span {
         font-size: 34px;
     }
+    &.active {
+        .toggle-btn {
+            &--minus {
+                display: block;
+            }
+            &--plus {
+                display: none;
+            }
+        }
+    }
+    &:hover {
+        svg {
+            path {
+                stroke: $color-blue;
+            }
+        }
+    }
 }
 
 .question-list__title {
-    font-size: 34;
+    font-size: 34px;
     font-weight: 400;
     margin-bottom: 40px;
 }
@@ -34,6 +51,7 @@
     margin-right: 30px;
     width: calc(100% / 3 - 30px);
     input {
+        font-size: 18px;
         height: 70px;
         width: 100%;
         border-radius: 15px;
@@ -53,6 +71,7 @@
 }
 
 .question-list__row {
+    margin-bottom: 40px;
     &--mode {
         padding-right: 30px;
     }
@@ -73,6 +92,7 @@
     &--full {
         width: 100%;
         textarea {
+            font-size: 18px;
             width: 100%;
             height: 135px;
             border-radius: 15px;
@@ -98,6 +118,7 @@
     background-position: right 30px top 50%;
 
     input {
+        font-size: 18px;
         background-color: transparent;
         height: 70px;
         border: 2px solid $color-base;
@@ -105,4 +126,15 @@
         padding-left: 35px;
         padding-right: 80px;
     }
+    &:hover {
+        background-image: url("../img/svg/arrow-submit-hover.svg");
+        input {
+            border-color: $color-blue;
+            color: $color-blue;
+        }
+    }
+}
+
+.question-list__content {
+    display: none;
 }

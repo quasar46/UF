@@ -1,6 +1,8 @@
-.tabs__content {
+.tabs__content,
+.tabs__content2 {
     display: none;
 }
-.tabs__content.active {
+.tabs__content.active,
+.tabs__content2.active {
     display: flex;
 }

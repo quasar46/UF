@@ -1,0 +1,32 @@
+.button-input {
+    display: flex;
+    align-self: flex-start;
+    background-image: url("../img/svg/arrow-submit.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    height: 70px;
+    input {
+        font-size: 18px;
+        background-color: transparent;
+        border: 2px solid #30355d;
+        border-radius: 15px;
+        padding: 0 30px;
+        padding-right: 80px;
+        color: $color-fiolet;
+        cursor: pointer;
+        @include media-tablet-horizontal {
+            font-size: 17px;
+        }
+    }
+    &:hover {
+        background-image: url("../img/svg/arrow-submit-hover.svg");
+        input {
+            border-color: $color-blue;
+            color: $color-blue;
+        }
+    }
+    @include media-tablet-horizontal {
+        background-size: 22px;
+    }
+}

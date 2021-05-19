@@ -1,20 +1,21 @@
 .advantage {
-    padding-top: 200px;
+    overflow: hidden;
+    // padding-top: 200px;
     padding-bottom: 200px;
     @include media-laptop {
-        padding-top: 180px;
+        // padding-top: 180px;
         padding-bottom: 180px;
     }
     @include media-tablet-horizontal {
-        padding-top: 150px;
+        // padding-top: 150px;
         padding-bottom: 150px;
     }
     @include media-tablet {
-        padding-top: 140px;
+        // padding-top: 140px;
         padding-bottom: 140px;
     }
     @include media-mobile {
-        padding-top: 100px;
+        // padding-top: 100px;
         padding-bottom: 100px;
     }
 }
@@ -106,25 +107,18 @@
     }
 }
 
-.slick-advantage__arrow {
-    width: 79px;
-    @include media-laptop {
-        width: 67px;
-    }
-    @include media-tablet-horizontal {
-        width: 60px;
-    }
-    @include media-mobile {
-        width: 56px;
-    }
-}
-
-.advantage__pagination {
+.advantage__arrows {
     display: flex;
     margin-top: auto;
     @include media-mobile {
         // position: absolute;
         // bottom: 0;
         // left: 0;
+    }
+}
+
+.advantage__tabs-content {
+    .container {
+        display: flex;
     }
 }

@@ -1,0 +1,13 @@
+.show-more {
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    button {
+        background-color: transparent;
+        color: $color-blue;
+        text-decoration: underline;
+        border: none;
+    }
+}

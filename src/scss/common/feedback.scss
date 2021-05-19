@@ -1,19 +1,21 @@
 .feedback {
-    padding-bottom: 190px;
+    // padding-bottom: 190px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     @include media-laptop {
-        padding-bottom: 180px;
+        // padding-bottom: 180px;
     }
     @include media-tablet-horizontal {
         padding-top: 150px;
-        padding-bottom: 150px;
+        // padding-bottom: 150px;
     }
     @include media-tablet {
         padding-top: 140px;
-        padding-bottom: 140px;
+        // padding-bottom: 140px;
     }
     @include media-mobile {
         padding-top: 100px;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
     }
 }
 
@@ -119,27 +121,5 @@
     }
     @include media-mobile {
         font-size: 15px;
-    }
-}
-
-.feedback__submit {
-    align-self: flex-start;
-    background-image: url("../img/svg/arrow-submit.svg");
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 80% center;
-    input {
-        font-size: 18px;
-        background-color: transparent;
-        border: 2px solid #30355d;
-        padding-right: 80px;
-        color: $color-fiolet;
-        cursor: pointer;
-        @include media-tablet-horizontal {
-            font-size: 17px;
-        }
-    }
-    @include media-tablet-horizontal {
-        background-size: 22px;
     }
 }
