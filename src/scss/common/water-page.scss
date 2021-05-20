@@ -8,4 +8,9 @@
 .water-page__table {
     display: flex;
     flex-direction: column;
+    max-height: 315px;
+    overflow: hidden;
+    &.more {
+        max-height: 100%;
+    }
 }

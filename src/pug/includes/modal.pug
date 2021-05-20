@@ -1,0 +1,25 @@
+.modal.hide
+    .modal__wrapper 
+        .modal__close(data-close)
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#d6d7df" stroke-width="2"/><path d="M23.979 23.979l24.042 24.042m0-24.042L23.979 48.021" fill="none" stroke="#d6d7df" stroke-width="2.5"/></svg>
+        img(src="img/bg/modal.jpg" alt="")
+        .modal__aside
+            h2.modal__title Заказ оборудования
+            .modal__form 
+                ul 
+                    li
+                        input(type="text" placeholder="Как к Вам обращаться")
+                    li
+                        input(type="text" placeholder="Номер телефона")
+                    li
+                        input(type="text" placeholder="Компания")
+                    li
+                        textarea(placeholder="Коментарий")
+                    li.feedback__consent Нажимая "Отправить" Вы соглашаетесь с 
+                        |
+                        a(href="#" target="_blank") лицензионным соглашением 
+                        | и принимаете условия обработки 
+                        | 
+                        a(href="#" target="_blank") персональных данных 
+                    li.feedback__submit.button-input
+                        input(type="submit" value="Отправить")

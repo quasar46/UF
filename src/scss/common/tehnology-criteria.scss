@@ -1,7 +1,7 @@
 .tehnology-criteria {
     p {
-        font-size: 18px;
-        margin-bottom: 20px;
+        // font-size: 18px;
+        // margin-bottom: 20px;
         a {
             position: relative;
             &:hover {
@@ -14,7 +14,6 @@
 }
 
 .tehnology-criteria__row {
-    font-size: 18px;
     &--toggle {
         border-bottom: 1px solid #c5c5c5;
         margin-bottom: 60px;
@@ -26,7 +25,7 @@
 }
 
 .tehnology-criteria__head {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 400;
 
     padding-bottom: 50px;
@@ -122,7 +121,7 @@
     display: flex;
     align-items: center;
     padding: 50px 0;
-    font-size: 34px;
+    font-size: 32px;
     justify-content: center;
     margin-bottom: 60px;
 }

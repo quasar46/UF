@@ -1,7 +1,7 @@
 .footer {
     position: relative;
     padding-top: 70px;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
     background-color: #2e2f38;
     color: #fff;
     line-height: 1.5;
@@ -45,7 +45,7 @@
         }
     }
     &--contacts {
-        font-size: 34px;
+        font-size: 32px;
         flex-direction: column;
         line-height: 1.5;
         p {
@@ -151,7 +151,7 @@
     align-items: center;
     font-size: 18px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
     @include media-tablet-horizontal {
         font-size: 17px;
         margin-top: 40px;

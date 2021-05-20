@@ -15,6 +15,10 @@
         padding-right: 80px;
         color: $color-fiolet;
         cursor: pointer;
+        &:focus {
+            outline: none;
+            border-color: $color-fiolet;
+        }
         @include media-tablet-horizontal {
             font-size: 17px;
         }

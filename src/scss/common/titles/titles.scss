@@ -1,9 +1,9 @@
 .title-inner {
     // display: block;
     display: flex;
-    font-size: 66px;
+    font-size: 62px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     white-space: nowrap;
     line-height: 1.4;
 
@@ -16,7 +16,7 @@
             margin-right: 0;
         }
     }
-    img {
+    svg {
         position: relative;
         width: 70px;
         bottom: -5px;
@@ -27,16 +27,12 @@
             width: 55px;
         }
         @include media-mobile {
-            // margin-left: auto;
-            margin-left: 30px;
+            margin-left: auto;
+            // margin-left: 30px;
             width: 50px;
         }
     }
-    svg {
-        position: relative;
-        width: 70px;
-        bottom: -5px;
-    }
+
     &:hover {
         svg {
             path {
@@ -66,5 +62,12 @@
     @include media-mobile {
         font-size: 38px;
         margin-bottom: 50px;
+        width: 100%;
     }
+}
+
+.title-main {
+    font-size: 76px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }

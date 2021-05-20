@@ -1,0 +1,70 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header-inner.pug
+        .breadcrumbs.container 
+            ul 
+                li
+                    a(href="index.html")  Главная
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a(href="index.html")  Продукция
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a.active Подбор online
+        .inner-content
+            .select-online
+                .container
+                    h2.title-main Подбор online
+                    .container-aside 
+                        p.select-online__head Для подбора оборудования необходимо выбрать качество обрабатываемой воды и пиковую производительность в м3/час.
+                        .little-text
+                            p Ультрафиолетовые лучи поглощаются как самой водой, так и веществами, находящимися в растворенном и взвешенном состоянии (коэффициент пропускания уф-излучения %).
+                            p Все модели оборудования рассчитаны на определённую производительность воды м3/час, при показателях качества исходной воды соответствующих нормам СанПиН.
+                            p Очень важно правильно выбрать класс воды и рассчитать максимальную производительность м3/час. От этого зависит качество обеззараживания воды.
+            .container
+                .change
+                    .change__wrapper
+                        .change__block
+                            h3.change__title Выбор исходного типа воды
+                            ul.change__check-style
+                                li
+                                    input(type="radio" id='radio1' name="radio").custom-radio
+                                    label(for="radio1") Питьевая вода
+                                li
+                                    input(type="radio" id='radio2' name="radio").custom-radio
+                                    label(for="radio2") Сточная вода
+                            ul.change__inputs 
+                                select.select-css#type-water
+                                    option(value="0" selected) 1 Вода после глубокой очистки (мембраны, обратный осмос)
+                                    option(value="1") 2 Вода после глубокой очистки (мембраны, обратный осмос)
+                                    option(value="2") 3 Вода после глубокой очистки (мембраны, обратный осмос)
+                                input(type="text" placeholder="Коэффициент пропускная УФ-излучения")#coefficient 
+                                #result
+                        .change__block 
+                            h3.change__title Доза облучения
+                            input(type="text" value="" placeholder="")
+                            ul.change__check-style
+                                li
+                                    input(type="checkbox" id="check").custom-radio 
+                                    label(for="check") Неблагоприятная эпидемическая ситуация 
+                                    p 
+                                        a(href="") ( критерии подбора ) 
+                        .change__block 
+                            h3.change__title Производительность
+                            .little-text 
+                                p Выберите производительность из выпадающего списка или введите свой вариант.	Внимание! Если в списке нет подходящей производительности, то  производительность оборудования будет подобрана с запасом.
+                                select.select-css
+                                    option(value="") 40 м3/ ч
+                                    option(value="") 40 м3/ ч
+                                    option(value="") 40 м3/ ч
+                    p.button-input
+                        input(type="submit" value="Отправить")
+
+
+        include modules/footer.pug
+        include modules/script.pug
+        script(src="js/select-water.js")

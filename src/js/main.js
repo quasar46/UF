@@ -40,8 +40,41 @@ $(document).ready(function () {
         nextArrow: $('.slick-missions__next'),
     })
 
+    // $(function () {
+    //     let $slider = $('.slick-hero');
+
+    //     if ($slider.length) {
+    //         let currentSlide;
+    //         let slidesCount;
+    //         let sliderCounter = document.createElement('div');
+    //         sliderCounter.classList.add('slider__counter');
+
+    //         let updateSliderCounter = function (slick, currentIndex) {
+    //             currentSlide = slick.slickCurrentSlide() + 1;
+    //             slidesCount = slick.slideCount;
+    //             $(sliderCounter).html(currentSlide + '<span class="line"></span>' + slidesCount)
+    //         };
+
+    //         $slider.on('init', function (event, slick) {
+    //             $slider.prepend(sliderCounter);
+    //             updateSliderCounter(slick);
+    //         });
+
+    //         $slider.on('afterChange', function (event, slick, currentSlide) {
+    //             updateSliderCounter(slick, currentSlide);
+    //         });
+
+    //         $slider.slick({
+    //             slidesToShow: 1,
+    //             // infinite: false,
+    //             prevArrow: $('.slick-hero__prev'),
+    //             nextArrow: $('.slick-hero__next'),
+    //         });
+    //     }
+    // });
+
     $(function () {
-        let $slider = $('.slick-hero');
+        let $slider = $('.slider-main');
 
         if ($slider.length) {
             let currentSlide;
@@ -57,6 +90,7 @@ $(document).ready(function () {
 
             $slider.on('init', function (event, slick) {
                 $slider.prepend(sliderCounter);
+                // $('.slider-main__title').prepend(sliderCounter);
                 updateSliderCounter(slick);
             });
 
@@ -67,8 +101,8 @@ $(document).ready(function () {
             $slider.slick({
                 slidesToShow: 1,
                 // infinite: false,
-                prevArrow: $('.slick-hero__prev'),
-                nextArrow: $('.slick-hero__next'),
+                prevArrow: $('.slick-arrow__prev'),
+                nextArrow: $('.slick-arrow__next'),
             });
         }
     });
@@ -144,6 +178,27 @@ $(document).ready(function () {
 
     }, 2000);
 
+    let showMore = function () {
+        $('.show-more').on('click', function () {
+            $(this).siblings('.hideContent').toggleClass('more');
+        });
+    }
+    showMore();
+
+    $(function () {
+        $('a[href^="#"]').on('click', function (evt) {
+            evt.preventDefault();
+
+            var sc = $(this).attr("href"),
+                dn = $(sc).offset().top;
+
+            $('html, body').animate({ scrollTop: dn }, 500);
+        });
+    });
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     let showPopup = function () {
 
         let datas = document.querySelectorAll('[data-caption]');
@@ -163,62 +218,4 @@ $(document).ready(function () {
         })
     }
     showPopup();
-
-    let showDevice = function () {
-        let deviceWrapper = document.querySelector('.selection');
-        let tabsMini = deviceWrapper.querySelectorAll('button[data-for="deviceMini"]');
-        let tabsNorma = deviceWrapper.querySelectorAll('button[data-for="deviceNorma"]');
-        let tabsProm = deviceWrapper.querySelectorAll('button[data-for="deviceProm"]');
-        let contentDevice = deviceWrapper.querySelectorAll('.selection__wrapper');
-
-        tabsMini.forEach((tab, i) => {
-            tab.onclick = function () {
-                contentDevice.forEach(item => {
-                    item.classList.remove('active');
-                })
-                contentDevice[0].classList.add('active');
-            }
-        })
-        tabsNorma.forEach((tab, i) => {
-            tab.onclick = function () {
-                contentDevice.forEach(item => {
-                    item.classList.remove('active');
-                })
-                contentDevice[1].classList.add('active');
-            }
-        })
-        tabsProm.forEach((tab, i) => {
-            tab.onclick = function () {
-                contentDevice.forEach(item => {
-                    item.classList.remove('active');
-                })
-                contentDevice[2].classList.add('active');
-            }
-        })
-    }
-    showDevice();
-
-    let showMore = function () {
-        $('.show-more').on('click', function (event) {
-            $(this).siblings('.hideContent').toggleClass('active');
-        });
-    }
-    showMore();
-
-    document.addEventListener('click', function (evt) {
-        console.log(evt.target.className);
-    })
-
-
-});
-
-$(function () {
-    $('a[href^="#"]').on('click', function (evt) {
-        evt.preventDefault();
-
-        var sc = $(this).attr("href"),
-            dn = $(sc).offset().top;
-
-        $('html, body').animate({ scrollTop: dn }, 500);
-    });
-});
+})

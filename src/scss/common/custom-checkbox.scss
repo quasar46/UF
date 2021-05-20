@@ -1,0 +1,34 @@
+.custom-radio {
+    & + label {
+        position: relative;
+        padding-left: 38px;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            border: 2px solid #bdbdbe;
+            border-radius: 25%;
+            width: 28px;
+            height: 28px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &:checked {
+        & + label {
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 19px;
+                height: 19px;
+                border-radius: 25%;
+                background-color: $color-blue;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

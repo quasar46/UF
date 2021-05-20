@@ -187,7 +187,7 @@
 }
 
 .device__title {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 400;
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -197,7 +197,7 @@
 .device__table {
     max-height: 275px;
     overflow: hidden;
-    &.active {
+    &.more {
         max-height: 100%;
     }
 }

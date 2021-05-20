@@ -24,7 +24,7 @@ html(lang="ru")
 
             .selection__header.container
                 h2.title-main УОВ-УФТ-А-2-500
-                .selection__button.button-input 
+                .selection__button.button-input(data-modal)
                     input(type="submit" value="Заказать")  
             .selection__wrapper.device#deviceMini.active.tabs
                 .container
@@ -816,6 +816,26 @@ html(lang="ru")
                                     p в помещениях
                                 li
                                     p закрытые отапливаемые вентилируемые
+                                li
+                                    p Условная производительность, м3/час
+                                li
+                                    p Тип основного оборудования
+                                li
+                                    p Назначение
+                                li
+                                    p Расположение
+                                li
+                                    p Типо помещений
+                                li
+                                    p 6...100
+                                li
+                                    p корпусные установки обеззараживания
+                                li
+                                    p корпусные установки обеззараживания
+                                li
+                                    p в помещениях
+                                li
+                                    p закрытые отапливаемые вентилируемые
                             .device__show-more.show-more 
                                 button показать больше
                         .device__col 
@@ -841,13 +861,32 @@ html(lang="ru")
                                     p в помещениях
                                 li
                                     p закрытые отапливаемые вентилируемые
+                                li
+                                    p Условная производительность, м3/час
+                                li
+                                    p Тип основного оборудования
+                                li
+                                    p Назначение
+                                li
+                                    p Расположение
+                                li
+                                    p Типо помещений
+                                li
+                                    p 6...100
+                                li
+                                    p корпусные установки обеззараживания
+                                li
+                                    p корпусные установки обеззараживания
+                                li
+                                    p в помещениях
+                                li
+                                    p закрытые отапливаемые вентилируемые
                             .device__show-more.show-more 
                                 button показать больше
 
 
-
-
-
-
+        include includes/modal.pug
         include modules/footer.pug
-        include modules/script-contacts.pug
+        include modules/script.pug
+        script(src="js/change-device.js") 
+        script(src="js/modal.js")

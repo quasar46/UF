@@ -3,7 +3,7 @@
     // margin-bottom: 70px;
     border-bottom: 1px solid #c5c5c5;
     p {
-        font-size: 34px;
+        font-size: 32px;
         line-height: 1.5;
         a {
             color: $color-blue;
@@ -29,7 +29,7 @@
     padding-bottom: 50px;
     cursor: pointer;
     span {
-        font-size: 34px;
+        font-size: 32px;
         font-weight: 500;
     }
     .teh__toggle {
@@ -66,7 +66,7 @@
     padding-bottom: 80px;
 
     h3 {
-        font-size: 34px;
+        font-size: 32px;
         margin-bottom: 40px;
         font-weight: 400;
     }
@@ -124,7 +124,8 @@
         }
     }
     &--big {
-        max-width: 50%;
+        // max-width: 50%;
+        max-width: 100%;
         width: 100%;
     }
     &--arrow {
@@ -199,6 +200,7 @@
 
 .teh__add-file {
     margin-left: auto;
+    padding-right: 30px;
     a {
         display: flex;
         align-items: center;
@@ -208,6 +210,13 @@
             margin-left: 20px;
             path {
                 stroke: #c5c5c5;
+            }
+        }
+    }
+    &:hover {
+        svg {
+            path {
+                stroke: $color-blue;
             }
         }
     }

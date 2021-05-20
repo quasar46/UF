@@ -18,4 +18,16 @@
             }
         }
     }
+    @include media-laptop {
+        right: 70px;
+    }
+    @include media-tablet-horizontal {
+        right: 55px;
+    }
+    @include media-tablet {
+        right: 40px;
+    }
+    @include media-mobile {
+        right: 15px;
+    }
 }
