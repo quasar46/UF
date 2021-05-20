@@ -151,7 +151,7 @@ $(document).ready(function () {
     })
 
     $(function () {
-        let header = $('.header-main__wrapper');
+        let header = $('.header-main__head');
         let headerHeight = header.height();
 
         $(window).scroll(function () {
@@ -168,7 +168,6 @@ $(document).ready(function () {
             }
         });
     })
-
 
     setTimeout(function tick() {
         if (window.innerWidth < 768) {
