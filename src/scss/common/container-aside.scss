@@ -11,6 +11,9 @@
             text-decoration: underline;
         }
     }
+    &--min {
+        max-width: 860px;
+    }
     @include media-laptop {
         font-size: 30px;
     }

@@ -1,7 +1,6 @@
 .teh__head {
     padding-bottom: 50px;
-    // margin-bottom: 70px;
-    border-bottom: 1px solid #c5c5c5;
+    // border-bottom: 1px solid #c5c5c5;
     p {
         font-size: 32px;
         line-height: 1.5;
@@ -13,52 +12,51 @@
 }
 
 .teh__wrapper {
-    // padding-bottom: 60px;
     border-bottom: 1px solid #c5c5c5;
 }
 
-.teh__content {
-    display: none;
-}
+// .teh__content {
+//     display: none;
+// }
 
-.teh__tab {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    cursor: pointer;
-    span {
-        font-size: 32px;
-        font-weight: 500;
-    }
-    .teh__toggle {
-        max-width: 70px;
-        height: 70px;
-        flex: 1 0 auto;
-        &--minus {
-            display: none;
-        }
-    }
-    &.active {
-        // padding-bottom: 0;
-        .teh__toggle {
-            &--minus {
-                display: block;
-            }
-            &--plus {
-                display: none;
-            }
-        }
-    }
-    &:hover {
-        svg {
-            path {
-                stroke: $color-blue;
-            }
-        }
-    }
-}
+// .teh__tab {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-top: 50px;
+//     padding-bottom: 50px;
+//     cursor: pointer;
+//     span {
+//         font-size: 32px;
+//         font-weight: 500;
+//     }
+//     .teh__toggle {
+//         max-width: 70px;
+//         height: 70px;
+//         flex: 1 0 auto;
+//         &--minus {
+//             display: none;
+//         }
+//     }
+//     &.active {
+//         // padding-bottom: 0;
+//         .teh__toggle {
+//             &--minus {
+//                 display: block;
+//             }
+//             &--plus {
+//                 display: none;
+//             }
+//         }
+//     }
+//     &:hover {
+//         svg {
+//             path {
+//                 stroke: $color-blue;
+//             }
+//         }
+//     }
+// }
 
 .teh__form {
     display: flex;

@@ -33,6 +33,7 @@
 .modal__aside {
     background-color: #fff;
     padding: 70px 50px;
+    padding-top: 130px;
 }
 
 .modal__title {
@@ -44,7 +45,17 @@
 .modal__form {
     ul {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        li {
+            width: 100%;
+            &:first-child {
+                width: 60%;
+                padding-right: 30px;
+            }
+            &:nth-child(2) {
+                width: 40%;
+            }
+        }
     }
     input {
         height: 70px;
@@ -70,17 +81,21 @@
         border-radius: 15px;
         padding: 30px;
         resize: none;
+        margin-bottom: 20px;
         &:focus {
             border-color: $color-fiolet;
             outline: none;
         }
     }
+    .feedback__submit {
+        flex: 0;
+    }
 }
 
 .modal__close {
     position: absolute;
-    right: 50px;
-    top: 50px;
+    right: 20px;
+    top: 20px;
     width: 70px;
     height: 70px;
     cursor: pointer;
