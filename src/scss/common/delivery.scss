@@ -14,6 +14,16 @@
         &:last-child {
             margin-bottom: 0;
         }
+        .delivery__head {
+            @include media-laptop {
+                font-size: 30px;
+            }
+        }
+        p {
+            @include media-laptop {
+                font-size: 17px;
+            }
+        }
     }
     p {
         line-height: 1.5;
@@ -23,6 +33,9 @@
 .delivery__head {
     font-size: 32px;
     line-height: 1.5;
+    @include media-laptop {
+        font-size: 30px;
+    }
 }
 
 .delivery__little {
@@ -39,5 +52,15 @@
     flex: 1 0 auto;
     p {
         width: 50%;
+        @include media-laptop {
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @include media-laptop {
+        flex-direction: column;
     }
 }

@@ -8,55 +8,15 @@
             color: $color-blue;
             text-decoration: underline;
         }
+        @include media-laptop {
+            font-size: 30px;
+        }
     }
 }
 
 .teh__wrapper {
     border-bottom: 1px solid #c5c5c5;
 }
-
-// .teh__content {
-//     display: none;
-// }
-
-// .teh__tab {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding-top: 50px;
-//     padding-bottom: 50px;
-//     cursor: pointer;
-//     span {
-//         font-size: 32px;
-//         font-weight: 500;
-//     }
-//     .teh__toggle {
-//         max-width: 70px;
-//         height: 70px;
-//         flex: 1 0 auto;
-//         &--minus {
-//             display: none;
-//         }
-//     }
-//     &.active {
-//         // padding-bottom: 0;
-//         .teh__toggle {
-//             &--minus {
-//                 display: block;
-//             }
-//             &--plus {
-//                 display: none;
-//             }
-//         }
-//     }
-//     &:hover {
-//         svg {
-//             path {
-//                 stroke: $color-blue;
-//             }
-//         }
-//     }
-// }
 
 .teh__form {
     display: flex;
@@ -67,6 +27,9 @@
         font-size: 32px;
         margin-bottom: 40px;
         font-weight: 400;
+        @include media-laptop {
+            font-size: 30px;
+        }
     }
     ul {
         display: flex;
@@ -74,32 +37,10 @@
         margin-right: -30px;
         margin-bottom: 30px;
     }
+    @include media-laptop {
+        padding-bottom: 60px;
+    }
 }
-
-// .teh__submit {
-//     align-self: flex-start;
-//     background-image: url("../img/svg/arrow-submit.svg");
-//     background-size: 30px;
-//     background-repeat: no-repeat;
-//     background-position: 80% center;
-//     input {
-//         font-size: 18px;
-//         background-color: transparent;
-//         border: 2px solid #30355d;
-//         padding: 0 30px;
-//         padding-right: 80px;
-//         color: $color-fiolet;
-//         cursor: pointer;
-//         height: 70px;
-//         border-radius: 15px;
-//         @include media-tablet-horizontal {
-//             font-size: 17px;
-//         }
-//     }
-//     @include media-tablet-horizontal {
-//         background-size: 22px;
-//     }
-// }
 
 .teh__input {
     flex: 1 0 auto;
@@ -119,6 +60,9 @@
         &:focus {
             outline: 0;
             border: 2px solid #30355d;
+        }
+        @include media-laptop {
+            height: 60px;
         }
     }
     &--big {
@@ -144,6 +88,7 @@
         font-size: 18px;
         border-radius: 15px;
         border-color: #bdbdbe;
+        border: 2px solid #c5c5c5;
         padding: 25px 30px;
         outline: none;
         height: 140px;
@@ -210,6 +155,12 @@
             path {
                 stroke: #c5c5c5;
             }
+            @include media-laptop {
+                width: 60px;
+            }
+        }
+        @include media-laptop {
+            font-size: 17px;
         }
     }
     &:hover {

@@ -19,6 +19,9 @@
             outline: none;
             border-color: $color-fiolet;
         }
+        @include media-laptop {
+            padding-right: 70px;
+        }
         @include media-tablet-horizontal {
             font-size: 17px;
         }
@@ -29,6 +32,9 @@
             border-color: $color-blue;
             color: $color-blue;
         }
+    }
+    @include media-laptop {
+        height: 60px;
     }
     @include media-tablet-horizontal {
         background-size: 22px;

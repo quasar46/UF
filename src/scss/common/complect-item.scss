@@ -1,33 +1,50 @@
 .complect-item {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 60px;
+    line-height: 1.5;
 }
 
 .complect-item__picture {
     margin-left: auto;
     border: 1px solid #c5c5c5;
+    &--mode {
+        margin-bottom: 40px;
+    }
+    @include media-laptop {
+        max-width: 611px;
+    }
 }
 
 .complect-item__article {
     margin-bottom: 30px;
+    @include media-laptop {
+        font-size: 17px;
+    }
 }
 
 .complect-item__title {
     font-size: 32px;
     line-height: 1.5;
-    .br {
-        display: block;
-    }
 }
 
 .complect-item__aside {
     display: flex;
     flex-direction: column;
+    max-width: 650px;
+    @include media-laptop {
+        max-width: 459px;
+    }
 }
 
 .complect-item__content {
     line-height: 1.5;
     margin-bottom: 80px;
+    p {
+        @include media-laptop {
+            font-size: 17px;
+        }
+    }
 }
 
 .complect-item__footer {

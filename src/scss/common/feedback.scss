@@ -46,7 +46,8 @@
         height: 70px;
         padding: 0 30px;
         @include media-laptop {
-            height: 65px;
+            height: 60px;
+            font-size: 17px;
         }
         @include media-tablet-horizontal {
             font-size: 17px;
@@ -98,6 +99,9 @@
             height: 50px;
         }
     }
+    @include media-laptop {
+        margin-bottom: 20px;
+    }
     @include media-tablet-horizontal {
         flex-direction: column;
     }
@@ -111,15 +115,15 @@
 
 .feedback__consent {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 1.5;
     a {
         text-decoration: underline;
     }
     @include media-laptop {
-        font-size: 17px;
+        font-size: 17px !important;
     }
     @include media-mobile {
-        font-size: 15px;
+        font-size: 15px !important;
     }
 }

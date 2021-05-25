@@ -1,7 +1,7 @@
 .catalog {
     padding-top: 175px;
     @include media-laptop {
-        padding-top: 130px;
+        padding-top: 100px;
     }
     @include media-tablet-horizontal {
         padding-top: 100px;
@@ -54,8 +54,8 @@
 
     &:nth-child(even) {
         .catalog__item {
-        position: relative;
-        z-index: 11;
+            position: relative;
+            z-index: 11;
             margin-right: auto;
             padding-right: 0;
             @include media-tablet {
@@ -188,6 +188,9 @@
         }
         &:last-child {
             margin-right: 0;
+        }
+        @include media-laptop {
+            margin-right: 30px;
         }
         @include media-tablet-horizontal {
             margin-right: 30px;

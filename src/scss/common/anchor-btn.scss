@@ -20,6 +20,7 @@
     }
     @include media-laptop {
         right: 70px;
+        width: 60px;
     }
     @include media-tablet-horizontal {
         right: 55px;

@@ -14,17 +14,10 @@
 }
 .tehnology-criteria__row {
     margin-bottom: 80px;
+    @include media-laptop {
+        margin-bottom: 60px;
+    }
 }
-// .tehnology-criteria__row {
-//     &--toggle {
-//         border-bottom: 1px solid #c5c5c5;
-//         margin-bottom: 60px;
-//     }
-//     a {
-//         color: $color-blue;
-//         text-decoration: underline;
-//     }
-// }
 
 .tehnology-criteria__head {
     font-size: 32px;
@@ -36,28 +29,9 @@
     .br {
         display: block;
     }
-    // &.toggle {
-    //     border-top: 1px solid #c5c5c5;
-    //     margin-top: 80px;
-    //     padding-top: 50px;
-    // }
-    // &.active {
-    //     .tehnology-criteria__toggle {
-    //         &--plus {
-    //             display: none;
-    //         }
-    //         &--minus {
-    //             display: block;
-    //         }
-    //     }
-    // }
-    // &:hover {
-    //     svg {
-    //         path {
-    //             stroke: $color-blue;
-    //         }
-    //     }
-    // }
+    @include media-laptop {
+        font-size: 30px;
+    }
 }
 
 // .tehnology-criteria__toggle {
@@ -88,7 +62,18 @@
             background-color: $color-blue;
             left: 0;
             top: 13px;
+            @include media-laptop {
+                width: 32px;
+                top: 12px;
+            }
         }
+        @include media-laptop {
+            font-size: 17px;
+        }
+    }
+    @include media-laptop {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -97,7 +82,7 @@
         border-collapse: collapse;
         width: 100%;
         // border-bottom: 2px solid #c5c5c5c5;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         td,
         th {
             font-size: 16px;
@@ -106,11 +91,15 @@
             text-align: left;
         }
         tr {
+            border-bottom: 1px solid rgba(195, 195, 195, 0.5);
             &.table__title {
                 background-color: #f1f1f1f1;
                 th {
                     padding: 30px 50px;
                 }
+            }
+            &:last-child {
+                border-bottom: 0;
             }
         }
     }
@@ -125,4 +114,7 @@
     font-size: 32px;
     justify-content: center;
     margin-bottom: 60px;
+    @include media-laptop {
+        font-size: 30px;
+    }
 }

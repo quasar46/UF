@@ -18,5 +18,8 @@
 .phones-list__items {
     p {
         font-size: 18px;
+        @include media-laptop {
+            font-size: 17px;
+        }
     }
 }

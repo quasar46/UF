@@ -31,16 +31,22 @@
                     max-width: 320px;
                     width: 100%;
                     line-height: 1.5;
-                    
                     display: -webkit-box;
                     -webkit-line-clamp: 4;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    @include media-laptop {
+                        font-size: 17px;
+                    }
                 }
                 svg {
-                    width: 70px;
+                    max-width: 70px;
+                    flex: 1 0 auto;
                     margin-right: 30px;
+                    @include media-laptop {
+                        max-width: 60px;
+                    }
                 }
                 &:hover {
                     svg {

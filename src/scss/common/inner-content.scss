@@ -1,6 +1,13 @@
 .inner-content {
     margin-bottom: 200px;
-
+    p {
+        @include media-laptop {
+            font-size: 30px;
+        }
+    }
+    @include media-laptop {
+        margin-bottom: 180px;
+    }
     @include media-tablet-horizontal {
         margin-bottom: 150px;
     }
@@ -48,14 +55,11 @@
         align-items: center;
     }
     @include media-laptop {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     @include media-tablet-horizontal {
         flex-direction: column;
         margin-bottom: 50px;
-    }
-    @include media-laptop {
-        margin-bottom: 40px;
     }
 }
 

@@ -6,6 +6,9 @@
 
 .about-page__head-picture {
     margin-bottom: 130px;
+    @include media-laptop {
+        margin-bottom: 100px;
+    }
 }
 
 .about-page-numbers {
@@ -34,15 +37,30 @@
     &:last-child {
         padding-right: 35px;
     }
+    p {
+        font-size: 18px;
+        @include media-laptop {
+            font-size: 17px;
+        }
+    }
 }
 
 .about-page-numbers__count {
-    color: $color-blue;
-    font-size: 110px;
-    margin-bottom: 25px;
+    p {
+        color: $color-blue;
+        font-size: 110px;
+        margin-bottom: 25px;
+        @include media-laptop {
+            font-size: 90px;
+        }
+    }
+
     span {
         font-size: 24px;
         margin-left: 20px;
+        @include media-laptop {
+            font-size: 22px;
+        }
     }
 }
 

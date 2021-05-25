@@ -1,11 +1,9 @@
 .objects {
+    position: relative;
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 100px 0;
-    &--history {
-        background-color: #fff;
-        padding: 0;
-    }
+
     @include media-laptop {
         padding-top: 90px;
         padding-bottom: 130px;
@@ -17,6 +15,13 @@
     @include media-mobile {
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+    &--history {
+        background-color: #fff;
+        padding: 0;
+        @include media-laptop {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -37,6 +42,11 @@
 .objects__slick-wrapper {
     display: flex;
     // overflow: hidden;
+    &.container {
+        @include media-laptop {
+            position: static;
+        }
+    }
     @include media-tablet {
         flex-direction: column;
     }
@@ -68,11 +78,22 @@
 .objects__pagination {
     display: flex;
     margin-top: auto;
+
+    @include media-laptop {
+        position: absolute;
+        top: 90px;
+        right: 70px;
+    }
     @include media-tablet {
         margin-top: 60px;
     }
     @include media-mobile {
         margin-top: 50px;
+    }
+    &--mode {
+        @include media-laptop {
+            top: 0;
+        }
     }
 }
 
@@ -107,7 +128,7 @@
         }
         @include media-laptop {
             font-size: 30px;
-            margin-bottom: 45px;
+            margin-bottom: 30px;
             .br {
                 display: none;
             }

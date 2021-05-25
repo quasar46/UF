@@ -39,7 +39,7 @@ a {
     width: 100%;
     margin: 0 auto;
     @include media-laptop {
-        padding: 0 70px;
+        padding: 0 60px;
     }
     @include media-tablet-horizontal {
         padding: 0 55px;
@@ -76,6 +76,9 @@ h4 {
     line-height: 1.5;
     &--small {
         padding: 70px 0;
+    }
+    @include media-laptop {
+        padding: 60px 0;
     }
 }
 

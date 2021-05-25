@@ -9,9 +9,15 @@
     span {
         font-size: 18px;
         padding-left: 20px;
+        @include media-laptop {
+            font-size: 17px;
+        }
     }
     svg {
         width: 70px;
+        @include media-laptop {
+            width: 60px;
+        }
     }
     &:hover {
         svg {

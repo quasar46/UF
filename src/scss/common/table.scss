@@ -16,10 +16,17 @@
 .table__row {
     display: flex;
     padding: 12px 50px;
+    border-bottom: 1px solid rgba(195, 195, 195, 0.5);
     &:last-child {
         margin-bottom: 27px;
+        border-bottom: 0;
     }
     &:hover {
         background-color: rgba(14, 177, 210, 0.2);
+    }
+    p {
+        @include media-laptop {
+            font-size: 16px;
+        }
     }
 }

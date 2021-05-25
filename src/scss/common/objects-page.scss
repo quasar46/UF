@@ -11,6 +11,16 @@
         padding-bottom: 140px;
         margin-bottom: 50px;
         margin-right: 50px;
+        @include media-laptop {
+            width: calc(100% / 3 - 40px);
+            padding: 50px 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    @include media-laptop {
+        margin-bottom: -40px;
+        margin-right: -40px;
     }
 }
 
@@ -30,4 +40,7 @@
     color: $color-blue;
     margin-bottom: 20px;
     font-size: 18px;
+    @include media-laptop {
+        font-size: 17px;
+    }
 }

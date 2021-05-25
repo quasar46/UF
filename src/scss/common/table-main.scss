@@ -1,0 +1,45 @@
+.table-main {
+    display: flex;
+    flex-direction: column;
+    max-height: 315px;
+    overflow: hidden;
+    line-height: 1.5;
+    &--mode {
+        .table__caption {
+            position: relative;
+            display: flex;
+            padding-left: 0;
+            p {
+                width: 50%;
+                padding: 0 50px;
+                @include media-laptop {
+                    font-size: 16px;
+                }
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 2px;
+                background-color: #fff;
+                right: 50%;
+                top: 0;
+            }
+        }
+        .table__row {
+            padding-left: 0;
+            border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+            p {
+                width: 50%;
+                padding: 0 50px;
+                @include media-laptop {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &.more {
+        max-height: 100%;
+    }
+}

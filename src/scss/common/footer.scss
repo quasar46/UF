@@ -112,6 +112,9 @@
         &:first-child {
             margin-right: 20px;
         }
+        @include media-laptop {
+            width: 60px;
+        }
         @include media-tablet-horizontal {
             width: 55px;
         }
@@ -152,6 +155,7 @@
     font-size: 18px;
     width: 100%;
     margin-top: 50px;
+
     @include media-tablet-horizontal {
         font-size: 17px;
         margin-top: 40px;
@@ -161,6 +165,13 @@
     }
     @include media-mobile {
         font-size: 15px;
+    }
+    p {
+        &:last-child {
+            @include media-laptop {
+                font-size: 16px;
+            }
+        }
     }
 }
 

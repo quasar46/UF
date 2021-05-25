@@ -16,10 +16,13 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 34px;
+    font-weight: 400;
     padding-top: 50px;
     padding-bottom: 50px;
+    .br {
+        display: block;
+    }
     &:hover {
         svg {
             path {
@@ -40,6 +43,11 @@
     & + div {
         display: none;
     }
+    @include media-laptop {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
 }
 
 .toggle-block__content {
@@ -55,5 +63,9 @@
     }
     &--plus {
         display: block;
+    }
+    @include media-laptop {
+        max-width: 60px;
+        height: 60px;
     }
 }

@@ -5,7 +5,6 @@
     line-height: 1.5;
     font-size: 32px;
     p {
-        // margin-bottom: 30px;
         a {
             color: $color-blue;
             text-decoration: underline;
@@ -15,6 +14,7 @@
         max-width: 860px;
     }
     @include media-laptop {
+        max-width: 765px;
         font-size: 30px;
     }
     @include media-tablet-horizontal {

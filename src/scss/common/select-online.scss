@@ -1,7 +1,13 @@
 .select-online {
     margin-bottom: 130px;
+    @include media-laptop {
+        margin-bottom: 100px;
+    }
 }
 
 .select-online__head {
     margin-bottom: 40px;
+    @include media-laptop {
+        margin-bottom: 30px;
+    }
 }

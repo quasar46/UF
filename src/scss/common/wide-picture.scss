@@ -1,0 +1,12 @@
+.wide-picture {
+    height: 300px;
+    margin-bottom: 130px;
+    img {
+        object-fit: cover;
+    }
+
+    @include media-laptop {
+        height: 214px;
+        margin-bottom: 100px;
+    }
+}

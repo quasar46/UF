@@ -10,5 +10,11 @@
         color: $color-blue;
         text-decoration: underline;
         border: none;
+        @include media-laptop {
+            font-size: 17px;
+        }
+    }
+    @include media-laptop {
+        padding: 20px 0;
     }
 }

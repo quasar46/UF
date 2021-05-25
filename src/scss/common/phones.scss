@@ -14,6 +14,9 @@
             p {
                 width: 50%;
             }
+            @include media-laptop {
+                font-size: 30px;
+            }
         }
     }
 }
