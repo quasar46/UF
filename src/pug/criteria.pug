@@ -20,13 +20,13 @@ html(lang="ru")
             .container
                 h2.title-main Критерии подбора УОВ
             .wide-picture
-                img(src="img/bg/criteria.jpg", alt="")
+                img(src="img/bg/criteria.jpg" alt="")
 
         .tehnology-criteria.inner-content
             .container
 
                 h3.title-inner Технологические и гигиенические критерии 
-                .container-aside.inner-content
+                .container-aside.container-aside--mode.inner-content
                     .tehnology-criteria__row
                         .tehnology-criteria__head Критерии использования УФ-облучения для обеззараживания питьевых и сточных вод (согласно МУК 4.3.2030-05)
                         .little-text
@@ -194,7 +194,7 @@ html(lang="ru")
                             p Тем не менее, согласно <a class="hover" data-caption="<a href='#'>МУ 3.2.1757-03</a> - не менее 25 мДж/кв. см для воды из подземных источников II, III класса и поверхностных источников; не менее 30 мДж/кв. см для бытовых и городских сточных вод.">МУ 3.2.1757-03</a>, эпидемическая безопасность воды по паразитологическим показателям достигается при обеззараживании ее УФ-облучением в дозах: для питьевой воды - 40 - 45 мДж/кв. см, сточной - не менее 65 мДж/кв. см.
 
                 h3.title-inner Расчет дозы УФ-облучения
-                .container-aside
+                .container-aside.container-aside--mode
                     .little-text
                         p Эффект обеззараживания воды D (доза облучения мДж/см2) зависит от произведения интенсивности бактерицидного облучения Е на продолжительность облучения Т.
                         .tehnology-criteria__formula 
@@ -211,4 +211,5 @@ html(lang="ru")
 
 
         include modules/footer.pug
+        include modules/menu.pug
         include modules/script.pug

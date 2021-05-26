@@ -18,6 +18,9 @@
         @include media-laptop {
             width: 60px;
         }
+        @include media-tablet-horizontal {
+            width: 55px;
+        }
     }
     &:hover {
         svg {

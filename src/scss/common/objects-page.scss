@@ -17,10 +17,18 @@
             margin-right: 40px;
             margin-bottom: 40px;
         }
+        @include media-tablet-horizontal {
+            width: calc(100% / 2 - 55px);
+            margin-right: 55px;
+            padding: 40px 35px;
+        }
     }
     @include media-laptop {
         margin-bottom: -40px;
         margin-right: -40px;
+    }
+    @include media-tablet-horizontal {
+        margin-right: 0;
     }
 }
 
@@ -32,6 +40,9 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+    @include media-tablet-horizontal {
+        margin-bottom: 30px;
     }
 }
 

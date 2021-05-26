@@ -4,4 +4,7 @@
 
 .principle__text {
     font-size: 32px;
+    @include media-tablet-horizontal {
+        font-size: 26px;
+    }
 }

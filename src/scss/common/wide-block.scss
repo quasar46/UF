@@ -1,0 +1,21 @@
+.wide-block {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+    font-size: 32px;
+    line-height: 1.5;
+    &--small {
+        padding: 70px 0;
+    }
+    p {
+        font-size: 30px;
+        @include media-tablet-horizontal {
+            font-size: 26px;
+        }
+    }
+    @include media-laptop {
+        padding: 60px 0;
+    }
+    @include media-tablet-horizontal {
+        padding: 50px 0;
+    }
+}

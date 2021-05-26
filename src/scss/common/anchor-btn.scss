@@ -6,9 +6,9 @@
     right: 100px;
     top: -200px;
     path {
-        &:first-child {
-            fill: #fff;
-        }
+        // &:first-child {
+        //     fill: #fff;
+        // }
     }
     &:hover {
         path {
@@ -24,6 +24,7 @@
     }
     @include media-tablet-horizontal {
         right: 55px;
+        width: 55px;
     }
     @include media-tablet {
         right: 40px;

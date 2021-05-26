@@ -10,7 +10,7 @@
             padding: 0 40px;
         }
     }
-    @include media-mobile {
+    @include media-tablet-horizontal{
         display: none;
     }
 }

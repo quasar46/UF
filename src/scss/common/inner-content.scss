@@ -2,7 +2,7 @@
     margin-bottom: 200px;
     p {
         @include media-laptop {
-            font-size: 30px;
+            // font-size: 30px;
         }
     }
     @include media-laptop {

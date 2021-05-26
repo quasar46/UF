@@ -5,21 +5,25 @@
         padding-bottom: 30px;
         margin-bottom: 50px;
         border-bottom: 1px solid #c5c5c5;
+        &:first-child {
+            align-items: center;
+        }
         &:last-child {
             margin-bottom: 0;
         }
     }
 
     .phones-list__item {
-        font-size: 32px;
+        font-size: 34px;
+        @include media-laptop {
+            font-size: 30px;
+        }
+        @include media-tablet-horizontal {
+            font-size: 26px;
+        }
     }
 }
 
-.phones-list__items {
-    p {
-        font-size: 18px;
-        @include media-laptop {
-            font-size: 17px;
-        }
-    }
+.phones-list__phone {
+    font-size: 18px;
 }

@@ -18,10 +18,16 @@
         font-size: 30px;
     }
     @include media-tablet-horizontal {
+        max-width: 574px;
         font-size: 28px;
     }
     @include media-tablet {
         font-size: 26px;
+    }
+    &--mode {
+        @include media-tablet-horizontal {
+            max-width: 100%;
+        }
     }
 }
 

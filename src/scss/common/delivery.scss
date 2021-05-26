@@ -24,6 +24,10 @@
                 font-size: 17px;
             }
         }
+        @include media-tablet-horizontal {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
     }
     p {
         line-height: 1.5;

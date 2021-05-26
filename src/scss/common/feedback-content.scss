@@ -7,7 +7,8 @@
         font-size: 30px;
     }
     @include media-tablet-horizontal {
-        font-size: 28px;
+        font-size: 26px;
+        margin-bottom: 30px;
     }
     @include media-tablet {
         font-size: 26px;

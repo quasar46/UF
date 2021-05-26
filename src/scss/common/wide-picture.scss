@@ -9,4 +9,8 @@
         height: 214px;
         margin-bottom: 100px;
     }
+    @include media-tablet-horizontal {
+        height: 160px;
+        margin-bottom: 90px;
+    }
 }

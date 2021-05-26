@@ -11,7 +11,8 @@
         position: static;
     }
     @include media-tablet-horizontal {
-        margin-bottom: 167px;
+        // margin-bottom: 167px;
+        margin-bottom: 0;
     }
     @include media-tablet {
         margin-bottom: 140px;

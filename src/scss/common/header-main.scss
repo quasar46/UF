@@ -62,6 +62,9 @@
     .container {
         display: flex;
     }
+    @include media-tablet-horizontal {
+        bottom: 40px;
+    }
     @include media-mobile {
         bottom: 20px;
     }

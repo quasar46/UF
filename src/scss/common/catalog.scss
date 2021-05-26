@@ -253,21 +253,13 @@
     @include media-tablet-horizontal {
         height: 291px;
         width: 459px;
+        padding: 30px;
     }
     @include media-tablet {
         height: auto;
         width: 100%;
         padding-bottom: 30px;
     }
-    // @include media-tablet {
-    //     width: 100%;
-    //     height: auto;
-    //     padding-bottom: 30px;
-    // }
-    // @include media-mobile {
-    //     padding-left: 15px;
-    //     padding-right: 15px;
-    // }
 }
 
 .catalog__overlay {
@@ -312,7 +304,7 @@
         // bottom: 30px;
     }
     @include media-tablet-horizontal {
-        font-size: 28px;
+        font-size: 26px;
     }
     @include media-tablet {
         font-size: 26px;
@@ -327,10 +319,11 @@
     @include media-laptop {
         font-size: 22px;
     }
-    @include media-tablet {
-        // margin-bottom: 30px;
-        margin-bottom: 0;
+    @include media-tablet-horizontal {
         font-size: 20px;
+    }
+    @include media-tablet {
+        margin-bottom: 0;
     }
     @include media-mobile {
         font-size: 18px;

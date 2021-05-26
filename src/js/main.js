@@ -217,4 +217,21 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     showPopup();
+
+    const showMenu = function () {
+        const body = document.querySelector('body');
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('.menu');
+        const close = document.querySelector('.menu__close');
+
+        burger.addEventListener('click', () => {
+            menu.classList.add('active');
+            body.style.overflow = "hidden";
+        })
+        close.addEventListener('click', () => {
+            menu.classList.remove('active');
+            body.style.overflow = "";
+        })
+    }
+    showMenu();
 })

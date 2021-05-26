@@ -21,6 +21,9 @@
             width: 50%;
             &:nth-child(even) {
                 padding-left: 100px;
+                @include media-tablet-horizontal {
+                    padding-left: 50px;
+                }
             }
             a {
                 display: flex;
@@ -28,8 +31,8 @@
 
                 p {
                     font-size: 18px;
-                    max-width: 320px;
-                    width: 100%;
+                    // max-width: 320px;
+                    // width: 100%;
                     line-height: 1.5;
                     display: -webkit-box;
                     -webkit-line-clamp: 4;
@@ -39,6 +42,9 @@
                     @include media-laptop {
                         font-size: 17px;
                     }
+                    @include media-tablet-horizontal {
+                        // max-width: 150px;
+                    }
                 }
                 svg {
                     max-width: 70px;
@@ -46,6 +52,10 @@
                     margin-right: 30px;
                     @include media-laptop {
                         max-width: 60px;
+                    }
+                    @include media-tablet-horizontal {
+                        max-width: 55px;
+                        margin-right: 20px;
                     }
                 }
                 &:hover {
@@ -59,6 +69,12 @@
                     }
                 }
             }
+            @include media-tablet-horizontal {
+                margin-bottom: 40px;
+            }
+        }
+        @include media-tablet-horizontal {
+            margin-bottom: -40px;
         }
     }
 }

@@ -4,10 +4,16 @@
     ul {
         display: flex;
         align-items: center;
-        font-size: 16px;
+
         color: #d6d7df;
         li {
             margin-right: 10px;
+            a {
+                font-size: 16px;
+                @include media-tablet-horizontal {
+                    font-size: 15px;
+                }
+            }
         }
         img {
             width: 18px;
@@ -16,5 +22,8 @@
         .active {
             color: $color-base;
         }
+    }
+    @include media-tablet-horizontal {
+        margin-top: 110px;
     }
 }

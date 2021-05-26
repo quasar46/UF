@@ -42,7 +42,7 @@ a {
         padding: 0 60px;
     }
     @include media-tablet-horizontal {
-        padding: 0 55px;
+        padding: 0 50px;
     }
     @include media-tablet {
         padding: 0 40px;
@@ -67,19 +67,6 @@ h2,
 h3,
 h4 {
     margin: 0;
-}
-
-.wide-block {
-    padding: 100px 0;
-    background-color: #f1f1f1;
-    font-size: 32px;
-    line-height: 1.5;
-    &--small {
-        padding: 70px 0;
-    }
-    @include media-laptop {
-        padding: 60px 0;
-    }
 }
 
 .toggle-btn {

@@ -12,10 +12,19 @@
             margin-bottom: 60px;
             margin-right: 55px;
         }
+        @include media-tablet-horizontal {
+            width: calc(100% / 2 - 115px);
+            margin-right: 115px;
+            margin-bottom: 50px;
+        }
     }
     @include media-laptop {
         margin-right: -55px;
         margin-bottom: -60px;
+    }
+    @include media-tablet-horizontal {
+        margin-right: 0;
+        margin-bottom: -50px;
     }
 }
 
@@ -37,6 +46,9 @@
     font-weight: 400;
     @include media-laptop {
         font-size: 30px;
+    }
+    @include media-tablet-horizontal {
+        font-size: 26px;
     }
 }
 
@@ -81,5 +93,8 @@
         @include media-laptop {
             font-size: 17px;
         }
+    }
+    @include media-tablet-horizontal {
+        font-size: 17px;
     }
 }

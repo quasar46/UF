@@ -23,6 +23,9 @@
     @include media-laptop {
         height: 60px;
     }
+    @include media-tablet-horizontal {
+        height: 55px;
+    }
 }
 
 .select-css::-ms-expand {

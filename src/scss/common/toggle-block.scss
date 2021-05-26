@@ -48,6 +48,11 @@
         padding-bottom: 40px;
         font-size: 30px;
     }
+    @include media-tablet-horizontal {
+        font-size: 26px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .toggle-block__content {
@@ -67,5 +72,9 @@
     @include media-laptop {
         max-width: 60px;
         height: 60px;
+    }
+    @include media-tablet-horizontal {
+        max-width: 55px;
+        height: 55px;
     }
 }
