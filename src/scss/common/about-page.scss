@@ -55,9 +55,9 @@
         }
     }
     p {
-        font-size: 18px;
+        // font-size: 18px;
         @include media-laptop {
-            font-size: 17px;
+            // font-size: 17px;
         }
     }
     @include media-tablet-horizontal {
@@ -92,4 +92,10 @@
 
 .about-page-numbers__text {
     line-height: 1.5;
+    @include media-laptop {
+        font-size: 18px;
+    }
+    @include media-tablet-horizontal {
+        font-size: 17px;
+    }
 }

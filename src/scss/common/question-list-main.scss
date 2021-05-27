@@ -1,0 +1,7 @@
+.question-list-main {
+    p {
+        @include media-laptop {
+            font-size: 30px;
+        }
+    }
+}

@@ -26,4 +26,7 @@
 
 .phones-list__phone {
     font-size: 18px;
+    @include media-tablet-horizontal {
+        font-size: 17px;
+    }
 }

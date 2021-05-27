@@ -21,6 +21,7 @@
         }
         @include media-laptop {
             padding-right: 70px;
+            font-size: 17px;
         }
         @include media-tablet-horizontal {
             font-size: 17px;

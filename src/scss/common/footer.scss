@@ -59,7 +59,7 @@
         }
         @include media-tablet-horizontal {
             max-width: 310px;
-            font-size: 28px;
+            font-size: 26px;
         }
         @include media-tablet {
             font-size: 26px;
@@ -199,5 +199,11 @@
     @include media-mobile {
         display: flex;
         align-items: center;
+    }
+}
+
+.footer__item {
+    @include media-tablet-horizontal {
+        display: none;
     }
 }
