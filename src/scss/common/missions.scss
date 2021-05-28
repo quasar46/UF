@@ -5,6 +5,12 @@
     padding-top: 40px;
     border-top: 1px solid #c5c5c5;
     margin-right: 55px;
+    @include media-laptop {
+        font-size: 30px;
+    }
+    @include media-tablet-horizontal {
+        font-size: 26px;
+    }
 }
 
 .missions__arrows {

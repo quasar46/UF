@@ -93,9 +93,6 @@
 .about-page-numbers__text {
     line-height: 1.5;
     @include media-laptop {
-        font-size: 18px;
-    }
-    @include media-tablet-horizontal {
         font-size: 17px;
     }
 }

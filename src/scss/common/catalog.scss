@@ -232,6 +232,9 @@
             height: 50px;
         }
     }
+    @include media-laptop {
+        font-size: 17px;
+    }
     @include media-tablet-horizontal {
         margin-bottom: 30px;
     }

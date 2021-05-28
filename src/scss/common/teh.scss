@@ -94,10 +94,10 @@
         }
         @include media-laptop {
             height: 60px;
+            font-size: 17px;
         }
         @include media-tablet-horizontal {
             height: 55px;
-            font-size: 17px;
         }
     }
     &--big {

@@ -10,4 +10,7 @@
     @include media-laptop {
         margin-bottom: 30px;
     }
+    @include media-tablet-horizontal {
+        font-size: 26px;
+    }
 }

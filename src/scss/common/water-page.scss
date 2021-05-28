@@ -4,3 +4,14 @@
         margin-bottom: 20px;
     }
 }
+.water-page__sub {
+    @include media-laptop {
+        font-size: 17px;
+    }
+}
+
+.water-page__over {
+    @include media-laptop {
+        font-size: 26px;
+    }
+}

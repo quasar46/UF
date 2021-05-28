@@ -14,6 +14,9 @@
 
 .footer__list {
     margin-bottom: 50px;
+    @include media-tablet-horizontal {
+        margin-bottom: 20px;
+    }
     @include media-tablet {
         margin-bottom: 0;
     }
@@ -58,7 +61,7 @@
             font-size: 30px;
         }
         @include media-tablet-horizontal {
-            max-width: 310px;
+            max-width: 520px;
             font-size: 26px;
         }
         @include media-tablet {
@@ -69,6 +72,9 @@
         font-size: 18px;
         @include media-laptop {
             font-size: 17px;
+        }
+        @include media-tablet-horizontal {
+            display: none;
         }
         @include media-tablet {
             display: none;
@@ -94,7 +100,7 @@
                 display: none;
             }
         }
-        @include media-tablet {
+        @include media-tablet-horizontal {
             display: block;
             margin-left: auto;
         }

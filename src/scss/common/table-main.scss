@@ -36,6 +36,9 @@
                 @include media-laptop {
                     font-size: 16px;
                 }
+                @include media-tablet-horizontal {
+                    font-size: 15px;
+                }
             }
         }
     }

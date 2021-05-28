@@ -40,10 +40,6 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     @include media-laptop {
-                        // font-size: 17px;
-                    }
-                    @include media-tablet-horizontal {
-                        // max-width: 150px;
                         font-size: 17px;
                     }
                 }

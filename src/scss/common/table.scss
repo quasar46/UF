@@ -3,6 +3,9 @@
     p {
         width: calc(100% / 5);
     }
+    @include media-tablet-horizontal {
+        font-size: 15px;
+    }
 }
 
 .table__caption {

@@ -13,6 +13,9 @@
         @include media-laptop {
             font-size: 17px;
         }
+        @include media-tablet-horizontal {
+            font-size: 15px;
+        }
     }
     @include media-laptop {
         padding: 20px 0;

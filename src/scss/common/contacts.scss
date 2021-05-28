@@ -18,7 +18,7 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
-    @include media-tablet-horizontal {
+    @include media-laptop {
         font-size: 17px;
     }
 }

@@ -18,6 +18,9 @@
             @include media-laptop {
                 font-size: 30px;
             }
+            @include media-tablet-horizontal {
+                font-size: 26px;
+            }
         }
         p {
             @include media-laptop {
