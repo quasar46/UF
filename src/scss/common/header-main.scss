@@ -9,12 +9,7 @@
     color: #fff;
     z-index: 1;
     font-size: 18px;
-    &--inner {
-        position: relative;
-        border-bottom: 1px solid #c1c3cf;
-        background-color: #fff;
-        color: #232323;
-    }
+
     &.fixed {
         position: fixed;
         top: 0;
@@ -52,6 +47,19 @@
     @include media-mobile {
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+    &--inner {
+        position: relative;
+        border-bottom: 1px solid #c1c3cf;
+        background-color: #fff;
+        color: #232323;
+        @include media-mobile {
+            border-bottom: 0;
+            padding-bottom: 0;
+            &.fixed {
+                padding-bottom: 20px;
+            }
+        }
     }
 }
 
@@ -242,6 +250,7 @@
     @include media-tablet-horizontal {
         line-height: 37px;
         font-size: 16px;
+        right: -137px;
     }
     @include media-mobile {
         display: none;

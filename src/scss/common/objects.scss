@@ -140,10 +140,11 @@
         }
         @include media-tablet-horizontal {
             font-size: 26px;
-            margin-bottom: 30px;
+            margin-bottom: 18px;
         }
         @include media-mobile {
-            font-size: 26px;
+            // font-size: 26px;
+            font-size: 24px; // objects
         }
     }
 
@@ -165,15 +166,21 @@
                 width: 32px;
             }
             @include media-mobile {
-                width: 25px;
+                // width: 25px;
+                width: 20px; // objects
             }
         }
         @include media-laptop {
             font-size: 17px;
         }
+        @include media-tablet-horizontal {
+            padding-left: 50px;
+        }
         @include media-mobile {
-            font-size: 15px;
-            padding-left: 45px;
+            // font-size: 15px;
+            font-size: 17px; // objects
+            // padding-left: 45px;
+            padding-left: 40px; // objects
         }
     }
     &.active {

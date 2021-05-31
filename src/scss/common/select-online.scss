@@ -1,7 +1,15 @@
 .select-online {
     margin-bottom: 130px;
+    .container-aside {
+        @include media-tablet-horizontal {
+            max-width: 100%;
+        }
+    }
     @include media-laptop {
         margin-bottom: 100px;
+    }
+    @include media-tablet-horizontal {
+        margin-bottom: 70px;
     }
 }
 

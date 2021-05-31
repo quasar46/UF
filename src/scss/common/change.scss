@@ -30,6 +30,9 @@
         @include media-laptop {
             height: 60px;
         }
+        @include media-tablet-horizontal {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -53,6 +56,11 @@
     &:nth-child(2) {
         border-right: none;
         width: 50%;
+        @include media-tablet-horizontal {
+            .change__check-style {
+                max-width: 100%;
+            }
+        }
     }
     &:nth-child(3) {
         width: 50%;
@@ -72,6 +80,7 @@
     }
     @include media-tablet-horizontal {
         font-size: 26px;
+        width: 100%;
     }
 }
 
@@ -108,12 +117,22 @@
         max-width: 595px;
         width: 100%;
     }
+    @include media-tablet-horizontal {
+        flex-direction: column;
+        max-width: 32%;
+    }
 }
 
 .change__inputs {
+    input {
+        margin-bottom: 0;
+    }
     @include media-laptop {
         margin-left: auto;
         max-width: 595px;
         width: 100%;
+    }
+    @include media-tablet-horizontal {
+        max-width: 68%;
     }
 }

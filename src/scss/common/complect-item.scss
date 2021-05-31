@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     margin-bottom: 60px;
     line-height: 1.5;
+    @include media-tablet-horizontal {
+        margin-bottom: 40px;
+    }
 }
 
 .complect-item__picture {
@@ -23,6 +26,9 @@
     margin-bottom: 30px;
     @include media-laptop {
         font-size: 17px;
+    }
+    @include media-tablet-horizontal {
+        margin-bottom: 20px;
     }
 }
 
@@ -57,7 +63,8 @@
             font-size: 17px;
         }
         @include media-tablet-horizontal {
-            font-size: 16px;
+            // font-size: 17px;
+            font-size: 15px;
         }
     }
 }

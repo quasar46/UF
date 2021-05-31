@@ -68,6 +68,14 @@
             width: 100%;
         }
     }
+    &--organization,
+    &--address {
+        @include media-laptop {
+            width: 50%;
+            margin-right: 0;
+            padding-right: 30px;
+        }
+    }
 }
 
 .question-list__row {

@@ -26,6 +26,11 @@
             display: block;
         }
     }
+    &--svg {
+        @include media-mobile {
+            margin-left: auto !important;
+        }
+    }
 }
 
 .catalog__content {

@@ -1,3 +1,10 @@
+.phones__grafik-work {
+    @include media-mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .phones__grafik-work-wrapper {
     display: flex;
     max-width: 900px;
@@ -20,6 +27,20 @@
             @include media-tablet-horizontal {
                 font-size: 26px;
             }
+            @include media-mobile {
+                font-size: 24px;
+            }
         }
+        &:first-child {
+            @include media-mobile {
+                margin-bottom: 30px;
+            }
+        }
+        @include media-mobile {
+            width: 100%;
+        }
+    }
+    @include media-mobile {
+        flex-direction: column;
     }
 }

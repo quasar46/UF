@@ -17,13 +17,31 @@
             font-size: 26px;
         }
     }
-    button {
-        display: none;
-    }
+
     .container-aside {
         @include media-tablet-horizontal {
             font-size: 26px;
             max-width: 100%;
+        }
+    }
+    .line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    button {
+        display: none;
+        align-self: flex-start;
+        font-size: 26px;
+        color: $color-blue;
+        text-decoration: underline;
+        padding: 0;
+        border: 0;
+        margin-top: 5px;
+        background-color: transparent;
+        @include media-mobile {
+            display: block;
         }
     }
     @include media-laptop {

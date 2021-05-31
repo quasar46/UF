@@ -26,6 +26,9 @@
         @include media-tablet-horizontal {
             font-size: 17px;
         }
+        @include media-mobile {
+            font-size: 15px;
+        }
     }
     &:hover {
         background-image: url("../img/svg/arrow-submit-hover.svg");

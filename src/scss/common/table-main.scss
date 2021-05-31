@@ -1,7 +1,7 @@
 .table-main {
     display: flex;
     flex-direction: column;
-    max-height: 315px;
+    max-height: 290px;
     overflow: hidden;
     line-height: 1.5;
     &--mode {
@@ -44,5 +44,8 @@
     }
     &.more {
         max-height: 100%;
+    }
+    @include media-tablet-horizontal {
+        max-height: 296px;
     }
 }

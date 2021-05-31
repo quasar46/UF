@@ -22,6 +22,12 @@
             margin-right: 55px;
             padding: 40px 35px;
         }
+        @include media-mobile {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px;
+            padding: 40px 30px;
+        }
     }
     @include media-laptop {
         margin-bottom: -40px;
@@ -37,8 +43,19 @@
     margin-bottom: 40px;
     .select-css {
         margin-right: 30px;
+        @include media-mobile {
+            margin-right: 20px;
+        }
+        &:first-child {
+            @include media-mobile {
+                max-width: 40%;
+            }
+        }
         &:last-child {
             margin-right: 0;
+            @include media-mobile {
+                max-width: calc(60% - 20px);
+            }
         }
     }
     @include media-tablet-horizontal {
@@ -56,5 +73,6 @@
     }
     @include media-tablet-horizontal {
         font-size: 17px;
+        margin-bottom: 12px;
     }
 }

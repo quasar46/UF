@@ -29,6 +29,7 @@
         background-size: 30px auto;
         background-repeat: no-repeat;
         line-height: 70px;
+        height: 70px;
         border: 2px solid #30355d;
         border-radius: 15px;
         padding-left: 35px;
@@ -40,6 +41,12 @@
         }
         @include media-laptop {
             font-size: 17px;
+            line-height: 60px;
+            height: 60px;
+        }
+        @include media-tablet-horizontal {
+            line-height: 55px;
+            height: 55px;
         }
     }
 }

@@ -28,8 +28,8 @@
             width: 55px;
         }
         @include media-mobile {
-            margin-left: auto;
-            // margin-left: 30px;
+            // margin-left: auto;
+            margin-left: 30px;
             width: 50px;
         }
     }

@@ -27,6 +27,9 @@
     @include media-tablet-horizontal {
         height: 55px;
     }
+    @include media-mobile {
+        height: 50px;
+    }
 }
 
 .select-css::-ms-expand {

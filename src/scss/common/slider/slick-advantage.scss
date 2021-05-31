@@ -2,6 +2,9 @@
     width: 80%;
     .slick-list {
         margin-right: -350px;
+        @include media-mobile {
+            padding-left: 1px; // index
+        }
     }
     .slick-track {
         display: flex;
@@ -12,7 +15,8 @@
     @include media-mobile {
         width: 240%;
         height: auto;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
+        margin-bottom: 0; // index
     }
 }
 

@@ -11,8 +11,12 @@
             width: 28px;
             height: 28px;
             left: 0;
-            top: 55%;
+            // top: 55%;
+            top: 50%;
             transform: translateY(-50%);
+        }
+        @include media-tablet-horizontal {
+            display: flex;
         }
     }
     &:checked {
