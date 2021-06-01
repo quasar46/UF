@@ -32,6 +32,12 @@
         }
         @include media-tablet-horizontal {
             margin-bottom: 20px;
+            height: 55px;
+        }
+    }
+    .select-css {
+        @include media-tablet-horizontal {
+            // margin-top: 30px;
         }
     }
 }
@@ -64,6 +70,13 @@
     }
     &:nth-child(3) {
         width: 50%;
+    }
+    &:last-child {
+        .select-css {
+            @include media-tablet-horizontal {
+                margin-top: 30px;
+            }
+        }
     }
     @include media-laptop {
         padding: 50px 40px;

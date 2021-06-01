@@ -38,10 +38,12 @@
             @include media-laptop {
                 font-size: 22px;
             }
+            @include media-tablet-horizontal {
+                font-size: 20px;
+            }
             @include media-tablet {
                 display: block;
                 margin-bottom: 20px;
-                font-size: 20px;
             }
         }
         @include media-tablet-horizontal {
@@ -73,6 +75,9 @@
         }
         @include media-tablet {
             font-size: 26px;
+        }
+        @include media-mobile {
+            font-size: 24px;
         }
     }
     &--other {
@@ -206,6 +211,9 @@
     span {
         font-size: 26px;
         margin-right: 20px;
+        @include media-mobile {
+            font-size: 24px;
+        }
     }
     svg {
         width: 50px;

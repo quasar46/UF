@@ -27,6 +27,9 @@
     @include media-laptop {
         margin: 20px 0;
     }
+    @include media-tablet-horizontal {
+        margin: 30px 0;
+    }
 }
 
 .principle-uf__wide-text {

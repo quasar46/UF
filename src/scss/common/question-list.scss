@@ -61,6 +61,9 @@
         &:focus {
             border-color: $color-base;
         }
+        @include media-tablet-horizontal {
+            height: 55px;
+        }
     }
     &--wide {
         width: 100%;

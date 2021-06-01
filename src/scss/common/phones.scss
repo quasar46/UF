@@ -40,6 +40,9 @@
             width: 100%;
         }
     }
+    @include media-tablet-horizontal {
+        max-width: 646px;
+    }
     @include media-mobile {
         flex-direction: column;
     }

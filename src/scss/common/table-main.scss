@@ -1,7 +1,7 @@
 .table-main {
     display: flex;
     flex-direction: column;
-    max-height: 290px;
+    // max-height: 290px;
     overflow: hidden;
     line-height: 1.5;
     &--mode {
@@ -29,7 +29,8 @@
         }
         .table__row {
             padding-left: 0;
-            border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+            // border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+            box-shadow: 0 1px 0 rgba(195, 195, 195, 0.5);
             p {
                 width: 50%;
                 padding: 0 50px;
@@ -40,12 +41,18 @@
                     font-size: 15px;
                 }
             }
+            &.hide {
+                display: none;
+            }
+            &.show {
+                display: flex;
+            }
         }
     }
-    &.more {
-        max-height: 100%;
-    }
-    @include media-tablet-horizontal {
-        max-height: 296px;
-    }
+    // &.more {
+    //     max-height: 100%;
+    // }
+    // @include media-tablet-horizontal {
+    //     max-height: 296px;
+    // }
 }

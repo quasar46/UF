@@ -79,4 +79,7 @@
         font-size: 60px;
         margin-bottom: 40px;
     }
+    @include media-mobile {
+        font-size: 46px;
+    }
 }

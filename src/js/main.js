@@ -178,7 +178,7 @@ $(document).ready(function () {
     }, 2000);
 
     let showMore = function () {
-        $('.show-more').on('click', function () {
+        $('.device__show-more').on('click', function () {
             $(this).siblings('.hideContent').toggleClass('more');
         });
     }
@@ -234,4 +234,22 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     showMenu();
+
+    const titleToggle = document.querySelectorAll('.list-items__title');
+
+    titleToggle.forEach((item) => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+            item.nextSibling.classList.toggle('active');
+        })
+    })
+
+    const buttonsShow = document.querySelectorAll('.show-more');
+    buttonsShow.forEach(button => {
+        button.addEventListener('click', () => {
+            for (let i of button.previousSibling.children) {
+                i.classList.toggle('show');
+            }
+        })
+    })
 })
