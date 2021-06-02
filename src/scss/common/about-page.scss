@@ -9,9 +9,15 @@
         @include media-tablet-horizontal {
             font-size: 26px;
         }
+        @include media-mobile {
+            font-size: 24px;
+        }
     }
     @include media-tablet-horizontal {
         margin-bottom: 50px;
+    }
+    @include media-mobile {
+        margin-bottom: 40px;
     }
 }
 
@@ -23,12 +29,18 @@
     @include media-tablet-horizontal {
         margin-bottom: 70px;
     }
+    @include media-mobile {
+        height: 200px;
+    }
 }
 
 .about-page-numbers {
     display: flex;
     border-top: 1px solid #c5c5c5;
     border-bottom: 1px solid #c5c5c5;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .about-page-numbers__block {

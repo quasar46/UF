@@ -1,0 +1,56 @@
+.table {
+    font-size: 16px;
+
+    p {
+        width: calc(100% / 5);
+    }
+
+    @include media-tablet-horizontal {
+        font-size: 15px;
+    }
+}
+
+.table__caption {
+    display: flex;
+    align-items: center;
+    padding: 18px 50px;
+    margin-bottom: 17px;
+    background-color: #f1f1f1;
+
+    @include media-mobile {
+        padding: 18px 30px;
+    }
+}
+
+.table__row {
+    display: flex;
+    padding: 12px 50px;
+    // border-bottom: 1px solid rgba(195, 195, 195, 0.5);
+
+    &:last-child {
+        // margin-bottom: 27px;
+        // border-bottom: 0;
+    }
+
+    &:hover {
+        background-color: rgba(14, 177, 210, 0.2);
+    }
+
+    p {
+        @include media-laptop {
+            font-size: 16px;
+        }
+
+        @include media-tablet-horizontal {
+            font-size: 15px;
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &.show {
+        display: flex;
+    }
+}

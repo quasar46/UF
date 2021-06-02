@@ -21,4 +21,7 @@
     @include media-tablet-horizontal {
         font-size: 26px;
     }
+    @include media-mobile {
+        font-size: 24px;
+    }
 }

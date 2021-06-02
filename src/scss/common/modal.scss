@@ -7,9 +7,11 @@
     bottom: 0;
     margin: auto;
     z-index: 150;
+
     &.hide {
         display: none;
     }
+
     &.show {
         display: block;
     }
@@ -24,9 +26,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     img {
         height: 100%;
         width: 50%;
+
+        @include media-mobile {
+            display: none;
+        }
+    }
+
+    @include media-mobile {
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0);
     }
 }
 
@@ -34,29 +48,51 @@
     background-color: #fff;
     padding: 70px 50px;
     padding-top: 130px;
+
+    @include media-mobile {
+        padding: 115px 15px;
+    }
 }
 
 .modal__title {
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 40px;
+
+    @include media-mobile {
+        font-size: 24px;
+    }
 }
 
 .modal__form {
     ul {
         display: flex;
         flex-wrap: wrap;
+
         li {
             width: 100%;
+
             &:first-child {
                 width: 60%;
                 padding-right: 30px;
+
+                @include media-mobile {
+                    width: 100%;
+                    padding-right: 0;
+                }
             }
+
             &:nth-child(2) {
                 width: 40%;
+
+                @include media-mobile {
+                    width: 100%;
+                }
             }
+
         }
     }
+
     input {
         height: 70px;
         width: 100%;
@@ -64,16 +100,32 @@
         border: 2px solid #c5c5c5;
         margin-bottom: 20px;
         padding: 0 30px;
+
         &[type="submit"] {
             padding-right: 82px;
+
             // color: $color-fiolet;
             // border-color: $color-fiolet;
+            @include media-mobile {
+                padding-left: 25px;
+                padding-right: 55px;
+                border-color: $color-fiolet;
+            }
         }
+
         &:focus {
             border-color: $color-fiolet;
             outline: none;
         }
+
+        @include media-mobile {
+            height: 50px;
+            font-size: 17px;
+            padding: 0 20px;
+
+        }
     }
+
     textarea {
         min-height: 160px;
         width: 100%;
@@ -82,11 +134,19 @@
         padding: 30px;
         resize: none;
         margin-bottom: 20px;
+
         &:focus {
             border-color: $color-fiolet;
             outline: none;
         }
+
+        @include media-mobile {
+            min-height: 90px;
+            font-size: 17px;
+            padding: 20px;
+        }
     }
+
     .feedback__submit {
         flex: 0;
     }
@@ -99,11 +159,23 @@
     width: 70px;
     height: 70px;
     cursor: pointer;
+
     &:hover {
         svg {
             path {
                 stroke: $color-blue;
             }
         }
+    }
+
+    svg {
+        path {
+            stroke: $color-fiolet;
+        }
+    }
+
+    @include media-mobile {
+        width: 50px;
+        top: 16px;
     }
 }

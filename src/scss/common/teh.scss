@@ -208,4 +208,7 @@
             }
         }
     }
+    @include media-tablet-horizontal {
+        padding-right: 0; // catalog
+    }
 }

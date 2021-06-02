@@ -3,3 +3,25 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.selection {
+    @include media-mobile {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+
+        @include media-mobile {
+            display: block;
+        }
+    }
+}
+
+// .selection__button {
+//     @include media-mobile {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//     }
+// }

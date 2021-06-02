@@ -4,29 +4,53 @@
     margin-left: auto;
     line-height: 1.5;
     font-size: 32px;
+
     p {
         a {
             color: $color-blue;
             text-decoration: underline;
         }
     }
+
     &--min {
         max-width: 860px;
     }
+
     @include media-laptop {
         max-width: 765px;
         font-size: 30px;
     }
+
     @include media-tablet-horizontal {
         max-width: 574px;
         font-size: 28px;
     }
+
     @include media-tablet {
         font-size: 26px;
     }
+
     &--mode {
         @include media-tablet-horizontal {
             max-width: 100%;
+        }
+
+        &+.show-more {
+            display: none;
+
+            @include media-mobile {
+                display: flex;
+            }
+        }
+
+        @include media-mobile {
+            .hide {
+                display: none;
+            }
+
+            .show {
+                display: block;
+            }
         }
     }
 }

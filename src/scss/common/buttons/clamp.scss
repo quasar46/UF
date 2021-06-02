@@ -1,0 +1,21 @@
+#clamp {
+    display: none;
+    font-size: 26px;
+    color: $color-blue;
+    text-decoration: underline;
+    padding: 0;
+    border: 0;
+    margin-top: 5px;
+    background-color: transparent;
+
+    @include media-mobile {
+        display: block;
+    }
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

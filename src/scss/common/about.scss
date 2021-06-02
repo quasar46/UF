@@ -1,18 +1,23 @@
 .about__head {
     display: flex;
     margin-bottom: 70px;
+
     .title-inner {
         align-items: center;
         margin-bottom: auto;
+
         @include media-tablet-horizontal {
             margin-bottom: 40px;
         }
     }
+
     p {
         font-size: 32px;
+
         @include media-laptop {
             font-size: 30px;
         }
+
         @include media-tablet-horizontal {
             font-size: 26px;
         }
@@ -24,29 +29,18 @@
             max-width: 100%;
         }
     }
-    .line-clamp {
-        display: -webkit-box;
-        -webkit-line-clamp: 10;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
+
     button {
         display: none;
         align-self: flex-start;
-        font-size: 26px;
-        color: $color-blue;
-        text-decoration: underline;
-        padding: 0;
-        border: 0;
-        margin-top: 5px;
-        background-color: transparent;
-        @include media-mobile {
-            display: block;
-        }
     }
+
+
+
     @include media-laptop {
         margin-bottom: 60px;
     }
+
     @include media-tablet-horizontal {
         flex-direction: column;
         margin-bottom: 50px;

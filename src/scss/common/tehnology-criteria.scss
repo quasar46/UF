@@ -1,9 +1,11 @@
 .tehnology-criteria {
     p {
+
         // font-size: 18px;
         // margin-bottom: 20px;
         a {
             position: relative;
+
             &:hover {
                 .toshow {
                     display: inline;
@@ -12,8 +14,12 @@
         }
     }
 }
+
 .tehnology-criteria__row {
     margin-bottom: 80px;
+
+
+
     @include media-laptop {
         margin-bottom: 60px;
     }
@@ -26,15 +32,22 @@
     padding-bottom: 50px;
     display: flex;
     align-items: center;
+
     .br {
         display: block;
     }
+
     @include media-laptop {
         font-size: 30px;
     }
+
     @include media-tablet-horizontal {
         font-size: 26px;
         padding-bottom: 30px;
+    }
+
+    @include media-mobile {
+        font-size: 24px;
     }
 }
 
@@ -49,14 +62,17 @@
 .tehnology-criteria__list {
     margin-top: 40px;
     margin-bottom: 40px;
+
     li {
         position: relative;
         padding-left: 58px;
         margin-bottom: 10px;
+
         a {
             color: $color-blue;
             text-decoration: underline;
         }
+
         &::before {
             content: "";
             display: block;
@@ -66,15 +82,26 @@
             background-color: $color-blue;
             left: 0;
             top: 13px;
+
             @include media-laptop {
                 width: 32px;
                 top: 12px;
             }
+
+            @include media-mobile {
+                width: 20px;
+            }
         }
+
         @include media-laptop {
             font-size: 17px;
         }
+
+        @include media-mobile {
+            padding-left: 35px;
+        }
     }
+
     @include media-laptop {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -85,6 +112,7 @@
     table {
         border-collapse: collapse;
         width: 100%;
+
         // border-bottom: 2px solid #c5c5c5c5;
         // margin-bottom: 60px;
         td,
@@ -93,19 +121,32 @@
             font-weight: 400;
             padding: 10px 50px;
             text-align: left;
+
             @include media-tablet-horizontal {
                 font-size: 15px;
             }
+
+            @include media-mobile {
+                padding: 15px 30px;
+            }
         }
+
         tr {
             border-bottom: 1px solid rgba(195, 195, 195, 0.5);
+
             &.table__title {
                 background-color: #f1f1f1f1;
                 border-bottom: 0;
+
                 th {
                     padding: 30px 50px;
+
+                    @include media-mobile {
+                        padding: 20px 30px;
+                    }
                 }
             }
+
             &:last-child {
                 border-bottom: 0;
             }
@@ -115,18 +156,21 @@
 
 .tehnology-criteria__formula {
     background-color: #f1f1f1;
-    min-height: 126px;
-    display: flex;
-    align-items: center;
+    text-align: center;
     padding: 50px 0;
     font-size: 32px;
-    justify-content: center;
     margin-bottom: 60px;
+
     @include media-laptop {
         font-size: 30px;
     }
+
     @include media-tablet-horizontal {
         font-size: 26px;
         margin-bottom: 40px;
+    }
+
+    @include media-mobile {
+        padding: 40px 0;
     }
 }

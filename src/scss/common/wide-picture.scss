@@ -1,21 +1,33 @@
 .wide-picture {
     height: 300px;
     margin-bottom: 130px;
+
     img {
         object-fit: cover;
         height: 100%;
+        width: 100%;
     }
 
     @include media-laptop {
         height: 214px;
         margin-bottom: 100px;
     }
+
     @include media-tablet-horizontal {
         height: 160px;
         margin-bottom: 90px;
     }
+
     @include media-mobile {
         height: 200px;
         margin-bottom: 50px;
+    }
+
+    &--notecover {
+        img {
+            @include media-mobile {
+                object-fit: fill;
+            }
+        }
     }
 }
