@@ -1,21 +1,27 @@
 .about-page__head {
     margin-bottom: 60px;
     line-height: 1.5;
+
     p {
         font-size: 32px;
+
         @include media-laptop {
             font-size: 30px;
         }
+
         @include media-tablet-horizontal {
             font-size: 26px;
         }
+
         @include media-mobile {
             font-size: 24px;
         }
     }
+
     @include media-tablet-horizontal {
         margin-bottom: 50px;
     }
+
     @include media-mobile {
         margin-bottom: 40px;
     }
@@ -23,14 +29,23 @@
 
 .about-page__head-picture {
     margin-bottom: 130px;
+
     @include media-laptop {
         margin-bottom: 100px;
     }
+
     @include media-tablet-horizontal {
         margin-bottom: 70px;
     }
+
     @include media-mobile {
         height: 200px;
+    }
+
+    &--cover {
+        @include media-mobile {
+            object-fit: cover;
+        }
     }
 }
 
@@ -38,6 +53,7 @@
     display: flex;
     border-top: 1px solid #c5c5c5;
     border-bottom: 1px solid #c5c5c5;
+
     @include media-mobile {
         display: none;
     }
@@ -47,8 +63,10 @@
     position: relative;
     width: 50%;
     padding: 50px;
+
     &:first-child {
         padding-left: 0;
+
         &:after {
             content: "";
             position: absolute;
@@ -60,18 +78,23 @@
             height: 80%;
         }
     }
+
     &:last-child {
         padding-right: 35px;
+
         @include media-tablet-horizontal {
             padding-right: 0;
         }
     }
+
     p {
+
         // font-size: 18px;
         @include media-laptop {
             // font-size: 17px;
         }
     }
+
     @include media-tablet-horizontal {
         padding: 50px 40px;
     }
@@ -82,9 +105,11 @@
         color: $color-blue;
         font-size: 110px;
         margin-bottom: 25px;
+
         @include media-laptop {
             font-size: 90px;
         }
+
         @include media-tablet-horizontal {
             font-size: 70px;
         }
@@ -93,9 +118,11 @@
     span {
         font-size: 24px;
         margin-left: 20px;
+
         @include media-laptop {
             font-size: 22px;
         }
+
         @include media-tablet-horizontal {
             font-size: 20px;
         }
@@ -104,6 +131,7 @@
 
 .about-page-numbers__text {
     line-height: 1.5;
+
     @include media-laptop {
         font-size: 17px;
     }

@@ -35,14 +35,6 @@
             max-width: 100%;
         }
 
-        &+.show-more {
-            display: none;
-
-            @include media-mobile {
-                display: flex;
-            }
-        }
-
         @include media-mobile {
             .hide {
                 display: none;

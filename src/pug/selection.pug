@@ -20,7 +20,7 @@ html(lang="ru")
                 li
                     a(href="index.html").active УОВ-УФТ-А-2-500
 
-        .selection
+        .selection#selectionDesktop
             .selection__header.container
                 h2.title-main УОВ-УФТ-А-2-500
                 .selection__button.button-input(data-modal)
@@ -202,80 +202,75 @@ html(lang="ru")
                                 th Колличнство, шт
                                 th Примечание
                             tr 
-                                td Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
-                                td 1
-                                td AISI 304
+                                td.table__td.table__td--border Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
+                                td.table__td.table__td--border 1
+                                td.table__td.table__td--border AISI 304
                             tr 
-                                td Блок питания облучателей (ЭПРА)
-                                td 1
-                                td 245252
+                                td.table__td.table__td--border Блок питания облучателей (ЭПРА)
+                                td.table__td.table__td--border 1
+                                td.table__td.table__td--border 245252
                             tr 
-                                td Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
-                                td 1
-                                td 542542
+                                td.table__td.table__td--border Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
+                                td.table__td.table__td--border 1
+                                td.table__td.table__td--border 542542
                             tr 
-                                td Блок питания облучателей (ЭПРА)
-                                td 2
-                                td AISI 304
+                                td.table__td.table__td--border Блок питания облучателей (ЭПРА)
+                                td.table__td.table__td--border 2
+                                td.table__td.table__td--border AISI 304
                             tr 
-                                td Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
-                                td 2
-                                td 54325425
+                                td.table__td.table__td--border Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
+                                td.table__td.table__td--border 2
+                                td.table__td.table__td--border 54325425
+                            tr.hide 
+                                td.table__td.table__td--border Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
+                                td.table__td.table__td--border 1
+                                td.table__td.table__td--border 542542
+                            tr.hide 
+                                td.table__td.table__td--border Блок питания облучателей (ЭПРА)
+                                td.table__td.table__td--border 2
+                                td.table__td.table__td--border AISI 304
+                            tr.hide 
+                                td.table__td.table__td--border Камера обеззараживания в сборе с уф-лампой и кварцевым чехлом
+                                td.table__td.table__td--border 2
+                                td.table__td.table__td--border 54325425
                         .show-more 
                             button показать больше
 
                 .device__description.tabs__content2
-                    .container
-                        .device__col 
-                            h2.device__title Общее
-                            ul.device__table.hideContent 
-                                li
-                                    p Условная производительность, м3/час
-                                li
-                                    p Тип основного оборудования
-                                li
-                                    p Назначение
-                                li
-                                    p Расположение
-                                li
-                                    p Типо помещений
-                                li
-                                    p 6...100
-                                li
-                                    p корпусные установки обеззараживания
-                                li
-                                    p корпусные установки обеззараживания
-                                li
-                                    p в помещениях
-                                li
-                                    p закрытые отапливаемые вентилируемые
-                            .device__show-more.show-more 
-                                button показать больше
-                        .device__col 
-                            h2.device__title Параметры камеры обеззараживания
-                            ul.device__table.hideContent 
-                                li
-                                    p Условная производительность, м3/час
-                                li
-                                    p Тип основного оборудования
-                                li
-                                    p Назначение
-                                li
-                                    p Расположение
-                                li
-                                    p Типо помещений
-                                li
-                                    p 6...100
-                                li
-                                    p корпусные установки обеззараживания
-                                li
-                                    p корпусные установки обеззараживания
-                                li
-                                    p в помещениях
-                                li
-                                    p закрытые отапливаемые вентилируемые
-                            .device__show-more.show-more 
-                                button показать больше
+                    .container.container--mode
+                        h2.device__title.device__title--notborder Дополнительное оборудование
+                        .device__block 
+                            h3.device__subtitle Блок питания (Шкаф ЭПРА):
+                            ul.device__block-list 
+                                li Под определённые климатические условия 
+                                li В необходимых взрывозащищённых категориях 
+                                li В необходимых категориях защиты IP 
+                                li Уличного исполнения 
+                        .device__block 
+                            h3.device__subtitle Опциональные датчики:
+                            ul.device__block-list 
+                                li Под определённые климатические условия 
+                                li В необходимых взрывозащищённых категориях 
+                                li В необходимых категориях защиты IP 
+                                li Уличного исполнения 
+                        .device__block 
+                            h3.device__subtitle Камера обеззараживания:
+                            ul.device__block-list 
+                                li Под определённые климатические условия 
+                                li В необходимых взрывозащищённых категориях 
+                                li В необходимых категориях защиты IP 
+                                li Уличного исполнения 
+                        .device__block 
+                            h3.device__subtitle Системы очистки:
+                            ul.device__block-list 
+                                li Под определённые климатические условия 
+                                li В необходимых взрывозащищённых категориях 
+                                li В необходимых категориях защиты IP 
+                                li Уличного исполнения 
+                        .device__block-text
+                            p Оборудование по запросу изготавливается в индивидуальном не штатном исполнении:
+                            p При выборе системы очистки кварцевых чехлов, рекомендуем применение системы САО.  Эта система более совершенна, менее энергозатратна, более эффективна, надежна и производит наиболее качественную очистку, в сравнении с системой УЗ. Но при выборе любой автоматической системы очистки, рекомендуется химическая промывка для профилактики загрязнений!
+
             .selection__wrapper.device#deviceNorma.tabs
                 .container
                     .device__review-tab
@@ -856,7 +851,7 @@ html(lang="ru")
                                     p закрытые отапливаемые вентилируемые
                             .device__show-more.show-more 
                                 button показать больше
-        .selection.selection--mobile 
+        .selection.selection--mobile#selectionMobile 
             .selection__header.container
                 h2.title-main УОВ-УФТ-А-2-500
             .selection__wrapper.device#deviceMini.active.tabs
@@ -888,7 +883,7 @@ html(lang="ru")
                             li.tabs__content
                                 img(src="img/bg/device/review1.png" alt="")
                             li.tabs__content
-                                img(src="img/bg/device/review1.png" alt="") 
+                                img(src="img/bg/device/review1.png" alt="")
                     .device__aside
                         .device__size 
                             ul 

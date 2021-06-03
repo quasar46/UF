@@ -479,6 +479,7 @@
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #c5c5c5;
+    width: 100%;
 
     &--notborder {
         border: 0;
@@ -519,9 +520,11 @@
     display: flex;
     width: 100%;
     margin-bottom: 100px;
+
     .container-aside {
         font-size: 18px;
     }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -529,4 +532,56 @@
 
 .device__control-title {
     font-size: 24px;
+}
+
+.device__block {
+    display: flex;
+    width: 50%;
+    margin-bottom: 50px;
+    padding-right: 40px;
+
+}
+
+.device__block-list {
+    margin-left: auto;
+    max-width: 400px;
+
+    li {
+        position: relative;
+        padding-left: 58px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 38px;
+            height: 2px;
+            background-color: $color-blue;
+            top: 14px;
+            left: 0;
+        }
+    }
+}
+
+.device__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    flex: 1 0 auto;
+}
+
+.device__block-text {
+    p {
+        margin-bottom: 20px;
+        line-height: 1.5;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }

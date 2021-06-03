@@ -44,6 +44,10 @@
         font-size: 26px;
         margin-bottom: 30px;
     }
+
+    @include media-mobile {
+        font-size: 24px;
+    }
 }
 
 .question-list__list {
@@ -77,6 +81,10 @@
         @include media-tablet-horizontal {
             height: 55px;
         }
+
+        @include media-mobile {
+            height: 50px;
+        }
     }
 
     &--wide {
@@ -86,6 +94,7 @@
             width: 100%;
         }
     }
+
     &--textarea {
         @include media-tablet-horizontal {
             margin-right: 0;
@@ -103,6 +112,11 @@
 
     @include media-tablet-horizontal {
         margin-bottom: 20px;
+    }
+
+    @include media-mobile {
+        width: 100%;
+        // height: 50px;
     }
 }
 
@@ -128,6 +142,10 @@
     &--wide {
         display: flex;
         width: 100%;
+
+        @include media-mobile {
+            flex-wrap: wrap;
+        }
     }
 
     &--full {
@@ -149,6 +167,10 @@
 
             @include media-tablet-horizontal {
                 height: 108px;
+            }
+
+            @include media-mobile {
+                padding: 20px 30px;
             }
         }
     }
@@ -195,6 +217,10 @@
     @include media-tablet-horizontal {
         background-size: 21px auto;
 
+    }
+
+    @include media-mobile {
+        order: 10;
     }
 }
 

@@ -1,20 +1,29 @@
 .teh__head {
     padding-bottom: 50px;
+
     // border-bottom: 1px solid #c5c5c5;
     p {
         font-size: 32px;
         line-height: 1.5;
+
         a {
             color: $color-blue;
             text-decoration: underline;
         }
+
         @include media-laptop {
             font-size: 30px;
         }
+
         @include media-tablet-horizontal {
             font-size: 26px;
         }
+
+        @include media-mobile {
+            font-size: 24px;
+        }
     }
+
     @include media-tablet-horizontal {
         padding-bottom: 40px;
     }
@@ -33,41 +42,67 @@
         font-size: 32px;
         margin-bottom: 40px;
         font-weight: 400;
+
         @include media-laptop {
             font-size: 30px;
         }
+
         @include media-tablet-horizontal {
             font-size: 26px;
         }
+
+        @include media-mobile {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
     }
+
     ul {
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
         margin-bottom: 30px;
+
         li {
+
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4) {
                 max-width: 50%;
                 width: 100%;
+
+                @include media-mobile {
+                    max-width: 100%;
+                }
             }
         }
+
         &:last-child {
             @include media-tablet-horizontal {
+
                 li:nth-child(1),
                 li:nth-child(2),
                 li:nth-child(3) {
                     max-width: calc(100% / 3);
                     width: 100%;
+
+                    @include media-mobile {
+                        max-width: 100%;
+                    }
                 }
             }
         }
+
+        @include media-mobile {
+            margin-right: -20px;
+        }
     }
+
     @include media-laptop {
         padding-bottom: 60px;
     }
+
     @include media-tablet-horizontal {
         padding-bottom: 50px;
     }
@@ -77,9 +112,11 @@
     flex: 1 0 auto;
     padding-right: 30px;
     margin-bottom: 30px;
+
     select {
         width: 100%;
     }
+
     input {
         font-size: 18px;
         border: 2px solid #bdbdbe;
@@ -92,19 +129,28 @@
             outline: 0;
             border: 2px solid #30355d;
         }
+
         @include media-laptop {
             height: 60px;
             font-size: 17px;
         }
+
         @include media-tablet-horizontal {
             height: 55px;
         }
+
+        @include media-mobile {
+            height: 50px;
+            padding: 0 20px;
+        }
     }
+
     &--big {
         // max-width: 50%;
         max-width: 100%;
         width: 100%;
     }
+
     &--arrow {
         input {
             background-image: url(../img/svg/arrow-select.svg);
@@ -113,12 +159,24 @@
             background-size: 17px auto;
         }
     }
+
+    &--mobile {
+        @include media-mobile {
+            max-width: 50%;
+        }
+    }
+
+    @include media-mobile {
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .teh__message {
     width: 100%;
     margin-bottom: 30px;
     padding-right: 30px;
+
     textarea {
         font-size: 18px;
         border-radius: 15px;
@@ -129,13 +187,24 @@
         height: 140px;
         width: 100%;
         resize: none;
+
         &:focus {
             outline: none;
             border: 2px solid $color-base;
         }
+
+        @include media-mobile {
+            height: 90px;
+        }
     }
+
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include media-mobile {
+        padding-right: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -144,13 +213,16 @@
     align-items: center;
     width: 100%;
     padding-right: 30px;
+
     p {
         font-size: 16px;
         color: #808080;
     }
+
     a {
         font-size: 18px;
     }
+
     .br {
         display: block;
     }
@@ -160,6 +232,7 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+
     &:hover {
         svg {
             g {
@@ -180,27 +253,44 @@
 .teh__add-file {
     margin-left: auto;
     padding-right: 30px;
+
     a {
         display: flex;
         align-items: center;
         font-size: 18px;
+
         svg {
             width: 70px;
             margin-left: 20px;
+
             path {
                 stroke: #c5c5c5;
             }
+
             @include media-laptop {
                 width: 60px;
             }
+
             @include media-tablet-horizontal {
                 height: 55px;
             }
+
+            @include media-mobile {
+                height: 50px;
+                margin-right: 15px;
+            }
         }
+
         @include media-laptop {
             font-size: 17px;
         }
+
+        @include media-mobile {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
+
     &:hover {
         svg {
             path {
@@ -208,7 +298,14 @@
             }
         }
     }
+
     @include media-tablet-horizontal {
         padding-right: 0; // catalog
+    }
+
+    @include media-mobile {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 40px;
     }
 }

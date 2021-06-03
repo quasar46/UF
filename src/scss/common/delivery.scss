@@ -1,6 +1,10 @@
 .delivery {
     .container {
         display: flex;
+
+        @include media-mobile {
+            flex-direction: column;
+        }
     }
 }
 
@@ -11,27 +15,37 @@
         border-bottom: 1px solid #c5c5c5;
         padding-bottom: 50px;
         margin-bottom: 50px;
+
         &:last-child {
             margin-bottom: 0;
         }
+
         .delivery__head {
             @include media-laptop {
                 font-size: 30px;
             }
+
             @include media-tablet-horizontal {
                 font-size: 26px;
             }
         }
+
         p {
             @include media-laptop {
                 font-size: 17px;
             }
         }
+
         @include media-tablet-horizontal {
             padding-bottom: 40px;
             margin-bottom: 40px;
         }
+        @include media-mobile {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
     }
+
     p {
         line-height: 1.5;
     }
@@ -40,8 +54,13 @@
 .delivery__head {
     font-size: 32px;
     line-height: 1.5;
+
     @include media-laptop {
         font-size: 30px;
+    }
+
+    @include media-mobile {
+        font-size: 24px;
     }
 }
 
@@ -50,6 +69,10 @@
     max-width: 430px;
     margin-right: 108px;
     flex: 0 1 auto;
+
+    @include media-mobile {
+        margin-right: 0;
+    }
 }
 
 .delivery__brend {
@@ -57,17 +80,25 @@
     align-items: center;
     width: auto;
     flex: 1 0 auto;
+
     p {
         width: 50%;
+
         @include media-laptop {
             width: 100%;
             margin-bottom: 30px;
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
+
     @include media-laptop {
         flex-direction: column;
+    }
+
+    @include media-mobile {
+        display: none;
     }
 }

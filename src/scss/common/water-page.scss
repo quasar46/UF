@@ -1,9 +1,15 @@
 .water-page__description {
     display: flex;
+
     p {
         margin-bottom: 20px;
     }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
 }
+
 .water-page__sub {
     @include media-laptop {
         font-size: 17px;
@@ -13,5 +19,9 @@
 .water-page__over {
     @include media-laptop {
         font-size: 26px;
+    }
+
+    @include media-mobile {
+        font-size: 24px;
     }
 }

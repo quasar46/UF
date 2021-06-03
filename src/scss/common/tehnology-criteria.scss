@@ -13,12 +13,29 @@
             }
         }
     }
+    .table {
+        display: none;
+    }
+
+    .show-more-mode {
+        display: none;
+
+        @include media-mobile {
+            display: flex;
+        }
+    }
 }
 
 .tehnology-criteria__row {
     margin-bottom: 80px;
 
+    .show-more-mode {
+        display: none;
 
+        @include media-mobile {
+            display: flex;
+        }
+    }
 
     @include media-laptop {
         margin-bottom: 60px;

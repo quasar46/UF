@@ -58,6 +58,10 @@
     @include media-tablet {
         flex-direction: column;
     }
+
+    @include media-mobile {
+        margin-top: -20px;
+    }
 }
 
 .catalog__content-wrapper {
@@ -128,8 +132,21 @@
         }
     }
 
-    &:nth-child(1),
-    &:nth-child(3) {
+    // &:nth-child(1),
+    // &:nth-child(3) {
+    //     &::after {
+    //         content: "";
+    //         display: block;
+    //         position: absolute;
+    //         right: 0;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         width: 1px;
+    //         height: 90%;
+    //         background-color: #c5c5c5;
+    //     }
+    // }
+    &:nth-child(odd) {
         &::after {
             content: "";
             display: block;
@@ -143,18 +160,44 @@
         }
     }
 
-    &:nth-child(1),
-    &:nth-child(2) {
+    // &:nth-child(1),
+    // &:nth-child(2) {
+    //     &::before {
+    //         content: "";
+    //         display: block;
+    //         position: absolute;
+    //         bottom: 0;
+    //         left: 50%;
+    //         width: 90%;
+    //         height: 1px;
+    //         background-color: #c5c5c5;
+    //         transform: translateX(-50%);
+    //     }
+    // }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 90%;
+        height: 1px;
+        background-color: #c5c5c5;
+        transform: translateX(-50%);
+    }
+
+    &:nth-last-child(2),
+    &:last-child {
         &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 90%;
-            height: 1px;
-            background-color: #c5c5c5;
-            transform: translateX(-50%);
+            display: none;
+        }
+    }
+
+    &:nth-last-child(2) {
+        @include media-mobile {
+            &::before {
+                display: block;
+            }
         }
     }
 
@@ -206,6 +249,7 @@
 
 .catalog__tabs {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 45px;
 
     li {
@@ -239,6 +283,7 @@
 
         @include media-mobile {
             margin-right: 20px;
+            margin-bottom: 20px;
         }
     }
 
@@ -300,6 +345,7 @@
     height: 420px;
     padding: 40px;
     width: 860px;
+    z-index: 10;
 
     @include media-laptop {
         height: 329px;

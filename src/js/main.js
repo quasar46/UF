@@ -191,7 +191,9 @@ $(document).ready(function () {
             var sc = $(this).attr("href"),
                 dn = $(sc).offset().top;
 
-            $('html, body').animate({ scrollTop: dn }, 500);
+            $('html, body').animate({
+                scrollTop: dn
+            }, 500);
         });
     });
 
@@ -247,9 +249,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const buttonsShow = document.querySelectorAll('.show-more');
     buttonsShow.forEach(button => {
         button.addEventListener('click', () => {
+            for (let i of button.previousSibling.children[0].children) {
+                i.classList.toggle('show');
+            }
+        })
+    })
+
+    const buttonsShowMode = document.querySelectorAll('.show-more-mode');
+    buttonsShowMode.forEach(button => {
+        button.addEventListener('click', () => {
             for (let i of button.previousSibling.children) {
                 i.classList.toggle('show');
             }
         })
     })
+
+    // const items = document.querySelectorAll('.catalog__tabs li');
+    // if (items.length > 2) {
+    //     items.forEach(item => {
+    //         item.style.marginBottom = "20px";
+    //     })
+    // }
+
 })

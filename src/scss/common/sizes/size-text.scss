@@ -2,14 +2,6 @@
     line-height: 1.5;
     font-size: 18px;
 
-    &+.show-more {
-        display: none;
-
-        @include media-mobile {
-            display: flex;
-        }
-    }
-
     @include media-mobile {
         .hide {
             display: none;

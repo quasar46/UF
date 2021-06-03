@@ -1,39 +1,55 @@
 .work__content {
     // margin-bottom: 80px;
     margin-bottom: 60px;
+    @include media-mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .work__document {
     display: inline-flex;
     align-items: center;
+
     span {
         font-size: 18px;
         padding-left: 20px;
+
         @include media-laptop {
             font-size: 17px;
         }
     }
+
     svg {
         width: 70px;
+
         @include media-laptop {
             width: 60px;
         }
+
         @include media-tablet-horizontal {
             width: 55px;
         }
+
+        @include media-mobile {
+            width: 50px;
+        }
     }
+
     &:hover {
         svg {
             text {
                 stroke: $color-blue;
             }
+
             path {
                 &:first-child {
                     stroke: $color-blue;
                 }
+
                 &:nth-child(2) {
                     fill: $color-blue;
                 }
+
                 &:last-child {
                     stroke: $color-blue;
                 }

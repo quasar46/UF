@@ -4,20 +4,65 @@
     padding: 30px 0;
     display: flex;
     justify-content: center;
-    // margin-top: 20px;
-    margin-top: 0; // epra
+    margin-top: -1px;
+
     button {
         background-color: transparent;
         color: $color-blue;
         text-decoration: underline;
         border: none;
+
         @include media-laptop {
             font-size: 17px;
         }
-        @include media-tablet-horizontal {
-            // font-size: 15px;
+
+    }
+
+    &--mobile {
+        display: none;
+
+        @include media-mobile {
+            display: flex;
         }
     }
+
+    &--margin {
+        margin: 0 15px;
+    }
+
+    @include media-laptop {
+        padding: 20px 0;
+    }
+}
+
+.show-more-mode {
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+
+    button {
+        background-color: transparent;
+        color: $color-blue;
+        text-decoration: underline;
+        border: none;
+
+        @include media-laptop {
+            font-size: 17px;
+        }
+
+    }
+
+    &--mobile {
+        display: none;
+
+        @include media-mobile {
+            display: flex;
+        }
+    }
+
     @include media-laptop {
         padding: 20px 0;
     }

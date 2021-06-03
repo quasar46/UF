@@ -1,13 +1,24 @@
 .select-online {
     margin-bottom: 130px;
+
     .container-aside {
         @include media-tablet-horizontal {
             max-width: 100%;
         }
     }
+
+    .show-more-mode {
+        display: none;
+
+        @include media-mobile {
+            display: flex;
+        }
+    }
+
     @include media-laptop {
         margin-bottom: 100px;
     }
+
     @include media-tablet-horizontal {
         margin-bottom: 70px;
     }
@@ -15,12 +26,15 @@
 
 .select-online__head {
     margin-bottom: 40px;
+
     @include media-laptop {
         margin-bottom: 30px;
     }
+
     @include media-tablet-horizontal {
         font-size: 26px;
     }
+
     @include media-mobile {
         font-size: 24px;
     }
