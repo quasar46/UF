@@ -34,19 +34,28 @@ html(lang="ru")
                             h3.change__title Выбор исходного типа воды
                             ul.change__check-style
                                 li
-                                    input(type="radio" id='radio1' name="radio").custom-radio
+                                    input(type="radio" id='radio1' name="radio").custom-radio.check-water
                                     label(for="radio1") Питьевая вода
                                 li
-                                    input(type="radio" id='radio2' name="radio").custom-radio
+                                    input(type="radio" id='radio2' name="radio").custom-radio.check-water
                                     label(for="radio2") Сточная вода
-                            ul.change__inputs 
-                                select.select-css#type-water
+                            ul.change__inputs.active
+                                select.select-css.type-water.options-type-1
                                     option(value="0" selected) 1 Вода после глубокой очистки (мембраны, обратный осмос)
                                     option(value="1") 2 Вода после глубокой очистки (мембраны, обратный осмос)
                                     option(value="2") 3 Вода после глубокой очистки (мембраны, обратный осмос)
                                     option(value="3") 4 Вода после глубокой очистки (мембраны, обратный осмос)
                                     option(value="4") 5 Вода после глубокой очистки (мембраны, обратный осмос)
-                                input(type="text" placeholder="" readonly)#coefficient 
+                                input(type="text" placeholder="" readonly).coefficient1
+                                #result
+                            ul.change__inputs
+                                select.select-css.type-water.options-type-2
+                                    option(value="0" selected) 1 Вода после глубокой очистки (мембраны, обратный осмос)
+                                    option(value="1") 2 Вода после глубокой очистки (мембраны, обратный осмос)
+                                    option(value="2") 3 Вода после глубокой очистки (мембраны, обратный осмос)
+                                    option(value="3") 4 Вода после глубокой очистки (мембраны, обратный осмос)
+                                    option(value="4") 5 Вода после глубокой очистки (мембраны, обратный осмос)
+                                input(type="text" placeholder="" readonly).coefficient2
                                 #result
                         .change__block 
                             h3.change__title Доза облучения
