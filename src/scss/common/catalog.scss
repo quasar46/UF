@@ -249,8 +249,15 @@
 
 .catalog__tabs {
     display: flex;
-    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: none;
+    // flex-wrap: wrap;
     margin-bottom: 45px;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 
     li {
         margin-right: 40px;
@@ -300,6 +307,7 @@
         span {
             margin-right: 10px;
             font-size: 18px;
+            white-space: nowrap;
 
             @include media-laptop {
                 font-size: 17px;
