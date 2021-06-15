@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header-inner.pug
+        .breadcrumbs.container 
+            ul 
+                li
+                    a(href="index.html") Главная
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a(href="catalog.html") Каталог
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a.active Кварцевые чехлы
+
+        .inner-content
+            .container
+                h2.title-main Кварцевые чехлы
+            .wide-picture
+                img(src="img/bg/bg-picture3.jpg" alt="")
+            .container 
+                .complect-item__content 
+                    table.table.table--notborder.table-wrap
+                        tr.table__caption.table__caption--light
+                            th.table__td Наименование		
+                            th.table__td Артикул	
+                        tr 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr.hide 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr.hide 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr.hide 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                        tr.hide 
+                            td.table__td.table__td--border БП-3
+                            td.table__td.table__td--border 01453254
+                    .show-more 
+                        button показать больше
+
+
+
+
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
