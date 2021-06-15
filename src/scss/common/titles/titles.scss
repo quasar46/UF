@@ -82,7 +82,20 @@
 
     &--mode {
         margin-bottom: 50px;
+        @include media-laptop {
+            font-size: 26px;
+        }
+
+        @include media-tablet-horizontal {
+            font-size: 24px;
+        }
     }
+}
+
+.title-complect {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .title-main {
