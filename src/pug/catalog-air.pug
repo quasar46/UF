@@ -1,0 +1,282 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header-inner.pug
+        .breadcrumbs.container 
+            ul 
+                li
+                    a(href="index.html")  Главная
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a.active  Обеззараживание воздуха
+
+        .products
+            //- .container
+            //-     h2.title-main Обеззараживание воздуха
+
+            //- .catalog__wrapper.inner-content.tabs
+                //- ul.catalog__tabs.container.tabs__caption2
+                //-     li.active
+                //-         button
+                //-             span Оборудованиe вода
+                //-             <svg viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M53.877 1.147c-1.043-1.529-3.604-1.529-4.64 0-1.333 1.978-32.702 48.505-32.702 66.947 0 19.306 15.718 35.021 35.021 35.021 19.306 0 35.022-15.716 35.022-35.021C86.58 49.652 55.209 3.12 53.877 1.147zm-2.32 96.365c-16.221 0-29.417-13.188-29.417-29.418 0-12.796 19.461-45.122 29.417-60.317 9.959 15.195 29.419 47.51 29.419 60.317 0 16.23-13.2 29.418-29.419 29.418zm2.801-8.405a2.804 2.804 0 01-2.801 2.802c-13.135 0-23.813-10.682-23.813-23.814a2.81 2.81 0 012.802-2.802 2.808 2.808 0 012.801 2.802c0 10.047 8.169 18.211 18.211 18.211a2.799 2.799 0 012.8 2.801z" fill="#30355D" fill-rule="nonzero" /></svg>
+                //-     li
+                //-         button 
+                //-             span Оборудованиe воздух
+                //-             <svg viewBox="0 0 344 344" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><g fill="#30355d" fill-rule="nonzero"><path d="M281.339 134.202c.024-.781.036-1.549.036-2.306 0-50.235-40.869-91.104-91.104-91.104-48.055 0-87.539 37.4-90.875 84.62a71.214 71.214 0 00-27.897-5.661C32.074 119.751 0 151.825 0 191.25a71.489 71.489 0 0017.297 46.63 7.5 7.5 0 0011.367-9.787A56.487 56.487 0 0115 191.25c0-31.153 25.345-56.498 56.499-56.498a56.218 56.218 0 0131.313 9.482 7.5 7.5 0 0011.645-6.778l-.04-.552c-.128-1.752-.249-3.408-.249-5.008 0-41.964 34.14-76.104 76.104-76.104 41.963 0 76.104 34.14 76.104 76.104 0 2.75-.197 5.733-.602 9.121a7.499 7.499 0 002.07 6.119 7.478 7.478 0 006.059 2.24c1.761-.161 3.22-.235 4.593-.235 27.465 0 49.809 22.344 49.809 49.809 0 13.304-5.181 25.813-14.588 35.221a7.5 7.5 0 000 10.606 7.474 7.474 0 005.303 2.197 7.474 7.474 0 005.303-2.197c12.241-12.241 18.982-28.516 18.982-45.827-.001-34.783-27.544-63.254-61.966-64.748z"/><path d="M248.806 208.479c-25.895 0-46.962 21.067-46.962 46.962a7.5 7.5 0 0015 0c0-17.624 14.338-31.962 31.962-31.962 17.625 0 31.963 14.338 31.963 31.962 0 17.625-14.338 31.963-31.963 31.963-.414 0-.818.042-1.214.107H64.75a7.5 7.5 0 000 15h184.056a7.52 7.52 0 001.456-.144c25.223-.774 45.507-21.519 45.507-46.926 0-25.894-21.067-46.962-46.963-46.962z"/><path d="M138.283 262.852c25.223-.774 45.507-21.519 45.507-46.925 0-25.896-21.067-46.963-46.963-46.963-25.895 0-46.962 21.067-46.962 46.963a7.5 7.5 0 0015 0c0-17.625 14.338-31.963 31.962-31.963 17.625 0 31.963 14.338 31.963 31.963 0 17.624-14.338 31.962-31.963 31.962-.414 0-.818.042-1.214.107H41.652a7.5 7.5 0 000 15h95.175c.498 0 .985-.052 1.456-.144z"/></g></svg>
+                //-     li
+                //-         button 
+                //-             span Комплектующие вода
+                //-             <svg viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M53.877 1.147c-1.043-1.529-3.604-1.529-4.64 0-1.333 1.978-32.702 48.505-32.702 66.947 0 19.306 15.718 35.021 35.021 35.021 19.306 0 35.022-15.716 35.022-35.021C86.58 49.652 55.209 3.12 53.877 1.147zm-2.32 96.365c-16.221 0-29.417-13.188-29.417-29.418 0-12.796 19.461-45.122 29.417-60.317 9.959 15.195 29.419 47.51 29.419 60.317 0 16.23-13.2 29.418-29.419 29.418zm2.801-8.405a2.804 2.804 0 01-2.801 2.802c-13.135 0-23.813-10.682-23.813-23.814a2.81 2.81 0 012.802-2.802 2.808 2.808 0 012.801 2.802c0 10.047 8.169 18.211 18.211 18.211a2.799 2.799 0 012.8 2.801z" fill="#30355D" fill-rule="nonzero" /></svg>
+                //-     li
+                //-         button 
+                //-             span Комплектующие воздух
+                //-             <svg viewBox="0 0 344 344" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><g fill="#30355d" fill-rule="nonzero"><path d="M281.339 134.202c.024-.781.036-1.549.036-2.306 0-50.235-40.869-91.104-91.104-91.104-48.055 0-87.539 37.4-90.875 84.62a71.214 71.214 0 00-27.897-5.661C32.074 119.751 0 151.825 0 191.25a71.489 71.489 0 0017.297 46.63 7.5 7.5 0 0011.367-9.787A56.487 56.487 0 0115 191.25c0-31.153 25.345-56.498 56.499-56.498a56.218 56.218 0 0131.313 9.482 7.5 7.5 0 0011.645-6.778l-.04-.552c-.128-1.752-.249-3.408-.249-5.008 0-41.964 34.14-76.104 76.104-76.104 41.963 0 76.104 34.14 76.104 76.104 0 2.75-.197 5.733-.602 9.121a7.499 7.499 0 002.07 6.119 7.478 7.478 0 006.059 2.24c1.761-.161 3.22-.235 4.593-.235 27.465 0 49.809 22.344 49.809 49.809 0 13.304-5.181 25.813-14.588 35.221a7.5 7.5 0 000 10.606 7.474 7.474 0 005.303 2.197 7.474 7.474 0 005.303-2.197c12.241-12.241 18.982-28.516 18.982-45.827-.001-34.783-27.544-63.254-61.966-64.748z"/><path d="M248.806 208.479c-25.895 0-46.962 21.067-46.962 46.962a7.5 7.5 0 0015 0c0-17.624 14.338-31.962 31.962-31.962 17.625 0 31.963 14.338 31.963 31.962 0 17.625-14.338 31.963-31.963 31.963-.414 0-.818.042-1.214.107H64.75a7.5 7.5 0 000 15h184.056a7.52 7.52 0 001.456-.144c25.223-.774 45.507-21.519 45.507-46.926 0-25.894-21.067-46.962-46.963-46.962z"/><path d="M138.283 262.852c25.223-.774 45.507-21.519 45.507-46.925 0-25.896-21.067-46.963-46.963-46.963-25.895 0-46.962 21.067-46.962 46.963a7.5 7.5 0 0015 0c0-17.625 14.338-31.963 31.962-31.963 17.625 0 31.963 14.338 31.963 31.963 0 17.624-14.338 31.962-31.963 31.962-.414 0-.818.042-1.214.107H41.652a7.5 7.5 0 000 15h95.175c.498 0 .985-.052 1.456-.144z"/></g></svg>
+                //- .catalog__content.tabs__content2.active
+                //-     .catalog__content-wrapper
+                //-         img.catalog__content-picture(src="img/bg/catalog-item.jpg" alt="")
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 01
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Обеззараживание питьевой воды
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         img.catalog__content-picture(src="img/bg/catalog-item-2.jpg" alt="")
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="water.html")
+                //-             span.catalog-item__number 02
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Обеззараживание воды бассейнов
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         img.catalog__content-picture(src="img/bg/catalog-item.jpg" alt="")
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 03
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Обеззараживание сточных вод
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         img.catalog__content-picture(src="img/bg/catalog-item.jpg" alt="")
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 04
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Комплектующие детали и материалы
+                //-         .catalog__overlay
+                //- .catalog__content.tabs__content2
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 03
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Бактерицидные рециркуляторы 
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 04
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Комплектующие
+                //-         .catalog__overlay
+                //- .catalog__content.tabs__content2
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="uf-lump.html")
+                //-             span.catalog-item__number 01
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title УФ-лампы
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="epra.html")
+                //-             span.catalog-item__number 02
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title ЭПРА
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 03
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Кварцевые чехлы
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="complect.html")
+                //-             span.catalog-item__number 04
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Датчики
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="system-clear.html")
+                //-             span.catalog-item__number 05
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Системы очистки
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="system-control.html")
+                //-             span.catalog-item__number 06
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Системы контроля
+                //-         .catalog__overlay
+                //- .catalog__content.tabs__content2
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="uf-lump.html")
+                //-             span.catalog-item__number 01
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title УФ-лампы
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="epra.html")
+                //-             span.catalog-item__number 02
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title ЭПРА
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="#")
+                //-             span.catalog-item__number 03
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Кварцевые чехлы
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="complect.html")
+                //-             span.catalog-item__number 04
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Датчики
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="system-clear.html")
+                //-             span.catalog-item__number 05
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Системы очистки
+                //-         .catalog__overlay
+                //-     .catalog__content-wrapper
+                //-         a.catalog__item.catalog-item.catalog-item--1(href="system-control.html")
+                //-             span.catalog-item__number 06
+                //-             span.catalog-item__arrow 
+                //-                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path id="Subdirectory_Arrow_Right" d="M21 23.379c0-.697.561-1.263 1.252-1.263h17.485c.691 0 1.252.566 1.252 1.263v22.219l7.855-7.835a1.263 1.263 0 011.786 1.786l-9.999 9.973a1.284 1.284 0 01-1.819-.033l-9.966-9.94a1.263 1.263 0 011.786-1.786l7.832 7.813V24.642H22.252A1.258 1.258 0 0121 23.379z" fill="#30355d" fill-rule="nonzero"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
+                //-             h3.catalog-item__title Системы контроля
+                //-         .catalog__overlay
+
+        .water-page
+            .inner-content
+                .container
+                    h2.title-main Обеззараживание воды бассейнов
+                .wide-picture
+                    img(src="img/bg/bg-picture.jpg" alt="")
+                .container 
+                    .water-page__description
+                        h2.title-inner Описание
+                        .container-aside 
+                            p.water-page__over Обеззараживание воды в бассейнах как индивидуального, так и общественного пользования, очень важно для гарантированной защиты здоровья. Ведь именно водная среда в наибольшей степени способствует размножению вредоносных организмов и распространению вредных химических веществ.
+                            p.water-page__sub Наиболее эффективным на сегодняшний день методом обеззараживания плавательных бассейнов является ультрафиолетовое 
+                                |
+                                a(href="") обеззараживание. 
+                                | Данная процедура осуществляется при помощи использования специальной бактерицидной установки под воздействием УФ излучения на волне 254 нм. 
+                            p.water-page__sub Наиболее эффективным на сегодняшний день методом обеззараживания плавательных бассейнов является ультрафиолетовое обеззараживание. Данная процедура осуществляется при помощи использования специальной бактерицидной установки под воздействием УФ излучения на волне 254 нм. 
+            .inner-content 
+                .container
+                    h2.title-inner Модели установок
+                    table.table.table--notborder.table-wrap
+                        tr.table__caption.table__caption--light
+                            th.table__td Наименование			
+                            th.table__td Тип бассейна		
+                            th.table__td Средняя глубина, м		
+                            th.table__td Площадь, м2		
+                            th.table__td Время полного водообмена в час, не более	
+                        tr 
+                            td.table__td УОВ-УФТ-П-2
+                            td.table__td домашний / уличный	
+                            td.table__td 0,9
+                            td.table__td 9
+                            td.table__td 9
+                        tr 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                        tr 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                        tr 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                        tr 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                        tr.hide 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                        tr.hide 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                        tr.hide 
+                            td.table__td УОВ-УФТ-П-5
+                            td.table__td домашний / уличный	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+                            td.table__td 1,5	
+
+                    .show-more 
+                        button показать больше	
+
+            .inner-content 
+                .container 
+                    .inner-content__head.inner-content__head--center
+                        h2.title-inner.title-inner--without-indent Цели бактерицидной установки
+                        .missions__arrows 
+                            .slick-missions__prev.slick-arrow 
+                                <svg viewBox="0 0 81 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M366 1485.25c0-12.83-21.983-23.25-49.059-23.25H194.059c-27.076 0-49.059 10.42-49.059 23.25v46.5c0 12.83 21.983 23.25 49.059 23.25h122.882c27.076 0 49.059-10.42 49.059-23.25v-46.5z" fill="none" stroke="#30355d" stroke-width="3.4" transform="matrix(-.35671 0 0 -.75269 131.556 1171.44)"/><g transform="rotate(-180 140.417 975.965)"><path d="M46.923 26.618a1 1 0 00-.217-.326L30.707 10.293a.999.999 0 10-1.414 1.414L43.586 26H1a1 1 0 100 2h42.586L29.293 42.293a.999.999 0 101.414 1.414l15.999-15.999a1.001 1.001 0 00.217-1.09z" fill="#30355d" fill-rule="nonzero" stroke="#30355d" stroke-width=".89" stroke-linecap="butt" stroke-miterlimit="1.414" transform="matrix(.7309 0 0 .72436 223.241 1896.362)"/></g></svg>
+                            .slick-missions__next.slick-arrow
+                                <svg viewBox="0 0 81 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M366 1485.25c0-12.83-21.983-23.25-49.059-23.25H194.059c-27.076 0-49.059 10.42-49.059 23.25v46.5c0 12.83 21.983 23.25 49.059 23.25h122.882c27.076 0 49.059-10.42 49.059-23.25v-46.5z" fill="none" stroke="#30355d" stroke-width="3.4" transform="matrix(.35671 0 0 .75269 -50.723 -1099.43)" /><g transform="translate(-200 -1879.92)"><path d="M46.923 26.618a1 1 0 00-.217-.326L30.707 10.293a.999.999 0 10-1.414 1.414L43.586 26H1a1 1 0 100 2h42.586L29.293 42.293a.999.999 0 101.414 1.414l15.999-15.999a1.001 1.001 0 00.217-1.09z" fill="#30355d" fill-rule="nonzero" stroke="#30355d" stroke-width=".89" stroke-linecap="butt" stroke-miterlimit="1.414" transform="matrix(.7309 0 0 .72436 223.241 1896.362)"/></g></svg>
+
+                    .missions.slick-slider 
+                        .missions__item 
+                            p Цели бактерицидной установки
+                        .missions__item
+                            p Детские бассейны
+                        .missions__item
+                            p Спортивные и оздоровительные бассейны
+                        .missions__item
+                            p Сточные воды в бассейнах любых видов
+                        .missions__item 
+                            p Цели бактерицидной установки
+                        .missions__item
+                            p Детские бассейны
+                        .missions__item
+                            p Спортивные и оздоровительные бассейны
+                        .missions__item
+                            p Сточные воды в бассейнах любых видов
+
+
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug

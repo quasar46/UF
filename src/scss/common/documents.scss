@@ -13,111 +13,116 @@
     }
 }
 
-.documents__links {
-    padding-top: 20px;
+.documents__list-wrapper {
+    display: none;
+}
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: -60px;
+.documents__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -60px;
+    padding-bottom: 50px;
 
-        li {
-            // flex: 0 1 auto;
-            margin-bottom: 60px;
-            width: 50%;
+    li {
+        // flex: 0 1 auto;
+        margin-bottom: 60px;
+        width: 50%;
 
-            &:nth-child(even) {
-                padding-left: 100px;
-
-                @include media-tablet-horizontal {
-                    padding-left: 50px;
-                }
-
-                @include media-mobile {
-                    padding-left: 0;
-                }
-            }
-
-            a {
-                display: flex;
-                align-items: center;
-
-                p {
-                    font-size: 18px;
-                    // max-width: 320px;
-                    // width: 100%;
-                    line-height: 1.5;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 4;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-
-                    @include media-laptop {
-                        font-size: 17px;
-                    }
-                }
-
-                svg {
-                    max-width: 70px;
-                    flex: 1 0 auto;
-                    margin-right: 30px;
-
-                    @include media-laptop {
-                        max-width: 60px;
-                    }
-
-                    @include media-tablet-horizontal {
-                        max-width: 55px;
-                        margin-right: 20px;
-                    }
-
-                    @include media-mobile {
-                        max-width: 50px;
-                    }
-                }
-
-                &:hover {
-                    svg {
-                        path {
-                            stroke: $color-blue;
-                        }
-
-                        text {
-                            fill: $color-blue;
-                        }
-                    }
-                }
-            }
-
-            &.hide {
-                @include media-mobile {
-                    display: none;
-                }
-            }
-
-            &.show {
-                display: block;
-            }
+        &:nth-child(even) {
+            padding-left: 100px;
 
             @include media-tablet-horizontal {
-                margin-bottom: 40px;
+                padding-left: 50px;
             }
 
             @include media-mobile {
-                width: 100%;
-                margin-bottom: 30px;
+                padding-left: 0;
             }
         }
 
+        a {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 18px;
+                // max-width: 320px;
+                // width: 100%;
+                line-height: 1.5;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                @include media-laptop {
+                    font-size: 17px;
+                }
+            }
+
+            svg {
+                max-width: 70px;
+                flex: 1 0 auto;
+                margin-right: 30px;
+
+                @include media-laptop {
+                    max-width: 60px;
+                }
+
+                @include media-tablet-horizontal {
+                    max-width: 55px;
+                    margin-right: 20px;
+                }
+
+                @include media-mobile {
+                    max-width: 50px;
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        stroke: $color-blue;
+                    }
+
+                    text {
+                        fill: $color-blue;
+                    }
+                }
+            }
+        }
+
+        &.hide {
+            @include media-mobile {
+                display: none;
+            }
+        }
+
+        &.show {
+            display: block;
+        }
+
         @include media-tablet-horizontal {
-            margin-bottom: -40px;
+            margin-bottom: 40px;
         }
 
         @include media-mobile {
-            flex-direction: column;
+            width: 100%;
+            margin-bottom: 30px;
         }
     }
+
+    @include media-tablet-horizontal {
+        margin-bottom: -40px;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
+}
+
+.documents__links {
+    padding-top: 20px;
 
     .show-more-mode {
         display: none;
@@ -130,5 +135,13 @@
 
     @include media-mobile {
         padding-top: 0;
+    }
+
+    &--mode {
+        margin-bottom: 80px;
+
+        @include media-mobile {
+            margin-top: 40px;
+        }
     }
 }

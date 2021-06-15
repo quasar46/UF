@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const contentDevice = deviceWrapperDesktop.querySelectorAll('.selection__wrapper');
 
         tabsMini.forEach((tab, i) => {
-            tab.onclick = function () {
+            tab.onclick = function () {ч
                 contentDevice.forEach(item => {
                     item.classList.remove('active');
                 })

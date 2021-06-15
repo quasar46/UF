@@ -1,0 +1,74 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header-inner.pug
+        .breadcrumbs.container 
+            ul 
+                li
+                    a(href="index.html")  Главная
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a(href="index.html")  Каталог
+                li
+                    img(src="img/svg/arrow-br.svg" alt="")
+                li
+                    a.active Бактерицидные рециркуляторы
+        .recirculatori.inner-content
+            .container
+                h2.title-main Бактерицидные рециркуляторы
+            .wide-picture.wide-picture--notecover
+                img(src="img/bg/recirculatori.jpg" alt="")
+            .inner-content.container.df
+                h2.title-inner Описание
+                .container-aside.container-aside--mode
+                    p.principle__text.line-clamp Рециркулятор предназначен для обеззараживания воздуха помещений всех категорий объемом до 65 м³,  согласно Руководству Р.3.5.1904-04. М.: Федеральный центр Госсанэпиднадзора Минздрава России, 2004 г. «Использование ультрафиолетового бактерицидного излучения для обеззараживания воздуха в помещениях» в присутствии и отсутствии людей:
+                    ul.block-list
+                        li В присутствии людей
+                        li.block-list__item-mode в помещениях для предотвращения повышения уровня микробной обсемененности воздуха (особенно в случаях высокой степени риска распространения заболеваний, передающихся воздушно-капельным путем)
+                        li В отсутствии людей
+                        li.block-list__item-mode в помещениях для снижения микробной обсемененности воздуха (в качестве заключительного звена в комплексе санитарно-гигиенических мероприятий).
+
+            .inner-content.container.df 
+                h2.title-inner Рециркуляторы
+                .container-aside.container-aside--mode
+                    table.table.recirculatori__table
+                        tr.table__caption.table__caption--light
+                            th.table__td.table__td--border Модель
+                            th.table__td.table__td--border Производительность
+                        tr 
+                            td.table__td.table__td--border УФ-АЭРО-65
+                            td.table__td.table__td--border 65
+                        tr 
+                            td.table__td.table__td--border УФ-АЭРО-65
+                            td.table__td.table__td--border 120
+                    .recirculatori__text
+                        p Бактерицидным действием обладает ультрафиолетовое излучение с диапазоном длин волн 205 - 315 нм, которое проявляется в деструктивно-модифицирующих фотохимических повреждениях ДНК клеточного ядра микроорганизма, что приводит к гибели микробной клетки в первом или последующем поколении.
+                        p Реакция живой микробной клетки на ультрафиолетовое излучение не одинакова для различных длин волн. Зависимость бактерицидной эффективности от длины волны излучения иногда называют спектром действия.
+                        p При воздействии ультрафиолетового (УФ) излучения на живые микроорганизмы, имеется оптимальный для их инактивации диапазон длин волн от 250 до 280 нм.
+                        p Кривая указанного бактерицидного воздействия излучения на микроорганизмы приведена на рисунке.
+                    .inner-picture
+                        img(src="img/bg/air.jpg" alt="")
+                    .recirculatori__text
+                        p Обеззараживание воздуха в рециркуляторе происходит за счет воздействия на микроорганизмы бактерицидного УФ излучения с длиной волны 253,7 нм. Инактивация микроорганизмов происходит за счет сообщения им летальной дозы УФ облучения. Доза облучения «D» или количество энергии, сообщаемое микроорганизмам, является главной характеристикой рециркулятора УФ обеззараживания. Она равна произведению средней интенсивности УФ облучения «I» на среднее время нахождения под облучением «t». 
+                        p где, D – доза УФ облучения, I  – средняя интенсивность УФ облучения, t – среднее время нахождения под облучением.
+                    .block-formula 
+                        span D = I * t
+            .container 
+                h2.title-inner Нормативные документы
+                .documents__links.container-aside
+                    ul 
+                        li 
+                            a(href="") 
+                                <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M1148 571.228c0-7.869-21.17-14.258-47.25-14.258h-94.5c-26.078 0-47.25 6.389-47.25 14.258v28.515c0 7.868 21.172 14.257 47.25 14.257h94.5c26.08 0 47.25-6.389 47.25-14.257v-28.515z" fill="none" stroke="#30355d" stroke-width="2.21" transform="matrix(.37037 0 0 1.22743 -354.185 -682.646)"/><text x="220" y="2399" font-family="'EuclidCircularA-Regular','Euclid Circular A',sans-serif" font-size="24" fill="#30355d" transform="translate(-206.057 -2360.347)">PDF</text><path d="M98 5072.91h51" fill="none" stroke="#30355d" stroke-width="2.27" transform="matrix(.7451 0 0 1 -56.02 -5021.561)"/></svg>
+                                p Руководство Р 3.5.1904-04 «Использование ультрафиолетового бактерицидного излучения для...
+                        li 
+                            a(href="") 
+                                <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M1148 571.228c0-7.869-21.17-14.258-47.25-14.258h-94.5c-26.078 0-47.25 6.389-47.25 14.258v28.515c0 7.868 21.172 14.257 47.25 14.257h94.5c26.08 0 47.25-6.389 47.25-14.257v-28.515z" fill="none" stroke="#30355d" stroke-width="2.21" transform="matrix(.37037 0 0 1.22743 -354.185 -682.646)"/><text x="220" y="2399" font-family="'EuclidCircularA-Regular','Euclid Circular A',sans-serif" font-size="24" fill="#30355d" transform="translate(-206.057 -2360.347)">PDF</text><path d="M98 5072.91h51" fill="none" stroke="#30355d" stroke-width="2.27" transform="matrix(.7451 0 0 1 -56.02 -5021.561)"/></svg>
+                                p МУ 2.3.975-00 «Применение ультрафиолетового бактерицидного излучения для обеззараживания...
+
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug

@@ -1,26 +1,34 @@
 .wide-block {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-color: #f1f1f1;
     font-size: 32px;
     line-height: 1.5;
+
     &--small {
         padding-top: 70px;
         padding-bottom: 70px;
     }
+
     p {
         font-size: 30px;
+
         @include media-tablet-horizontal {
             font-size: 26px;
         }
+
         @include media-mobile {
             font-size: 24px;
         }
     }
+
     @include media-laptop {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
     @include media-tablet-horizontal {
         padding-top: 50px;
         padding-bottom: 50px;

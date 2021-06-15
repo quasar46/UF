@@ -1,21 +1,16 @@
 .inner-content {
-    margin-bottom: 200px;
-    p {
-        @include media-laptop {
-            // font-size: 30px;
-        }
-    }
+    margin-bottom: 60px;
+
     @include media-laptop {
-        margin-bottom: 180px;
+        margin-bottom: 40px;
     }
+
     @include media-tablet-horizontal {
-        margin-bottom: 150px;
+        margin-bottom: 20px;
     }
-    @include media-tablet {
-        margin-bottom: 140px;
-    }
+
     @include media-mobile {
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
 }
 
@@ -23,18 +18,21 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 70px;
+
     p {
         a {
             color: $color-blue;
             text-decoration: underline;
         }
     }
+
     .line-clamp {
         display: -webkit-box;
         -webkit-line-clamp: 10;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
     button {
         display: none;
         font-size: 26px;
@@ -44,19 +42,24 @@
         border: 0;
         margin-top: 5px;
         background-color: transparent;
+
         @include media-mobile {
             display: block;
         }
     }
+
     &--mode {
         margin-bottom: 130px;
     }
+
     &--center {
         align-items: center;
     }
+
     @include media-laptop {
         margin-bottom: 50px;
     }
+
     @include media-tablet-horizontal {
         flex-direction: column;
         margin-bottom: 50px;
@@ -66,6 +69,7 @@
 .inner-content__submit {
     display: flex;
     margin-top: 50px;
+
     a {
         font-size: 18px;
         background-image: url("../img/svg/arrow-submit.svg");
@@ -77,6 +81,7 @@
         border-radius: 15px;
         padding-left: 35px;
         padding-right: 70px;
+
         &:hover {
             border-color: $color-blue;
             color: $color-blue;

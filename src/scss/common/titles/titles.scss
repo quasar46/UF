@@ -1,7 +1,8 @@
 .title-inner {
     // display: block;
     display: flex;
-    font-size: 62px;
+    // font-size: 62px;
+    font-size: 56px;
     font-weight: 500;
     // margin-bottom: 50px;
     margin-bottom: 30px;
@@ -10,77 +11,96 @@
 
     span {
         margin-right: 50px;
+
         @include media-laptop {
             margin-right: 30px;
         }
+
         @include media-mobile {
             margin-right: 0;
         }
     }
+
     svg {
         position: relative;
-        width: 70px;
+        width: 65px;
         bottom: -5px;
+
         @include media-laptop {
-            width: 60px;
-        }
-        @include media-tablet-horizontal {
             width: 55px;
         }
+
+        @include media-tablet-horizontal {
+            width: 50px;
+        }
+
         @include media-mobile {
             // margin-left: auto;
             margin-left: 30px;
-            width: 50px;
+            width: 45px;
         }
     }
 
     &:hover {
         svg {
             path {
-                &:nth-child(2) {
-                    stroke: $color-blue;
-                }
-                &:first-child {
+                stroke: $color-blue;
+            }
+
+            g {
+                path {
                     fill: $color-blue;
                 }
             }
         }
     }
+
     &--without-indent {
         margin-bottom: 0;
     }
+
     @include media-laptop {
-        font-size: 56px;
-    }
-    @include media-tablet-horizontal {
         font-size: 52px;
-        margin-bottom: 40px;
     }
-    @include media-tablet {
+
+    @include media-tablet-horizontal {
         font-size: 50px;
         margin-bottom: 40px;
     }
-    @include media-mobile {
+
+    @include media-tablet {
         font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    @include media-mobile {
+        font-size: 34px;
         // margin-bottom: 50px;
         margin-bottom: 40px;
         width: 100%;
     }
+
+    &--mode {
+        margin-bottom: 50px;
+    }
 }
 
 .title-main {
-    font-size: 76px;
+    font-size: 66px;
     font-weight: 500;
     margin-bottom: 50px;
     line-height: 1.3;
+
     @include media-laptop {
-        font-size: 66px;
-    }
-    @include media-tablet-horizontal {
         font-size: 60px;
+    }
+
+    @include media-tablet-horizontal {
+        font-size: 46px;
         margin-bottom: 40px;
     }
+
     @include media-mobile {
-        font-size: 46px;
+        font-size: 44px;
     }
 }

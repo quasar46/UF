@@ -1,7 +1,7 @@
 .button-input {
     display: flex;
     align-self: flex-start;
-    background-image: url("../img/svg/arrow-submit.svg");
+    // background-image: url("../img/svg/arrow-submit.svg");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 80% center;
@@ -13,7 +13,7 @@
         border: 2px solid #30355d;
         border-radius: 15px;
         padding: 0 30px;
-        padding-right: 80px;
+        // padding-right: 80px;
         color: $color-fiolet;
         cursor: pointer;
 
@@ -34,12 +34,13 @@
         @include media-mobile {
             font-size: 15px;
             padding-left: 25px;
-            padding-right: 50px;
+            // padding-right: 50px;
+            padding-right: 25px;
         }
     }
 
     &:hover {
-        background-image: url("../img/svg/arrow-submit-hover.svg");
+        // background-image: url("../img/svg/arrow-submit-hover.svg");
 
         input {
             border-color: $color-blue;

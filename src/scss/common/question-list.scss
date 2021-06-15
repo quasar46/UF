@@ -183,10 +183,10 @@
 
 .question-list__submit {
     align-items: flex-start;
-    background-image: url("../img/svg/arrow-submit.svg");
-    background-size: 30px auto;
-    background-repeat: no-repeat;
-    background-position: right 30px top 50%;
+    // background-image: url("../img/svg/arrow-submit.svg");
+    // background-size: 30px auto;
+    // background-repeat: no-repeat;
+    // background-position: right 30px top 50%;
 
     input {
         font-size: 18px;
@@ -195,13 +195,13 @@
         border: 2px solid $color-base;
         border-radius: 15px;
         padding-left: 35px;
-        padding-right: 80px;
+        padding-right: 35px;
 
         @include media-tablet-horizontal {
             height: 55px;
             font-size: 17px;
             padding-left: 25px;
-            padding-right: 60px;
+            padding-right: 25px;
         }
     }
 

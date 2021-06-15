@@ -13,8 +13,9 @@
             }
         }
     }
+
     .table {
-        display: none;
+        // display: none;
     }
 
     .show-more-mode {
@@ -43,10 +44,10 @@
 }
 
 .tehnology-criteria__head {
-    font-size: 32px;
-    font-weight: 400;
 
-    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
 
@@ -55,17 +56,14 @@
     }
 
     @include media-laptop {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     @include media-tablet-horizontal {
-        font-size: 26px;
+        font-size: 24px;
         padding-bottom: 30px;
     }
 
-    @include media-mobile {
-        font-size: 24px;
-    }
 }
 
 // .tehnology-criteria__toggle {
@@ -76,54 +74,7 @@
 //     }
 // }
 
-.tehnology-criteria__list {
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-    li {
-        position: relative;
-        padding-left: 58px;
-        margin-bottom: 10px;
-
-        a {
-            color: $color-blue;
-            text-decoration: underline;
-        }
-
-        &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 38px;
-            height: 2px;
-            background-color: $color-blue;
-            left: 0;
-            top: 13px;
-
-            @include media-laptop {
-                width: 32px;
-                top: 12px;
-            }
-
-            @include media-mobile {
-                width: 20px;
-            }
-        }
-
-        @include media-laptop {
-            font-size: 17px;
-        }
-
-        @include media-mobile {
-            padding-left: 35px;
-        }
-    }
-
-    @include media-laptop {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
+.tehnology-criteria__list {}
 
 .tehnology-criteria__table {
     table {
@@ -171,23 +122,4 @@
     }
 }
 
-.tehnology-criteria__formula {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 50px 0;
-    font-size: 32px;
-    margin-bottom: 60px;
-
-    @include media-laptop {
-        font-size: 30px;
-    }
-
-    @include media-tablet-horizontal {
-        font-size: 26px;
-        margin-bottom: 40px;
-    }
-
-    @include media-mobile {
-        padding: 40px 0;
-    }
-}
+.tehnology-criteria__formula {}

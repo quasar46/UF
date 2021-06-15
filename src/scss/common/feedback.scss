@@ -13,7 +13,7 @@
     }
 
     @include media-tablet {
-        padding-top: 140px;
+        // padding-top: 140px;
         // padding-bottom: 140px;
     }
 
@@ -38,6 +38,12 @@
     display: flex;
     justify-content: space-between;
 
+    .container-aside {
+        @include media-tablet {
+            max-width: 100%;
+        }
+    }
+
     @include media-tablet {
         flex-direction: column;
     }
@@ -51,29 +57,29 @@
         font-size: 18px;
         border: 2px solid #bdbdbe;
         border-radius: 15px;
-        height: 70px;
+        height: 65px;
         padding: 0 30px;
 
         @include media-laptop {
-            height: 60px;
+            height: 55px;
             font-size: 17px;
         }
 
         @include media-tablet-horizontal {
             font-size: 17px;
-            height: 55px;
+            height: 50px;
             padding: 0 25px;
         }
 
         @include media-mobile {
-            height: 50px;
+            height: 45px;
         }
     }
 }
 
 .feedback__inputs {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     input {
         &:focus {

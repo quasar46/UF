@@ -3,12 +3,24 @@
     width: 100%;
     margin-left: auto;
     line-height: 1.5;
-    font-size: 32px;
+    font-size: 30px;
+
+    @include media-laptop {
+        font-size: 26px;
+    }
+
+    @include media-tablet-horizontal {
+        font-size: 24px;
+    }
 
     p {
         a {
             color: $color-blue;
             text-decoration: underline;
+        }
+
+        @include media-mobile {
+            font-size: 24px;
         }
     }
 
@@ -18,16 +30,10 @@
 
     @include media-laptop {
         max-width: 765px;
-        font-size: 30px;
     }
 
     @include media-tablet-horizontal {
         max-width: 574px;
-        font-size: 28px;
-    }
-
-    @include media-tablet {
-        font-size: 26px;
     }
 
     &--mode {

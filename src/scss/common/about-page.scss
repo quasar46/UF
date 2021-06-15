@@ -3,17 +3,13 @@
     line-height: 1.5;
 
     p {
-        font-size: 32px;
+        font-size: 30px;
 
         @include media-laptop {
-            font-size: 30px;
-        }
-
-        @include media-tablet-horizontal {
             font-size: 26px;
         }
 
-        @include media-mobile {
+        @include media-tablet-horizontal {
             font-size: 24px;
         }
     }
@@ -28,19 +24,6 @@
 }
 
 .about-page__head-picture {
-    margin-bottom: 130px;
-
-    @include media-laptop {
-        margin-bottom: 100px;
-    }
-
-    @include media-tablet-horizontal {
-        margin-bottom: 70px;
-    }
-
-    @include media-mobile {
-        height: 200px;
-    }
 
     &--cover {
         @include media-mobile {

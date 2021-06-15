@@ -5,8 +5,20 @@
         margin-bottom: 20px;
     }
 
-    @include media-mobile {
+    @include media-laptop {
+        margin-bottom: 180px;
+    }
+
+
+    @include media-tablet-horizontal {
         flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .container-aside {
+        @include media-tablet-horizontal {
+            max-width: 100%;
+        }
     }
 }
 
@@ -17,11 +29,13 @@
 }
 
 .water-page__over {
+    font-size: 30px;
+
     @include media-laptop {
         font-size: 26px;
     }
 
-    @include media-mobile {
+    @include media-tablet-horizontal {
         font-size: 24px;
     }
 }

@@ -6,17 +6,20 @@
     position: relative;
     overflow: hidden;
     display: flex;
+
     // margin-bottom: 200px;
     .slick-slider {
         position: static;
     }
+
     @include media-tablet-horizontal {
         // margin-bottom: 167px;
         margin-bottom: 0;
     }
-    @include media-tablet {
-        margin-bottom: 140px;
-    }
+
+    // @include media-tablet {
+    //     margin-bottom: 140px;
+    // }
     @include media-mobile {
         flex-direction: column;
         margin-bottom: 0;
@@ -32,6 +35,7 @@
     width: 100%;
     flex: 1 0 auto;
     padding-bottom: 50px;
+
     span {
         z-index: -1;
         position: absolute;
@@ -39,6 +43,7 @@
         height: 100%;
         left: 0;
         top: 0;
+
         &::before {
             content: "";
             position: absolute;
@@ -48,10 +53,12 @@
             left: 0;
             height: 1px;
             background-color: #c4c4c4;
+
             @include media-mobile {
                 // display: none;
             }
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -61,11 +68,13 @@
             left: 0;
             height: 1px;
             background-color: #c4c4c4;
+
             @include media-mobile {
                 // display: none;
             }
         }
     }
+
     &::after {
         content: "";
         position: absolute;
@@ -76,18 +85,25 @@
         right: 0;
         transform: translateY(-50%);
         background-color: #c4c4c4;
+
         @include media-tablet-horizontal {
             height: 90%;
         }
     }
-    @include media-tablet {
-        max-width: 340px;
+
+    // @include media-tablet {
+    //     max-width: 340px;
+    // }
+    @include media-tablet-horizontal {
+        max-width: 300px;
     }
+
     @include media-mobile {
         // height: 427px;
         // position: absolute;
         display: none;
     }
+
     &--index {
         @include media-mobile {
             display: block;
@@ -102,11 +118,6 @@
 .advantage__arrows {
     display: flex;
     margin-top: auto;
-    @include media-mobile {
-        // position: absolute;
-        // bottom: 0;
-        // left: 0;
-    }
 }
 
 .advantage__tabs-content {

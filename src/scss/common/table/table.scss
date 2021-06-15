@@ -16,6 +16,7 @@
 
     &+.show-more {
         width: 100%;
+        margin-top: -4px;
     }
 }
 
@@ -29,6 +30,10 @@
         td {
             border-bottom: 0;
         }
+    }
+
+    @include media-tablet-horizontal {
+        font-size: 15px;
     }
 }
 
@@ -63,5 +68,29 @@
 
     &--light {
         background-color: #F1F1F1;
+    }
+}
+
+.table__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+
+    @include media-laptop {
+        font-size: 30px;
+    }
+
+    @include media-tablet-horizontal {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    @include media-mobile {
+        font-size: 24px;
+    }
+}
+
+.table__tr {
+    &:hover {
+        background-color: #CFEFF6;
     }
 }

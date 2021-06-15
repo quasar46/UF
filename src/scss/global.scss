@@ -38,15 +38,19 @@ a {
     padding: 0 100px;
     width: 100%;
     margin: 0 auto;
+
     @include media-laptop {
         padding: 0 60px;
     }
+
     @include media-tablet-horizontal {
         padding: 0 50px;
     }
+
     @include media-tablet {
         padding: 0 40px;
     }
+
     @include media-mobile {
         padding: 0 15px;
     }
@@ -74,6 +78,7 @@ h4 {
     height: 70px;
     background-image: url("../img/svg/minus.svg");
     background-size: cover;
+
     &--minus {
         display: none;
     }
@@ -100,7 +105,7 @@ h4 {
 .popup-block {
     position: absolute;
     bottom: calc(100% + 20px);
-    left: -270px;
+    left: -230px;
     width: 324px;
     color: $color-base;
     // height: 170px;
@@ -109,6 +114,7 @@ h4 {
     border-radius: 15px;
     padding: 20px;
     filter: drop-shadow(2px 2px 10px #c4c4c4);
+
     &::before {
         content: "";
         position: absolute;
@@ -126,5 +132,17 @@ h4 {
         .footer {
             margin-top: 0;
         }
+    }
+}
+
+.df {
+    display: flex;
+
+    @include media-tablet-horizontal {
+        flex-direction: column;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
     }
 }

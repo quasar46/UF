@@ -1,6 +1,6 @@
 .slick-arrow {
     cursor: pointer;
-    width: 79px;
+    width: 65px;
     &.slick-disabled {
         svg {
             path {
@@ -12,13 +12,13 @@
         }
     }
     @include media-laptop {
-        width: 67px;
+        width: 63px;
     }
     @include media-tablet-horizontal {
-        width: 60px;
+        width: 55px;
     }
     @include media-mobile {
-        width: 56px;
+        width: 51px;
     }
     &:hover {
         svg {

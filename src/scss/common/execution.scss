@@ -1,0 +1,32 @@
+.execution__item {
+    margin-right: 37px;
+
+    img {
+        border: 1px solid #c5c5c5;
+        // margin-right: 37px;
+        height: 218px;
+        object-fit: contain;
+    }
+}
+
+.execution__slick {
+    display: none;
+    width: 160%;
+    margin-bottom: 40px;
+
+    @include media-mobile {
+        display: block;
+    }
+}
+
+.execution__pagination {
+    display: none;
+
+    @include media-mobile {
+        display: flex;
+    }
+}
+
+.slick-execution__prev {
+    margin-right: 20px;
+}

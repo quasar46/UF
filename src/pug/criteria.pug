@@ -32,7 +32,7 @@ html(lang="ru")
                                 | или 
                                 a(href="") внесите данные в форму.
                             p Основными факторами, влияющими на эффективность обеззараживания природных и сточных вод УФ-облучением, являются:
-                            ul.tehnology-criteria__list 
+                            ul.tehnology-criteria__list.block-list
                                 li чувствительность различных вирусов к действию УФ-облучения
                                 li 
                                     <a class="hover" data-caption="<a href='#'>МУ 3.2.1757-03</a> - не менее 25 мДж/кв. см для воды из подземных источников II, III класса и поверхностных источников; не менее 30 мДж/кв. см для бытовых и городских сточных вод.">Мощность лампы</a>
@@ -50,25 +50,26 @@ html(lang="ru")
                                 | отдельных видов вирусов на 99,0 - 99,9%
                             <svg class="toggle-block__btn toggle-block__btn--plus" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M19 36h34M36 19v34" fill="none" stroke="#30355d" stroke-width="2.5"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
                             <svg class="toggle-block__btn toggle-block__btn--minus" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><g transform="translate(-1486 -2069.715)"><path d="M1505 2105.71h34" fill="none" stroke="#30355d" stroke-width="2.5" id="_-"/></g><path d="M1148 571.228c0-7.869-21.17-14.258-47.25-14.258h-94.5c-26.078 0-47.25 6.389-47.25 14.258v28.515c0 7.868 21.172 14.257 47.25 14.257h94.5c26.08 0 47.25-6.389 47.25-14.257v-28.515z" fill="none" stroke="#30355d" stroke-width="2.21" transform="matrix(.37037 0 0 1.22743 -354.185 -682.648)"/></svg>
-                        table.table
-                            tr.table__caption.table__caption--light
-                                th.table__td Виды вирусов
-                                th.table__td Доза облучения мДж/кв.см
-                            tr 
-                                td.table__td Аденовирус III типа
-                                td.table__td 4,5
-                            tr 
-                                td.table__td Колифаги
-                                td.table__td 6,6 - 8,1 - 25
-                            tr 
-                                td.table__td Коксаки
-                                td.table__td 6,3
-                            tr 
-                                td.table__td Вирус гепатита А
-                                td.table__td 8,0 - 11,0
-                            tr 
-                                td.table__td Полиовирус
-                                td.table__td 16 - 25
+                        .tablewrap
+                            table.table
+                                tr.table__caption.table__caption--light
+                                    th.table__td Виды вирусов
+                                    th.table__td Доза облучения мДж/кв.см
+                                tr 
+                                    td.table__td Аденовирус III типа
+                                    td.table__td 4,5
+                                tr 
+                                    td.table__td Колифаги
+                                    td.table__td 6,6 - 8,1 - 25
+                                tr 
+                                    td.table__td Коксаки
+                                    td.table__td 6,3
+                                tr 
+                                    td.table__td Вирус гепатита А
+                                    td.table__td 8,0 - 11,0
+                                tr 
+                                    td.table__td Полиовирус
+                                    td.table__td 16 - 25
 
                     .tehnology-criteria__row
                         .little-text
@@ -91,34 +92,35 @@ html(lang="ru")
                             .tehnology-criteria__toggle
                                 <svg class="toggle-block__btn toggle-block__btn--plus" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M19 36h34M36 19v34" fill="none" stroke="#30355d" stroke-width="2.5"/><path d="M71 18.5C71 8.841 63.159 1 53.5 1h-35C8.841 1 1 8.841 1 18.5v35C1 63.159 8.841 71 18.5 71h35C63.159 71 71 63.159 71 53.5v-35z" fill="none" stroke="#30355d" stroke-width="2"/></svg>
                                 <svg class="toggle-block__btn toggle-block__btn--minus" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><g transform="translate(-1486 -2069.715)"><path d="M1505 2105.71h34" fill="none" stroke="#30355d" stroke-width="2.5" id="_-"/></g><path d="M1148 571.228c0-7.869-21.17-14.258-47.25-14.258h-94.5c-26.078 0-47.25 6.389-47.25 14.258v28.515c0 7.868 21.172 14.257 47.25 14.257h94.5c26.08 0 47.25-6.389 47.25-14.257v-28.515z" fill="none" stroke="#30355d" stroke-width="2.21" transform="matrix(.37037 0 0 1.22743 -354.185 -682.648)"/></svg>
-                        table.table.table-wrap
-                            tr.table__caption.table__caption--light
-                                th.table__td(colspan="4") Виды вирусов
-                            tr 
-                                td.table__td Аденовирус III типа
-                                td.table__td 4,5
-                                td.table__td Аденовирус III типа
-                                td.table__td 4,5
-                            tr 
-                                td.table__td Колифаги
-                                td.table__td 6,6 - 8,1 - 25
-                                td.table__td Колифаги
-                                td.table__td 6,6 - 8,1 - 25
-                            tr 
-                                td.table__td Коксаки
-                                td.table__td 6,3
-                                td.table__td Коксаки
-                                td.table__td 6,3
-                            tr 
-                                td.table__td Вирус гепатита А
-                                td.table__td 8,0 - 11,0
-                                td.table__td Вирус гепатита А
-                                td.table__td 8,0 - 11,0
-                            tr 
-                                td.table__td Полиовирус
-                                td.table__td 16 - 25
-                                td.table__td Полиовирус
-                                td.table__td 16 - 25
+                        .tablewrap
+                            table.table.table-wrap
+                                tr.table__caption.table__caption--light
+                                    th.table__td(colspan="4") Виды вирусов
+                                tr 
+                                    td.table__td Аденовирус III типа
+                                    td.table__td 4,5
+                                    td.table__td Аденовирус III типа
+                                    td.table__td 4,5
+                                tr 
+                                    td.table__td Колифаги
+                                    td.table__td 6,6 - 8,1 - 25
+                                    td.table__td Колифаги
+                                    td.table__td 6,6 - 8,1 - 25
+                                tr 
+                                    td.table__td Коксаки
+                                    td.table__td 6,3
+                                    td.table__td Коксаки
+                                    td.table__td 6,3
+                                tr 
+                                    td.table__td Вирус гепатита А
+                                    td.table__td 8,0 - 11,0
+                                    td.table__td Вирус гепатита А
+                                    td.table__td 8,0 - 11,0
+                                tr 
+                                    td.table__td Полиовирус
+                                    td.table__td 16 - 25
+                                    td.table__td Полиовирус
+                                    td.table__td 16 - 25
 
                     .tehnology-criteria__row 
                         .little-text
@@ -144,16 +146,16 @@ html(lang="ru")
                 .container-aside.container-aside--mode
                     .little-text
                         p Эффект обеззараживания воды D (доза облучения мДж/см2) зависит от произведения интенсивности бактерицидного облучения Е на продолжительность облучения Т.
-                        .tehnology-criteria__formula 
+                        .block-formula 
                             span D = E*T
                         p Эмпирическая формула расчета коэффициента поглощения водой УФ-лучей. Где: Ц – цветность воды в градусах ( гр) П – эмпирическая величина учитывающая влияние мутности воды СFe – концентрация железа
-                        .tehnology-criteria__formula.hide 
+                        .block-formula.hide 
                             span А = Ц+П+10(СFe – 0,1) / 100
                         p.hide Интенсивность бактерицидного облучения изменяется по закону Ламберта-Бугера. Где E0 – минимальная интенсивность бактерицидного излучения на поверхности лампы,мВт/см2 a – коэффициент поглощения водой УФ-лучей, см-1 x – толщина слоя поглощающего вещества, см
-                        .tehnology-criteria__formula.hide 
+                        .block-formula.hide 
                             span А = Ц+П+10(СFe – 0,1) / 100
                         p.hide Процесс отмирания бактерий описывается уравнением. Где: Р – колииндекс воды после облучения, КОЕ/100 мл Ро – колииндекс воды до облучения КОЕ/100 мл Е – интенсивность бактерицидного облучения в мкВт Т – продолжительность облучения в с k – коэффициент сопротивляемости бактерий, принимаемый равным 2500 мкВт*с/см2
-                        .tehnology-criteria__formula.hide 
+                        .block-formula.hide 
                             span Р = Ро * ехр ( - ЕТ / k)
                     .show-more-mode 
                         button Показать еще
