@@ -12,18 +12,6 @@
         padding-bottom: 70px;
     }
 
-    p {
-        font-size: 30px;
-
-        @include media-tablet-horizontal {
-            font-size: 26px;
-        }
-
-        @include media-mobile {
-            font-size: 24px;
-        }
-    }
-
     @include media-laptop {
         padding-top: 60px;
         padding-bottom: 60px;

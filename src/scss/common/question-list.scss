@@ -36,17 +36,10 @@
 }
 
 .question-list__title {
-    font-size: 32px;
-    font-weight: 400;
     margin-bottom: 40px;
 
     @include media-tablet-horizontal {
-        font-size: 26px;
         margin-bottom: 30px;
-    }
-
-    @include media-mobile {
-        font-size: 24px;
     }
 }
 

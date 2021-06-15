@@ -473,9 +473,7 @@
 }
 
 .device__title {
-    font-size: 34px;
     line-height: 1.5;
-    font-weight: 400;
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #c5c5c5;
@@ -487,12 +485,7 @@
         margin-bottom: 50px;
     }
 
-    @include media-laptop {
-        font-size: 30px;
-    }
-
     @include media-tablet-horizontal {
-        font-size: 26px;
         margin-bottom: 25px;
         padding-bottom: 25px;
     }
@@ -539,7 +532,6 @@
     width: 50%;
     margin-bottom: 50px;
     padding-right: 40px;
-
 }
 
 .device__block-list {

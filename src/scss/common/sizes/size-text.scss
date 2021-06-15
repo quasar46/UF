@@ -1,23 +1,16 @@
 .little-text {
     line-height: 1.5;
-    font-size: 18px;
 
     @include media-mobile {
         .hide {
             display: none;
         }
-
         .show {
             display: block;
         }
     }
 
     p {
-        font-size: 18px;
         margin-bottom: 15px;
-
-        @include media-laptop {
-            font-size: 17px;
-        }
     }
 }

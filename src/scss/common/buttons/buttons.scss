@@ -8,12 +8,10 @@
     height: 70px;
 
     input {
-        font-size: 18px;
         background-color: transparent;
         border: 2px solid #30355d;
         border-radius: 15px;
         padding: 0 30px;
-        // padding-right: 80px;
         color: $color-fiolet;
         cursor: pointer;
 
@@ -24,17 +22,10 @@
 
         @include media-laptop {
             padding-right: 70px;
-            font-size: 17px;
-        }
-
-        @include media-tablet-horizontal {
-            font-size: 17px;
         }
 
         @include media-mobile {
-            font-size: 15px;
             padding-left: 25px;
-            // padding-right: 50px;
             padding-right: 25px;
         }
     }

@@ -3,24 +3,11 @@
 
     // border-bottom: 1px solid #c5c5c5;
     p {
-        font-size: 32px;
         line-height: 1.5;
 
         a {
             color: $color-blue;
             text-decoration: underline;
-        }
-
-        @include media-laptop {
-            font-size: 30px;
-        }
-
-        @include media-tablet-horizontal {
-            font-size: 26px;
-        }
-
-        @include media-mobile {
-            font-size: 24px;
         }
     }
 
@@ -39,9 +26,7 @@
     padding-bottom: 80px;
 
     h3 {
-        font-size: 32px;
         margin-bottom: 40px;
-        font-weight: 400;
 
         @include media-laptop {
             font-size: 30px;

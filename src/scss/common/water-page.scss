@@ -21,21 +21,3 @@
         }
     }
 }
-
-.water-page__sub {
-    @include media-laptop {
-        font-size: 17px;
-    }
-}
-
-.water-page__over {
-    font-size: 30px;
-
-    @include media-laptop {
-        font-size: 26px;
-    }
-
-    @include media-tablet-horizontal {
-        font-size: 24px;
-    }
-}

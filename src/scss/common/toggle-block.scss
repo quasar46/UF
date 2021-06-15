@@ -29,7 +29,6 @@
     align-items: center;
     width: 100%;
     line-height: 1.3;
-    font-weight: 400;
     padding-top: 50px;
     padding-bottom: 50px;
     cursor: pointer;
@@ -68,30 +67,17 @@
         display: none;
     }
 
-    font-size: 30px;
-
-    @include media-laptop {
-        font-size: 26px;
-    }
-
-    @include media-tablet-horizontal {
-        font-size: 24px;
-    }
-
     @include media-laptop {
         padding-top: 40px;
         padding-bottom: 40px;
-
     }
 
     @include media-tablet-horizontal {
-
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
     @include media-mobile {
-
         align-items: flex-start; // criteria
     }
 

@@ -1,18 +1,6 @@
 .podbor__wrapper {
     display: flex;
 
-    p {
-        font-size: 32px;
-
-        @include media-laptop {
-            font-size: 30px;
-        }
-
-        @include media-tablet-horizontal {
-            font-size: 26px;
-        }
-    }
-
     .container-aside {
         @include media-tablet-horizontal {
             max-width: 100%;
@@ -29,7 +17,6 @@
     margin-top: 50px;
 
     a {
-        font-size: 18px;
         background-image: url("../img/svg/arrow-submit.svg");
         background-position: right 30px top 50%;
         background-size: 30px auto;
@@ -48,7 +35,6 @@
         }
 
         @include media-laptop {
-            font-size: 17px;
             line-height: 60px;
             height: 60px;
         }

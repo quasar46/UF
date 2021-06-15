@@ -1,26 +1,10 @@
 .feedback {
-    // padding-bottom: 190px;
     padding-bottom: 0;
     margin-bottom: 0;
 
-    @include media-laptop {
-        // padding-bottom: 180px;
-    }
-
-    @include media-tablet-horizontal {
-        // padding-top: 150px;
-        // padding-bottom: 150px;
-    }
-
-    @include media-tablet {
-        // padding-top: 140px;
-        // padding-bottom: 140px;
-    }
 
     @include media-mobile {
-        // padding-top: 100px;
         padding-top: 0; // index
-        // padding-bottom: 100px;
     }
 }
 
@@ -151,19 +135,10 @@
 
 .feedback__consent {
     margin-bottom: 40px;
-    font-size: 18px !important;
     line-height: 1.5;
 
     a {
         text-decoration: underline;
-    }
-
-    @include media-laptop {
-        font-size: 17px !important;
-    }
-
-    @include media-mobile {
-        font-size: 15px !important;
     }
 }
 

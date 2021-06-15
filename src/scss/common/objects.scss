@@ -148,9 +148,6 @@
     }
 
     h3 {
-        font-size: 32px;
-        font-weight: 500;
-        // line-height: 1.5;
         line-height: 1.3;
         margin-bottom: 35px;
 
@@ -159,7 +156,6 @@
         }
 
         @include media-laptop {
-            font-size: 30px;
             margin-bottom: 30px;
 
             .br {
@@ -168,19 +164,13 @@
         }
 
         @include media-tablet-horizontal {
-            font-size: 26px;
             margin-bottom: 18px;
         }
 
-        @include media-mobile {
-            // font-size: 26px;
-            font-size: 24px; // objects
-        }
     }
 
     p {
         position: relative;
-        font-size: 18px;
         padding-left: 58px;
         line-height: 1.5;
 
@@ -204,18 +194,11 @@
             }
         }
 
-        @include media-laptop {
-            font-size: 17px;
-        }
-
         @include media-tablet-horizontal {
             padding-left: 50px;
         }
 
         @include media-mobile {
-            // font-size: 15px;
-            font-size: 17px; // objects
-            // padding-left: 45px;
             padding-left: 40px; // objects
         }
     }

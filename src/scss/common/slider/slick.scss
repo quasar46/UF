@@ -1,14 +1,11 @@
 .slider__counter {
+    font-size: 32px;
     position: absolute;
-    // position: relative;
     display: flex;
     align-items: center;
-    // top: 0;
     top: 494px;
-    // left: 0;
     left: 100px;
     z-index: 1;
-    font-size: 32px;
     font-weight: 300;
     color: #fff;
     pointer-events: none;
@@ -20,13 +17,13 @@
     }
 
     @include media-tablet-horizontal {
-        font-size: 28px;
+        font-size: 26px;
         top: 260px;
         left: 55px;
     }
 
     @include media-tablet {
-        font-size: 26px;
+        font-size: 24px;
         left: 40px;
     }
 

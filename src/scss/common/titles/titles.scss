@@ -1,12 +1,8 @@
 .title-inner {
-    // display: block;
     display: flex;
-    // font-size: 62px;
     font-size: 56px;
     font-weight: 500;
-    // margin-bottom: 50px;
     margin-bottom: 30px;
-    // white-space: nowrap;
     line-height: 1.4;
 
     span {
@@ -75,7 +71,6 @@
 
     @include media-mobile {
         font-size: 34px;
-        // margin-bottom: 50px;
         margin-bottom: 40px;
         width: 100%;
     }
@@ -96,6 +91,12 @@
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
+    @include media-laptop {
+        font-size: 26px;
+    }
+    @include media-tablet-horizontal {
+        font-size: 24px;
+    }
 }
 
 .title-main {
@@ -115,5 +116,41 @@
 
     @include media-mobile {
         font-size: 44px;
+    }
+}
+
+.main-text {
+    font-size: 32px;
+    font-weight: 400;
+    @include media-laptop {
+        font-size: 30px;
+    }
+    @include media-tablet-horizontal {
+        font-size: 26px;
+    }
+    @include media-tablet {
+        font-size: 26px;
+    }
+    @include media-mobile {
+        font-size: 24px;
+    }
+    &--w {
+        font-weight: 500;
+    }
+}
+
+.add-text {
+    font-size: 18px;
+    font-weight: 400;
+    @include media-tablet {
+        font-size: 17px;
+    }
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: 400;
+    @include media-tablet {
+        font-size: 15px;
     }
 }

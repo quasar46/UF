@@ -45,8 +45,6 @@
 
 .tehnology-criteria__head {
 
-    font-weight: 400;
-    font-size: 30px;
     padding-bottom: 40px;
     display: flex;
     align-items: center;
@@ -55,12 +53,7 @@
         display: block;
     }
 
-    @include media-laptop {
-        font-size: 26px;
-    }
-
     @include media-tablet-horizontal {
-        font-size: 24px;
         padding-bottom: 30px;
     }
 

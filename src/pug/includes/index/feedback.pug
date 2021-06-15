@@ -3,16 +3,16 @@
         .feedback__wrapper
             h2.title-inner.feedback__title Связаться
             .feedback__content.feedback-content.container-aside
-                h3.feedback-content__title Свяжитесь с Нами и, в ближайшее время, Вам помогут подобрать оборудование в соответствии с вашими требованиями.
+                h3.feedback-content__title.main-text Свяжитесь с Нами и, в ближайшее время, Вам помогут подобрать оборудование в соответствии с вашими требованиями.
                 form.feedback__form(action="get") 
                     p.feedback__inputs
-                        input(type="text" placeholder="Как к Вам обращаться")
-                        input(type="text" placeholder="Номер телефона")
-                    p.feedback__consent Нажимая "Отправить" Вы соглашаетесь с 
+                        input(type="text" placeholder="Как к Вам обращаться").add-text
+                        input(type="text" placeholder="Номер телефона").add-text
+                    p.feedback__consent.add-text Нажимая "Отправить" Вы соглашаетесь с 
                         |
                         a(href="#" target="_blank") лицензионным соглашением 
                         | и принимаете условия обработки 
                         | 
                         a(href="#" target="_blank") персональных данных 
                     p.feedback__submit.button-input
-                        input(type="submit" value="Отправить")
+                        input(type="submit" value="Отправить").add-text

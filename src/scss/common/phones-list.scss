@@ -21,23 +21,8 @@
     }
 
     .phones-list__item {
-        font-size: 34px;
-        @include media-laptop {
-            font-size: 30px;
-        }
-        @include media-tablet-horizontal {
-            font-size: 26px;
-        }
         @include media-mobile {
-            font-size: 24px;
             margin-bottom: 15px;
         }
-    }
-}
-
-.phones-list__phone {
-    font-size: 18px;
-    @include media-laptop {
-        font-size: 17px;
     }
 }

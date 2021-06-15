@@ -26,25 +26,8 @@
 }
 
 .contacts__list-head {
-    font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
-    @include media-laptop {
-        font-size: 17px;
-    }
-}
-
-.contacts__list__address {
-    font-size: 32px;
-    @include media-laptop {
-        font-size: 30px;
-    }
-    @include media-tablet-horizontal {
-        font-size: 26px;
-    }
-    @include media-mobile {
-        font-size: 24px;
-    }
 }
 
 .contacts__map {
