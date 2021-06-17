@@ -135,8 +135,12 @@ $(document).ready(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 1) {
                 headerMode.addClass('active');
+                $('.header-main__head--hide').css('display', 'none');
+                $('.header-main__head--inner').css('display', 'none');
             } else {
                 headerMode.removeClass('active');
+                $('.header-main__head--hide').css('display', 'flex');
+                $('.header-main__head--inner').css('display', 'flex');
             }
         });
     })

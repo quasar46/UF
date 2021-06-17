@@ -5,15 +5,20 @@
         padding-bottom: 30px;
         margin-bottom: 50px;
         border-bottom: 1px solid #c5c5c5;
+
         &:first-child {
             align-items: center;
+
             @include media-mobile {
                 align-items: flex-start;
             }
         }
+
         &:last-child {
             margin-bottom: 0;
+            border-bottom: 0;
         }
+
         @include media-mobile {
             flex-direction: column;
             justify-content: flex-start;
