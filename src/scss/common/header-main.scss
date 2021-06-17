@@ -344,7 +344,7 @@
 
 .header-main__fixed-link {
     position: fixed;
-    right: -145px;
+    right: -148px;
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
     background-color: $color-blue;
@@ -363,7 +363,7 @@
     @include media-tablet-horizontal {
         line-height: 37px;
         font-size: 16px;
-        right: -137px;
+        right: -140px;
     }
 
     @include media-mobile {

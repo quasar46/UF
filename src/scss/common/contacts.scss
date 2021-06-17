@@ -42,12 +42,12 @@
 
 .contacts__phone {
     display: flex;
-    margin-bottom: 130px;
+    // margin-bottom: 130px;
     @include media-laptop {
-        margin-bottom: 110px;
+        // margin-bottom: 110px;
     }
     @include media-tablet-horizontal {
-        margin-bottom: 70px;
+        // margin-bottom: 70px;
     }
     @include media-mobile {
         flex-direction: column;
